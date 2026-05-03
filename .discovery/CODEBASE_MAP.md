@@ -12,17 +12,6 @@ This is the top level of the FreeBSD source directory. FreeBSD is an operating s
 
 ```
 freebsd-src/
-├── .arcconfig              # Arc Configuration (Phabricator)
-├── .arclint               # Arc linting rules
-├── .cirrus-ci/            # Cirrus CI configuration
-├── .clang-format          # Clang formatting rules
-├── .editorconfig          # Editor configuration
-├── .git-blame-ignore-revs # Git blame ignore list
-├── .github/               # GitHub workflows
-├── .gitattributes         # Git attributes
-├── .gitignore             # Git ignore patterns
-├── .mailmap               # Mail mapping for contributors
-│
 ├── bin/                   # Essential user commands (44 entries)
 ├── cddl/                  # CDDL-licensed third-party software
 ├── contrib/               # Third-party software (92 entries)
@@ -34,14 +23,6 @@ freebsd-src/
 ├── krb5/                  # Kerberos 5 (MIT) build system
 ├── lib/                   # System libraries (157 entries)
 ├── libexec/               # System commands executed by others (38 entries)
-├── LOCKS                  # Lock file documentation
-├── MAINTAINERS            # Maintainer list
-├── Makefile               # Top-level build file
-├── Makefile.inc1          # Build includes
-├── Makefile.libcompat     # Library compatibility
-├── Makefile.sys.inc       # System build includes
-├── ObsoleteFiles.inc      # Obsolete file list
-├── packages/              # Package build system
 ├── release/               # Release build system
 ├── rescue/                # Statically linked /rescue utilities
 ├── sbin/                  # System administration commands (90 entries)
@@ -52,7 +33,6 @@ freebsd-src/
 ├── targets/               # DIRDEPS_BUILD support
 ├── tests/                 # Kyua test suite
 ├── tools/                 # Ancillary utilities (22 entries)
-├── UPDATING               # Update notes
 ├── usr.bin/               # User commands (282 entries)
 └── usr.sbin/              # System administration commands (236 entries)
 ```
@@ -157,6 +137,17 @@ See `build(7)`, `config(8)`, and the FreeBSD Handbook for more build options.
 | `CONTRIBUTING.md` | Contribution guidelines |
 | `COPYRIGHT` | Copyright information |
 | `MAINTAINERS` | Maintainer contacts |
+
+## Discovery Map
+
+See subdirectory maps for detailed documentation:
+
+- `sys/CODEBASE_MAP.md` — Kernel sources
+- `userland/CODEBASE_MAP.md` — User commands (bin, sbin, usr.bin, usr.sbin)
+- `libraries/CODEBASE_MAP.md` — Libraries (lib, libexec, secure)
+- `third-party/CODEBASE_MAP.md` — Third-party software (contrib, cddl, gnu, crypto)
+- `boot-loader/CODEBASE_MAP.md` — Boot loader (stand, rescue)
+- `share/CODEBASE_MAP.md` — Share and tests
 
 ## Related Documentation
 

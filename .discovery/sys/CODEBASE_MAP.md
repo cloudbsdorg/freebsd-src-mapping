@@ -167,12 +167,10 @@ dev/
 ├── psynth/            # Pseudo synth
 ├── rtc/               # Real-time clock
 ├── sdhci/             # SD Host Controller
-├── sdhci/             # SDHCI driver
 ├── siis/              # Silicon Image SATA
 ├── smbios/            # SMBIOS
 ├── spi/               # SPI bus
 ├── ti/                # Texas Instruments
-├── twitter/           # Twitter-specific
 ├── uart/              # UART serial
 ├── usb/               # USB stack
 ├── vge/               # VIA VT612x Ethernet
@@ -231,66 +229,31 @@ Organized by subsystem:
 ```
 modules/
 ├── accf/              # Accept filters
-├── accf_httpd/
-├── amd/               # AutoMount daemon
 ├── apm/
 ├── acpi/
 ├── audit/
-├── bhnd/
 ├── bpf/               # Berkeley Packet Filter
-├── bus/               # Bus modules
-├── ccd/
 ├── crypto/            # Cryptographic modules
 ├── dtrace/
 ├── ext2fs/
-├── fdescfs/
 ├── firewire/          # IEEE 1394
 ├── geom/              # GEOM modules
-├── i2c/
-├── icmp/
-├── ichsmb/
 ├── if_/               # Network drivers
 ├── ip_divert/
 ├── ipfw/
-├── ipmi/
 ├── ipsec/
-├── iscsi/
 ├── jail/
 ├── linux/
 ├── mac/               # Mandatory Access Control
 ├── msdosfs/
 ├── nfsd/
-├── ng_/               # Netgraph nodes
-├── nullfs/
-├── nwfs/
-├── opensolaris/
-├── overlayfs/
-├── pcmcia/
 ├── pf/                # Packet Filter
-├── procfs/
-├── pseudofs/
-├── race/
-├── sch_netgraph/
-├── sd/
-├── sdp/
-├── sdhci/
-├── sppp/
-├── sym/
-├── sysvipc/
 ├── tmpfs/
 ├── udf/
-├── ulpt/
-├── ums/
-├── uipc_socket/
 ├── usb/               # USB drivers
-├── uvscom/
-├── vfs/
 ├── virtio/            # VirtIO drivers
-├── vmware/
-├── vnode_if.c         # Vnode interface
 ├── vesa/
 ├── wlan/              # Wireless LAN
-├── xen/
 └── zfs/
 ```
 
