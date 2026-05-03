@@ -1,132 +1,63 @@
-# share/ — Share and Tests Codebase Map
+# share/ — Shared Resources Codebase Map
 
-**Path:** `share/`, `tests/`, `tools/`
+**Path:** `share/`
+**Purpose:** Architecture-independent resources
 
 ## Overview
 
-The share and tests directories contain shared resources, documentation, and test infrastructure.
+The share directory contains architecture-independent resources.
 
----
+## Key Directories
 
-## share/ — Shared Resources
-
-**Path:** `share/`
-
-### Man Pages & Documentation
-
-| Directory | Description |
-|-----------|-------------|
-| `man/` | Manual pages |
-| `doc/` | Documentation |
+| Directory | Purpose |
+|-----------|---------|
 | `mk/` | Build makefiles |
-
-### Locale & Internationalization
-
-| Directory | Description |
-|-----------|-------------|
-| `i18n/` | Internationalization |
-| `zoneinfo/` | Timezone data |
-| `colldef/` | Collation definitions |
-| `msgdef/` | Message definitions |
-
-### System Resources
-
-| Directory | Description |
-|-----------|-------------|
-| `dict/` | Word lists |
 | `skel/` | Skeleton files |
-| `termcap/` | Terminal capabilities |
-| `vt/` | VT fonts |
+| `telnetd/` | Telnetd files |
+| `zoneinfo/` | Timezone data |
+| `man/` | Manual pages |
+| `dict/` | Word lists |
+| `misc/` | Misc data |
+| `secure/` | TLS certs |
 
-### Examples & Templates
-
-| Directory | Description |
-|-----------|-------------|
-| `examples/` | Example configurations |
-| `security/` | Security templates |
-
----
-
-## tests/ — Kyua Test Suite
-
-**Path:** `tests/`
-
-### Structure
+## timezone Data
 
 ```
-tests/
-├── atf_python/         # Python ATF tests
-├── freebsd_test_suite/ # Main test suite
-├── sys/               # Kernel tests
-├── Kyuafile           # Test specification
-└── README             # Test documentation
+share/zoneinfo/
+├── America/
+│   ├── New_York
+│   ├── Los_Angeles
+│   └── Chicago
+├── Europe/
+│   ├── London
+│   ├── Paris
+│   └── Berlin
+├── Asia/
+│   ├── Tokyo
+│   └── Shanghai
+└── UTC
 ```
 
-### Running Tests
+## Skeleton Files
 
-```bash
-# Run all tests
-make test
-
-# Run specific test
-kyua test -t tests/Kyuafile
-
-# Run kernel tests
-cd tests/sys && make
+```
+share/skel/
+├── .cshrc
+├── .profile
+├── .shrc
+└── dot.cshrc
 ```
 
-### Test Categories
+## Build Makefiles
 
-| Category | Description |
-|----------|-------------|
-| `sys/` | Kernel-level tests |
-| `usr.bin/` | User command tests |
-| `usr.sbin/` | Admin command tests |
-| `lib/` | Library tests |
-
----
-
-## tools/ — Ancillary Utilities
-
-**Path:** `tools/`
-
-### Categories
-
-| Directory | Description |
-|-----------|-------------|
-| `boot/` | Boot-related tools |
-| `build/` | Build tools |
-| `debug/` | Debugging tools |
-| `regression/` | Regression tests |
-
-### Key Tools
-
-| Tool | Description |
-|------|-------------|
-| `install.sh` | Install script |
-| `tinder.sh` | Tinderbox script |
-| `coccinelle/` | Coccinelle scripts |
-
----
-
-## Build System
-
-### Share
-
-```bash
-# Build man pages
-cd share && make
-
-# Install share
-make installworld
+```
+share/mk/
+├── bsd.prog.mk
+├── bsd.lib.mk
+├── bsd.files.mk
+└── bsd.sys.mk
 ```
 
-### Tests
+## See Also
 
-```bash
-# Build tests
-make -C tests
-
-# Run tests
-cd tests && kyua test
-```
+- `etc/` - System configuration
