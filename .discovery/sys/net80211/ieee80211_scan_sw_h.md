@@ -1,0 +1,20 @@
+# Component: ieee80211_scan_sw.h
+
+**Path:** `sys/net80211/ieee80211_scan_sw.h`
+**Type:** Header
+**Maps to:** `.discovery/sys/net80211/ieee80211_scan_sw_h.md`
+
+## Purpose
+
+802.11 scan definitions.
+
+## Use Cases
+
+| Use | Description |
+|-----|-------------|
+| `net80211` | 802.11 wireless |
+| `scan` | AP scanning |
+
+## Includes
+
+- `ieee80211/ieee80211.h` - Main definitions
