@@ -21,11 +21,29 @@ The `sys/kern/` directory contains the heart of the FreeBSD kernel. It handles p
 | `kern_kthread.c` | Kernel threads | `kthread_add()`, `kthread_exit()` |
 
 **Relationships:**
+
+```mermaid
+flowchart TD
+    A[kern_fork.c] --> B[kern_thread.c]
+    A --> C[kern_proc.c]
+    D[kern_exit.c] --> B
+    D --> C
 ```
-kern_fork.c → calls → kern_thread.c (create thread for new process)
-kern_fork.c → calls → kern_proc.c (allocate process structure)
-kern_exit.c → calls → kern_thread.c (thread_exit for main thread)
-kern_exit.c → calls → kern_proc.c (proc_reap to clean up)
+
+**Call Graph:**
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant kern_fork.c
+    participant kern_thread.c
+    participant kern_proc.c
+
+    User->>kern_fork.c: fork()
+    kern_fork.c->>kern_proc.c: proc_alloc()
+    kern_fork.c->>kern_thread.c: thread_create()
+    kern_thread.c-->>kern_fork.c: new thread
+    kern_fork.c-->>User: PID
 ```
 
 ### 2. System Call Interface
@@ -37,9 +55,13 @@ kern_exit.c → calls → kern_proc.c (proc_reap to clean up)
 | `sys/syscall.h` | Syscall numbers | `SYS_xxx` constants |
 | `sys/sysproto.h` | Syscall arguments | `struct proc`, `struct thread` |
 
-**Flow:**
-```
-userland → trap → syscall.c:syscall() → init_sysent.c:sysent[SYS_xxx].sy_call
+**Syscall Flow:**
+
+```mermaid
+flowchart LR
+    A[userland] -->|trap| B[syscall.c]
+    B -->|syscall| C[init_sysent.c]
+    C -->|sy_call| D[syscall handler]
 ```
 
 ### 3. Virtual Filesystem (VFS)
@@ -52,15 +74,15 @@ userland → trap → syscall.c:syscall() → init_sysent.c:sysent[SYS_xxx].sy_c
 | `vfs_mount.c` | Mount operations | `vfs_mount()`, `vfs_unmount()` |
 | `vfs_syscalls.c` | VFS syscalls | `sys_chdir()`, `sys_mount()` |
 
-**Key Dependencies:**
-```
-vfs_subr.c includes:
-  - vm/vm_map.h (memory mapping)
-  - sys/buf.h (buffer cache)
-  - sys/vnode.h (vnode interface)
-  - security/mac_framework.h (mandatory access control)
+**VFS Dependencies:**
 
-vfs_lookup.c → vfs_subr.c (shares vnode cache)
+```mermaid
+flowchart TD
+    A[vfs_subr.c] --> B[vm/vm_map.h]
+    A --> C[sys/buf.h]
+    A --> D[sys/vnode.h]
+    A --> E[security/mac_framework.h]
+    F[vfs_lookup.c] --> A
 ```
 
 ### 4. Memory Management Coordination
@@ -93,8 +115,13 @@ vfs_lookup.c → vfs_subr.c (shares vnode cache)
 | `subr_witness.c` | Lock order verification | witness framework |
 
 **Lock Order (partial):**
-```
-sleepq_lock → turnstile_lock → proc_lock → filedesc_lock → vnode_lock
+
+```mermaid
+flowchart LR
+    A[sleepq_lock] --> B[turnstile_lock]
+    B --> C[proc_lock]
+    C --> D[filedesc_lock]
+    D --> E[vnode_lock]
 ```
 
 ### 6. Time & Scheduling
