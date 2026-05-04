@@ -1,23 +1,20 @@
 # CODEBASE MAP for 
 
 Package: 
-Source: contrib/bearssl/
+Source: contrib/xz/
 
 Top-level contents:
-- build
-- conf
-- Doxyfile
-- inc
-- LICENSE.txt
-- Makefile
-- mk
-- README.txt
-- samples
+- AUTHORS
+- ChangeLog
+- COPYING
+- COPYING.0BSD
+- doxygen
+- FREEBSD-upgrade
+- FREEBSD-Xlist
+- README
 - src
-- T0
-- T0Comp.exe
-- test
-- tools
+- THANKS
+- TODO
 
 Recursive contents:
-build/
+(none)
