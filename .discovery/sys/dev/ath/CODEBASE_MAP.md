@@ -1,39 +1,60 @@
-# sys/dev/ath/ — Atheros Wireless Driver Codebase Map
-
-**Path:** `sys/dev/ath/`
-**Purpose:** Atheros ARxxxx wireless network driver
-
-## Overview
-
-The ath driver supports Atheros-based wireless network cards.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `ath_hal/ ` | Hardware abstraction |
-| `ath/ ` | Core driver |
-| `ratectrl/ ` | Rate control |
-
-## Key Subdirectories
-
-| Subdir | Purpose |
-|--------|---------|
-| `ath_hal/` | Hardware layer |
-| `ar5210/` | AR5210 (11a) |
-| `ar5211/` | AR5211 (11a/b) |
-| `ar5212/` | AR5212 (11a/b/g) |
-| `ar5416/` | AR5416 (11n) |
-| `ar9300/` | AR9300 (11n) |
-
-## Chipset Support
-
-- AR5210 (802.11a)
-- AR5211 (802.11a/b)
-- AR5212 (802.11a/b/g)
-- AR5416 (802.11n)
-- AR9300 (802.11n)
-
-## See Also
-
-- `sys/net80211/` - 802.11 stack
+Directory: sys/dev/ath
+Entries:
+- d/ath_dfs/
+- d/ath_hal/
+- d/ath_rate/
+- f/ah_osdep_ar5210.c
+- f/ah_osdep_ar5211.c
+- f/ah_osdep_ar5212.c
+- f/ah_osdep_ar5416.c
+- f/ah_osdep_ar9300.c
+- f/ah_osdep.c
+- f/ah_osdep.h
+- f/if_ath_alq.c
+- f/if_ath_alq.h
+- f/if_ath_beacon.c
+- f/if_ath_beacon.h
+- f/if_ath_btcoex_mci.c
+- f/if_ath_btcoex_mci.h
+- f/if_ath_btcoex.c
+- f/if_ath_btcoex.h
+- f/if_ath_debug.c
+- f/if_ath_debug.h
+- f/if_ath_descdma.c
+- f/if_ath_descdma.h
+- f/if_ath_dfs.c
+- f/if_ath_drv.c
+- f/if_ath_ioctl.c
+- f/if_ath_ioctl.h
+- f/if_ath_keycache.c
+- f/if_ath_keycache.h
+- f/if_ath_led.c
+- f/if_ath_led.h
+- f/if_ath_lna_div.c
+- f/if_ath_lna_div.h
+- f/if_ath_misc.h
+- f/if_ath_pci_devlist.h
+- f/if_ath_pci.c
+- f/if_ath_rate.c
+- f/if_ath_rx_edma.c
+- f/if_ath_rx_edma.h
+- f/if_ath_rx.c
+- f/if_ath_rx.h
+- f/if_ath_spectral.c
+- f/if_ath_spectral.h
+- f/if_ath_sysctl.c
+- f/if_ath_sysctl.h
+- f/if_ath_tdma.c
+- f/if_ath_tdma.h
+- f/if_ath_tsf.h
+- f/if_ath_tx_edma.c
+- f/if_ath_tx_edma.h
+- f/if_ath_tx_ht.c
+- f/if_ath_tx_ht.h
+- f/if_ath_tx.c
+- f/if_ath_tx.h
+- f/if_ath.c
+- f/if_athdfs.h
+- f/if_athioctl.h
+- f/if_athrate.h
+- f/if_athvar.h

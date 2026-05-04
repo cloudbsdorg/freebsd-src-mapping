@@ -1,0 +1,26 @@
+Directory: sys/contrib/libsodium
+Entries:
+- d/builds/
+- d/contrib/
+- d/dist-build/
+- d/m4/
+- d/msvc-scripts/
+- d/packaging/
+- d/regen-msvc/
+- d/src/
+- d/test/
+- f/appveyor.yml
+- f/AUTHORS
+- f/autogen.sh
+- f/ChangeLog
+- f/configure.ac
+- f/lgtm.yml
+- f/libsodium-uninstalled.pc.in
+- f/libsodium.pc.in
+- f/libsodium.sln
+- f/libsodium.vcxproj
+- f/libsodium.vcxproj.filters
+- f/LICENSE
+- f/Makefile.am
+- f/README.markdown
+- f/THANKS

@@ -1,28 +1,33 @@
-# sys/dev/aic7xxx/ — Adaptec AIC7xxx SCSI Codebase Map
-
-**Path:** `sys/dev/aic7xxx/`
-**Purpose:** Adaptec AIC7xxx SCSI controller driver
-
-## Overview
-
-The aic7xxx driver supports Adaptec AIC7xxx SCSI controllers.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `aic7xxx.c` | Main driver |
-| `aic7xxx_pci.c` | PCI probe |
-| `aic7xxx_reg.h` | Registers |
-| `aic7xxx_seq.c` | Sequencer |
-
-## Driver Features
-
-- SCSI-3 support
-- Ultra320 support
-- Tagged queuing
-- Scatter-gather
-
-## See Also
-
-- `sys/cam/` - CAM SCSI subsystem
+Directory: sys/dev/aic7xxx
+Entries:
+- d/aicasm/
+- f/ahc_isa.c
+- f/ahc_pci.c
+- f/ahd_pci.c
+- f/aic_osm_lib.c
+- f/aic_osm_lib.h
+- f/aic7770.c
+- f/aic79xx_inline.h
+- f/aic79xx_osm.c
+- f/aic79xx_osm.h
+- f/aic79xx_pci.c
+- f/aic79xx_reg_print.c
+- f/aic79xx_reg.h
+- f/aic79xx_seq.h
+- f/aic79xx.c
+- f/aic79xx.h
+- f/aic79xx.reg
+- f/aic79xx.seq
+- f/aic7xxx_93cx6.c
+- f/aic7xxx_93cx6.h
+- f/aic7xxx_inline.h
+- f/aic7xxx_osm.c
+- f/aic7xxx_osm.h
+- f/aic7xxx_pci.c
+- f/aic7xxx_reg_print.c
+- f/aic7xxx_reg.h
+- f/aic7xxx_seq.h
+- f/aic7xxx.c
+- f/aic7xxx.h
+- f/aic7xxx.reg
+- f/aic7xxx.seq

@@ -1,0 +1,25 @@
+Directory: sys/contrib/device-tree/Bindings/firmware
+Entries:
+- d/meson/
+- d/xilinx/
+- f/amlogic,meson-gxbb-sm.yaml
+- f/arm,scmi.yaml
+- f/arm,scpi.yaml
+- f/brcm,kona-smc.yaml
+- f/coreboot.txt
+- f/cznic,turris-mox-rwtm.txt
+- f/cznic,turris-omnia-mcu.yaml
+- f/fsl,scu.yaml
+- f/google,gs101-acpm-ipc.yaml
+- f/intel,ixp4xx-network-processing-engine.yaml
+- f/intel,stratix10-svc.txt
+- f/intel,stratix10-svc.yaml
+- f/nvidia,tegra186-bpmp.txt
+- f/nvidia,tegra186-bpmp.yaml
+- f/nvidia,tegra210-bpmp.txt
+- f/nxp,imx95-scmi-pinctrl.yaml
+- f/nxp,imx95-scmi.yaml
+- f/qcom,scm.txt
+- f/qcom,scm.yaml
+- f/qemu,fw-cfg-mmio.yaml
+- f/thead,th1520-aon.yaml

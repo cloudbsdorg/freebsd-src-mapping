@@ -1,0 +1,20 @@
+Directory: sys/contrib/device-tree/Bindings/mips
+Entries:
+- d/brcm/
+- d/cavium/
+- d/img/
+- d/ingenic/
+- d/lantiq/
+- d/loongson/
+- d/pic32/
+- f/ath79-soc.txt
+- f/cpu_irq.txt
+- f/cpus.yaml
+- f/econet.yaml
+- f/mobileye.yaml
+- f/mscc.txt
+- f/mti,mips-cm.yaml
+- f/ni.txt
+- f/ralink.txt
+- f/ralink.yaml
+- f/realtek-rtl.yaml

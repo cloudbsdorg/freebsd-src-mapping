@@ -1,0 +1,26 @@
+Directory: sys/modules/geom
+Entries:
+- d/geom_cache/
+- d/geom_ccd/
+- d/geom_concat/
+- d/geom_eli/
+- d/geom_flashmap/
+- d/geom_gate/
+- d/geom_journal/
+- d/geom_label/
+- d/geom_linux_lvm/
+- d/geom_mirror/
+- d/geom_mountver/
+- d/geom_multipath/
+- d/geom_nop/
+- d/geom_part/
+- d/geom_raid/
+- d/geom_raid3/
+- d/geom_shsec/
+- d/geom_stripe/
+- d/geom_union/
+- d/geom_uzip/
+- d/geom_virstor/
+- d/geom_zero/
+- f/Makefile
+- f/Makefile.inc

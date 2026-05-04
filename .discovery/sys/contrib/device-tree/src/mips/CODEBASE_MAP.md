@@ -1,0 +1,19 @@
+Directory: sys/contrib/device-tree/src/mips
+Entries:
+- d/brcm/
+- d/cavium-octeon/
+- d/econet/
+- d/img/
+- d/ingenic/
+- d/lantiq/
+- d/loongson/
+- d/mobileye/
+- d/mscc/
+- d/mti/
+- d/netlogic/
+- d/ni/
+- d/pic32/
+- d/qca/
+- d/ralink/
+- d/realtek/
+- d/xilfpga/

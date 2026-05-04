@@ -1,0 +1,23 @@
+Directory: sys/dev/rtwn/rtl8812a
+Entries:
+- d/usb/
+- f/r12a_beacon.c
+- f/r12a_calib.c
+- f/r12a_caps.c
+- f/r12a_chan.c
+- f/r12a_fw_cmd.h
+- f/r12a_fw.c
+- f/r12a_init.c
+- f/r12a_led.c
+- f/r12a_priv.h
+- f/r12a_reg.h
+- f/r12a_rf.c
+- f/r12a_rom_defs.h
+- f/r12a_rom_image.h
+- f/r12a_rom.c
+- f/r12a_rx_desc.h
+- f/r12a_rx.c
+- f/r12a_tx_desc.h
+- f/r12a_tx.c
+- f/r12a_var.h
+- f/r12a.h

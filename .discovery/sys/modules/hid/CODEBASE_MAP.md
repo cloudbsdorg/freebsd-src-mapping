@@ -1,0 +1,22 @@
+Directory: sys/modules/hid
+Entries:
+- d/appleir/
+- d/bcm5974/
+- d/hconf/
+- d/hcons/
+- d/hgame/
+- d/hid/
+- d/hidbus/
+- d/hidmap/
+- d/hidquirk/
+- d/hidraw/
+- d/hkbd/
+- d/hms/
+- d/hmt/
+- d/hpen/
+- d/hsctrl/
+- d/ietp/
+- d/ps4dshock/
+- d/u2f/
+- d/xb360gp/
+- f/Makefile

@@ -1,0 +1,19 @@
+Directory: sys/dev/bhnd/cores/chipc
+Entries:
+- d/pwrctl/
+- f/bhnd_chipc_if.m
+- f/bhnd_pmu_chipc.c
+- f/bhnd_sprom_chipc.c
+- f/chipc_cfi.c
+- f/chipc_gpio.c
+- f/chipc_gpiovar.h
+- f/chipc_private.h
+- f/chipc_slicer.c
+- f/chipc_slicer.h
+- f/chipc_spi.c
+- f/chipc_spi.h
+- f/chipc_subr.c
+- f/chipc.c
+- f/chipc.h
+- f/chipcreg.h
+- f/chipcvar.h

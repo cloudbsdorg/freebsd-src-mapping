@@ -1,300 +1,478 @@
-# sys/modules/ — Loadable Kernel Modules Codebase Map
-
-**Path:** `sys/modules/`
-**Files:** 478 module directories
-**Purpose:** Build system for loadable kernel modules
-
-## Overview
-
-The modules/ directory contains Makefiles and metadata for building loadable kernel modules (KLDs). Each subdirectory builds one kernel module.
-
-## Module Categories
-
-### Filesystem Modules
-
-| Module | Description |
-|--------|-------------|
-| ext2fs | ext2/ext3/ext4 filesystem |
-| msdosfs | FAT filesystem |
-| udf | UDF DVD filesystem |
-| cd9660 | ISO9660 CD-ROM |
-| nfsclient | NFS client |
-| nfsd | NFS server |
-| smbfs | SMB/CIFS client |
-| tmpfs | Memory filesystem |
-| unionfs | Union filesystem |
-| nullfs | Null filesystem |
-| procfs | Process filesystem |
-| devfs | Device filesystem |
-| fdescfs | File descriptor filesystem |
-
-### Network Protocol Modules
-
-| Module | Description |
-|--------|-------------|
-| accf_data | Accept filter - data |
-| accf_dns | Accept filter - DNS |
-| accf_http | Accept filter - HTTP |
-| accf_tls | Accept filter - TLS |
-| firewall | IPFW firewall |
-| ipfw | IP firewall |
-| pf | Packet Filter |
-| pflog | PF logging |
-| pfsync | PF state sync |
-| ipfw_nat | IPFW NAT |
-| dummynet | Traffic shaper |
-
-### Network Interface Modules
-
-| Module | Description |
-|--------|-------------|
-| ae | Attansic Ethernet |
-| age | Agere Ethernet |
-| ale | Atheros L1E |
-| alc | Atheros AR8131/8152 |
-| amdsmn | AMD SMBus |
-| ath | Atheros 802.11 |
-| ath_hal | Atheros HAL |
-| ath_rate | Atheros rate control |
-| bce | Broadcom NetXtreme |
-| bfe | Broadcom 440x |
-| bge | Broadcom 570x |
-| bnxt | Broadcom Nextreme |
-| cas | Cardinal Ethernet |
-| cxgbe | Chelsio T4/T5 |
-| em | Intel 8254x |
-| et | Epic Ethernet |
-| igc | Intel 2.5G |
-| ixgbe | Intel 10GbE |
-| ixl | Intel 40GbE |
-| jme | JMicron Ethernet |
-| le | AMD PCnet |
-| lem | Intel 82543 |
-| msk | Marvell Yukon |
-| mxge | Myricom 10GbE |
-| nfe | NVIDIA nForce |
-| ngbe | Nextreme 10GbE |
-| pcnet | AMD PCnet |
-| re | Realtek 8139/8169 |
-| rl | Realtek 8029 |
-| sf | Seeq Ethernet |
-| sis | Silicon Integrated Systems |
-| sk | SysKonnect SK-98xx |
-| ste | Sundance ST-201 |
-| stge | Sundance Tech |
-| ti | Texas Instruments |
-| txp | 3Com 3c985 |
-| udav | ASIX USB |
-| vge | VIA VT612x |
-| vr | VIA Rhine |
-| xl | 3Com 905c |
-
-### Wireless Modules
-
-| Module | Description |
-|--------|-------------|
-| ath | Atheros 802.11 |
-| ath_hal | Atheros hardware |
-| ath_rate | Rate control |
-| ath10k | Atheros 10k |
-| ath11k | Atheros 11k |
-| bwi | Broadcom Wi-Fi |
-| bwn | Broadcom Nano |
-| iwn | Intel 802.11n |
-| iwm | Intel 802.11ac |
-| iwmc | Intel Wi-Fi MVM |
-| malo | Marvell Libertas |
-| mwlu | MediaTek |
-| otus | Atheros OTUS |
-| pci | PCI wireless |
-| ral | Ralink |
-| rtwn | Realtek RTL8188 |
-| rum | Ralink USB |
-| run | Ralink USB |
-| uath | Atheros USB |
-| ural | Ralink USB |
-| urtw | Realtek USB |
-| wi | WaveLAN |
-| wpi | Intel 4965 |
-| zyd | Zydas ZD1211 |
-
-### Virtualization Modules
-
-| Module | Description |
-|--------|-------------|
-| vmm | BHyV hypervisor |
-| virtio | VirtIO para-virtual |
-| virtio_blk | VirtIO block |
-| virtio_balloon | VirtIO balloon |
-| virtio_console | VirtIO console |
-| virtio_gpu | VirtIO GPU |
-| virtio_scsi | VirtIO SCSI |
-| hyperv | Hyper-V drivers |
-| vmware | VMware guest |
-
-### SCSI/CAM Modules
-
-| Module | Description |
-|--------|-------------|
-| aac | Adaptec RAID |
-| aacraid | Adaptec RAID |
-| ahci | AHCI SATA |
-| aic7xxx | Adaptec SCSI |
-| arcmsr | Areca RAID |
-| ciss | HP Smart Array |
-| da | SCSI disk |
-| isp | QLogic FC |
-| mrsas | LSI MegaRAID |
-| mps | LSI SAS |
-| mpt | LSI SCSI |
-| siis | Silicon Image SATA |
-| smartpqi | HPE Smart |
-| twa | 3ware RAID |
-| tws | LSI SAS |
-
-### Crypto Modules
-
-| Module | Description |
-|--------|-------------|
-| aesni | Intel AES-NI |
-| armv8crypto | ARMv8 crypto |
-| ccp | AMD CCP |
-| cryptodev | /dev/crypto |
-| hifn | HiFn 795x |
-| padlock | VIA PadLock |
-| safe | SafeNet |
-| ubsec | Broadcom |
-| vmware_balloon | VirtIO balloon |
-
-### Sound Modules
-
-| Module | Description |
-|--------|-------------|
-| sound | Sound driver |
-| ichss | Intel HD Audio |
-| ichsd | Intel SD Card |
-| ichsmb | Intel SMBus |
-| csa | CS4281 |
-| emu10k1 | SB Live! |
-| snd_ad1816 | AD1816 |
-| snd_als4000 | ALS4000 |
-| uaudio | USB audio |
-
-### Input Modules
-
-| Module | Description |
-|--------|-------------|
-| atkbdc | AT keyboard |
-| atkbd | AT keyboard |
-| psm | PS/2 mouse |
-| ukbd | USB keyboard |
-| ums | USB mouse |
-| kbdmux | Keyboard mux |
-
-### ACPI/APM Modules
-
-| Module | Description |
-|--------|-------------|
-| acpi | ACPI |
-| acpi_asus | ASUS ACPI |
-| acpi_dock | ACPI docking |
-| acpi_fujitsu | Fujitsu |
-| acpi_hp | HP ACPI |
-| acpi_ibm | IBM ACPI |
-| acpi_panasonic | Panasonic |
-| acpi_sony | Sony |
-| acpi_toshiba | Toshiba |
-| acpi_video | ACPI video |
-| apm | APM (legacy) |
-
-### Terminal/Console Modules
-
-| Module | Description |
-|--------|-------------|
-| vt | Virtual terminal |
-| fb | Framebuffer |
-| splash | Splash screen |
-| splash_vt | Splash VT |
-| vga | VGA console |
-
-### Utility Modules
-
-| Module | Description |
-|--------|-------------|
-| ulpt | USB printer |
-| umct | USB modem |
-| uplcom | USB serial |
-| uslcom | USB serial |
-| uhid | USB HID |
-| umass | USB storage |
-| ums | USB mouse |
-| urio | Diamond Rio |
-
-### Kernel Extension Modules
-
-| Module | Description |
-|--------|-------------|
-| linux | Linux emulation |
-| linux64 | Linux 64-bit |
-| freebsd32 | FreeBSD32 |
-| mac | MAC framework |
-| audit | Audit |
-| capsicum | Capsicum sandbox |
-| dtrace | DTrace |
-
-### NAND/Flash Modules
-
-| Module | Description |
-|--------|-------------|
-| nand | NAND flash |
-| g_nand | GEOM NAND |
-| ffs | FFS filesystem |
-
-## Module Build System
-
-Each module directory contains:
-
-```makefile
-# Makefile
-KMOD    = foo
-SRCS    = foo.c bar.c
-.PATH   : ${SRCTOP}/sys/foo
-
-.include <bsd.kmod.mk>
-```
-
-## Loading/Unloading Modules
-
-```bash
-# Load module
-kldload foo
-
-# Unload module
-kldunload foo
-
-# List loaded modules
-kldstat
-
-# Auto-load at boot
-# Add to /boot/loader.conf
-foo_load="YES"
-```
-
-## Module Dependencies
-
-```bash
-# Show dependencies
-kldstat -v
-```
-
-## Module Path
-
-```
-/boot/kernel/           - Production modules
-/boot/modules/          - Third-party modules
-```
-
-## See Also
-
-- `sys/kern/kern_kld.c` - KLD system calls
-- `sys/kern/kmod.c` - Kernel module support
+Directory: sys/modules
+Entries:
+- d/3dfx_linux/
+- d/3dfx/
+- d/aac/
+- d/aacraid/
+- d/accf_data/
+- d/accf_dns/
+- d/accf_http/
+- d/accf_tls/
+- d/acl_nfs4/
+- d/acl_posix1e/
+- d/acpi/
+- d/adlink/
+- d/ae/
+- d/aesni/
+- d/age/
+- d/agp/
+- d/ahci/
+- d/aic7xxx/
+- d/alc/
+- d/ale/
+- d/allwinner/
+- d/alq/
+- d/am335x_dmtpps/
+- d/amd_ecc_inject/
+- d/amdgpio/
+- d/amdsbwd/
+- d/amdsmb/
+- d/amdsmn/
+- d/amdsmu/
+- d/amdtemp/
+- d/aout/
+- d/aq/
+- d/arcmsr/
+- d/arm_ti/
+- d/armv8_rng/
+- d/armv8crypto/
+- d/asmc/
+- d/ata/
+- d/ath_dfs/
+- d/ath_hal_ar5210/
+- d/ath_hal_ar5211/
+- d/ath_hal_ar5212/
+- d/ath_hal_ar5416/
+- d/ath_hal_ar9300/
+- d/ath_hal/
+- d/ath_main/
+- d/ath_rate/
+- d/ath/
+- d/ath10k/
+- d/ath11k/
+- d/ath12k/
+- d/athk_common/
+- d/autofs/
+- d/axgbe/
+- d/backlight/
+- d/bce/
+- d/bcm283x_clkman/
+- d/bcm283x_pwm/
+- d/bfe/
+- d/bge/
+- d/bhnd/
+- d/bios/
+- d/blake2/
+- d/bnxt/
+- d/brcm80211/
+- d/bridgestp/
+- d/bwi/
+- d/bwn/
+- d/bxe/
+- d/bytgpio/
+- d/cam/
+- d/cardbus/
+- d/carp/
+- d/cas/
+- d/cbb/
+- d/cc/
+- d/ccp/
+- d/cd9660_iconv/
+- d/cd9660/
+- d/cfi/
+- d/cfiscsi/
+- d/chromebook_platform/
+- d/chvgpio/
+- d/ciss/
+- d/coretemp/
+- d/cpsw/
+- d/cpuctl/
+- d/cpufreq/
+- d/crypto/
+- d/cryptodev/
+- d/ctl/
+- d/cuse/
+- d/cxgb/
+- d/cxgbe/
+- d/dc/
+- d/dcons_crom/
+- d/dcons/
+- d/dpaa2/
+- d/dpdk_lpm4/
+- d/dpdk_lpm6/
+- d/dpms/
+- d/dtb/
+- d/dtrace/
+- d/dummymbuf/
+- d/dummynet/
+- d/dwwdt/
+- d/e6000sw/
+- d/efirt/
+- d/em/
+- d/ena/
+- d/enetc/
+- d/enic/
+- d/epoch_test/
+- d/et/
+- d/etherswitch/
+- d/evdev/
+- d/exca/
+- d/ext2fs/
+- d/fdc/
+- d/fdescfs/
+- d/fdt/
+- d/felix/
+- d/ffec/
+- d/fib_dxr/
+- d/filemon/
+- d/firewire/
+- d/firmware/
+- d/flash/
+- d/ftgpio/
+- d/ftwd/
+- d/fusefs/
+- d/fxp/
+- d/gem/
+- d/genet/
+- d/geom/
+- d/glxiic/
+- d/glxsb/
+- d/gpio/
+- d/gve/
+- d/hid/
+- d/hpt27xx/
+- d/hptiop/
+- d/hptmv/
+- d/hptnr/
+- d/hptrr/
+- d/hwpmc/
+- d/hwt/
+- d/hyperv/
+- d/i2c/
+- d/iavf/
+- d/ibcore/
+- d/ice_ddp/
+- d/ice/
+- d/ichwd/
+- d/ida/
+- d/if_bridge/
+- d/if_cgem/
+- d/if_disc/
+- d/if_edsc/
+- d/if_enc/
+- d/if_epair/
+- d/if_geneve/
+- d/if_gif/
+- d/if_gre/
+- d/if_infiniband/
+- d/if_lagg/
+- d/if_me/
+- d/if_ovpn/
+- d/if_stf/
+- d/if_tuntap/
+- d/if_vlan/
+- d/if_vxlan/
+- d/if_wg/
+- d/iflib/
+- d/igc/
+- d/imgact_binmisc/
+- d/imx/
+- d/intelspi/
+- d/io/
+- d/ioat/
+- d/ip_mroute_mod/
+- d/ip6_mroute_mod/
+- d/ipdivert/
+- d/ipfilter/
+- d/ipfw_nat/
+- d/ipfw_nat64/
+- d/ipfw_nptv6/
+- d/ipfw_pmod/
+- d/ipfw/
+- d/ipmi/
+- d/ipoib/
+- d/ips/
+- d/ipsec/
+- d/ipw/
+- d/ipwfw/
+- d/irdma/
+- d/isci/
+- d/iscsi/
+- d/iser/
+- d/isp/
+- d/ispfw/
+- d/itwd/
+- d/iwi/
+- d/iwifw/
+- d/iwlwifi/
+- d/iwm/
+- d/iwn/
+- d/iwnfw/
+- d/iwx/
+- d/ix/
+- d/ixl/
+- d/ixv/
+- d/jme/
+- d/kbdmux/
+- d/kgssapi_krb5/
+- d/kgssapi/
+- d/khelp/
+- d/krpc/
+- d/ksyms/
+- d/ktest/
+- d/lge/
+- d/libalias/
+- d/libiconv/
+- d/libmchain/
+- d/lindebugfs/
+- d/linprocfs/
+- d/linsysfs/
+- d/linux_common/
+- d/linux/
+- d/linux64/
+- d/linuxkpi_hdmi/
+- d/linuxkpi_video/
+- d/linuxkpi_wlan/
+- d/linuxkpi/
+- d/lio/
+- d/lpt/
+- d/mac_biba/
+- d/mac_bsdextended/
+- d/mac_ddb/
+- d/mac_do/
+- d/mac_ifoff/
+- d/mac_ipacl/
+- d/mac_lomac/
+- d/mac_mls/
+- d/mac_none/
+- d/mac_ntpd/
+- d/mac_partition/
+- d/mac_pimd/
+- d/mac_portacl/
+- d/mac_priority/
+- d/mac_seeotheruids/
+- d/mac_stub/
+- d/mac_test/
+- d/mac_veriexec_sha1/
+- d/mac_veriexec_sha256/
+- d/mac_veriexec_sha384/
+- d/mac_veriexec_sha512/
+- d/mac_veriexec/
+- d/malo/
+- d/mana/
+- d/md/
+- d/mdio/
+- d/mem/
+- d/mfi/
+- d/mgb/
+- d/mii/
+- d/miiproxy/
+- d/mlx/
+- d/mlx4/
+- d/mlx4en/
+- d/mlx4ib/
+- d/mlx5/
+- d/mlx5en/
+- d/mlx5fpga_tools/
+- d/mlx5ib/
+- d/mlxfw/
+- d/mmc/
+- d/mmcnull/
+- d/mmcsd/
+- d/mpi3mr/
+- d/mpr/
+- d/mps/
+- d/mpt/
+- d/mqueue/
+- d/mrsas/
+- d/msdosfs_iconv/
+- d/msdosfs/
+- d/msk/
+- d/mt76/
+- d/mthca/
+- d/mvs/
+- d/mwl/
+- d/mwlfw/
+- d/mxge/
+- d/my/
+- d/nctgpio/
+- d/ncthwm/
+- d/neta/
+- d/netgraph/
+- d/netlink/
+- d/netmap/
+- d/nfe/
+- d/nfscl/
+- d/nfscommon/
+- d/nfsd/
+- d/nfslockd/
+- d/nfssvc/
+- d/nge/
+- d/nlsysevent/
+- d/nmdm/
+- d/ntb/
+- d/nullfs/
+- d/nvd/
+- d/nvdimm/
+- d/nvme/
+- d/nvmf/
+- d/nvram/
+- d/oce/
+- d/ocs_fc/
+- d/opal_nvram/
+- d/opensolaris/
+- d/ossl/
+- d/otus/
+- d/otusfw/
+- d/ow/
+- d/p2sb/
+- d/p9fs/
+- d/padlock_rng/
+- d/padlock/
+- d/pcfclock/
+- d/pchtherm/
+- d/pf/
+- d/pflog/
+- d/pflow/
+- d/pfsync/
+- d/plip/
+- d/pms/
+- d/powermac_nvram/
+- d/ppbus/
+- d/ppc/
+- d/ppi/
+- d/pps/
+- d/procfs/
+- d/proto/
+- d/pseudofs/
+- d/pst/
+- d/pt/
+- d/pty/
+- d/puc/
+- d/pwm/
+- d/qat_c2xxx/
+- d/qat_c2xxxfw/
+- d/qat/
+- d/qatfw/
+- d/qlnx/
+- d/qlxgb/
+- d/qlxgbe/
+- d/qlxge/
+- d/ral/
+- d/ralfw/
+- d/random_fortuna/
+- d/random_other/
+- d/rc4/
+- d/rccgpio/
+- d/rdma/
+- d/rdrand_rng/
+- d/rdseed_rng/
+- d/re/
+- d/rge/
+- d/rl/
+- d/rndtest/
+- d/rockchip/
+- d/rpi_ft5406/
+- d/rtsx/
+- d/rtw88/
+- d/rtw89/
+- d/rtwn_pci/
+- d/rtwn_usb/
+- d/rtwn/
+- d/rtwnfw/
+- d/s3/
+- d/safe/
+- d/safexcel/
+- d/sbni/
+- d/scc/
+- d/sctp/
+- d/sdhci_acpi/
+- d/sdhci_fdt/
+- d/sdhci_pci/
+- d/sdhci/
+- d/sdio/
+- d/sem/
+- d/send/
+- d/sff/
+- d/sfxge/
+- d/sge/
+- d/sgx_linux/
+- d/sgx/
+- d/siftr/
+- d/siis/
+- d/sis/
+- d/sk/
+- d/smartpqi/
+- d/smbfs/
+- d/snp/
+- d/sound/
+- d/spe/
+- d/speaker/
+- d/spi/
+- d/spigen/
+- d/splash/
+- d/ste/
+- d/stge/
+- d/sume/
+- d/superio/
+- d/sym/
+- d/syscons/
+- d/sysvipc/
+- d/tarfs/
+- d/tcp/
+- d/tests/
+- d/thunderbolt/
+- d/ti/
+- d/tmpfs/
+- d/toecore/
+- d/tpm/
+- d/tsec/
+- d/tws/
+- d/uart/
+- d/ubser/
+- d/uchcom/
+- d/ucycom/
+- d/udf_iconv/
+- d/udf/
+- d/ufintek/
+- d/ufs/
+- d/ufshci/
+- d/uinput/
+- d/unionfs/
+- d/usb/
+- d/veriexec/
+- d/vesa/
+- d/vf_i2c/
+- d/vge/
+- d/viawd/
+- d/videomode/
+- d/virtio/
+- d/vkbd/
+- d/vmd/
+- d/vmm/
+- d/vmware/
+- d/vnic/
+- d/vr/
+- d/vte/
+- d/wbwd/
+- d/wdatwd/
+- d/wlan_acl/
+- d/wlan_amrr/
+- d/wlan_ccmp/
+- d/wlan_gcmp/
+- d/wlan_rssadapt/
+- d/wlan_tkip/
+- d/wlan_wep/
+- d/wlan_xauth/
+- d/wlan/
+- d/wpi/
+- d/wpifw/
+- d/wtap/
+- d/x86bios/
+- d/xdr/
+- d/xl/
+- d/xz/
+- d/zfs/
+- d/zlib/
+- f/Makefile
+- f/Makefile.inc

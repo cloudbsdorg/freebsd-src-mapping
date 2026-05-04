@@ -1,21 +1,52 @@
-# sys/dev/usb/controller/ — USB Controller Drivers Codebase Map
-
-**Path:** `sys/dev/usb/controller/`
-**Purpose:** USB host controllers
-
-## Overview
-
-USB host controller drivers (EHCI, OHCI, UHCI, XHCI).
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `ehci.c` | EHCI |
-| `ohci.c` | OHCI |
-| `uhci.c` | UHCI |
-| `xhci.c` | XHCI |
-
-## See Also
-
-- `sys/dev/usb/` - USB core
+Directory: sys/dev/usb/controller
+Entries:
+- d/dwc3/
+- f/atmegadci.c
+- f/atmegadci.h
+- f/avr32dci.c
+- f/avr32dci.h
+- f/dwc_otg_acpi.c
+- f/dwc_otg_fdt.c
+- f/dwc_otg_fdt.h
+- f/dwc_otg_hisi.c
+- f/dwc_otg.c
+- f/dwc_otg.h
+- f/dwc_otgreg.h
+- f/ehci_fsl.c
+- f/ehci_imx.c
+- f/ehci_msm.c
+- f/ehci_mv.c
+- f/ehci_pci.c
+- f/ehci.c
+- f/ehci.h
+- f/ehcireg.h
+- f/generic_ehci_acpi.c
+- f/generic_ehci_fdt.c
+- f/generic_ehci.c
+- f/generic_ehci.h
+- f/generic_ohci.c
+- f/generic_usb_if.m
+- f/generic_xhci_acpi.c
+- f/generic_xhci_fdt.c
+- f/generic_xhci.c
+- f/generic_xhci.h
+- f/musb_otg_allwinner.c
+- f/musb_otg.c
+- f/musb_otg.h
+- f/ohci_pci.c
+- f/ohci.c
+- f/ohci.h
+- f/ohcireg.h
+- f/uhci_pci.c
+- f/uhci.c
+- f/uhci.h
+- f/uhcireg.h
+- f/usb_controller.c
+- f/usb_nop_xceiv.c
+- f/uss820dci.c
+- f/uss820dci.h
+- f/xhci_pci.c
+- f/xhci.c
+- f/xhci.h
+- f/xhcireg.h
+- f/xlnx_dwc3.c

@@ -1,0 +1,24 @@
+Directory: sys/contrib/dev/athk
+Entries:
+- d/ath10k/
+- d/ath11k/
+- d/ath12k/
+- f/ath.h
+- f/debug.c
+- f/dfs_pattern_detector.c
+- f/dfs_pattern_detector.h
+- f/dfs_pri_detector.c
+- f/dfs_pri_detector.h
+- f/hw.c
+- f/Kconfig
+- f/key.c
+- f/main.c
+- f/Makefile
+- f/reg.h
+- f/regd_common.h
+- f/regd.c
+- f/regd.h
+- f/spectral_common.h
+- f/testmode_i.h
+- f/trace.c
+- f/trace.h

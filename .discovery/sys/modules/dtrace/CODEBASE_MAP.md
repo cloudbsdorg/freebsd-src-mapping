@@ -1,0 +1,20 @@
+Directory: sys/modules/dtrace
+Entries:
+- d/dtaudit/
+- d/dtmalloc/
+- d/dtnfscl/
+- d/dtrace_test/
+- d/dtrace/
+- d/dtraceall/
+- d/fasttrap/
+- d/fbt/
+- d/kinst/
+- d/profile/
+- d/prototype/
+- d/sdt/
+- d/systrace_freebsd32/
+- d/systrace_linux/
+- d/systrace_linux32/
+- d/systrace/
+- f/Makefile
+- f/Makefile.inc

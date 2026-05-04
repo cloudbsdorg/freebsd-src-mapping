@@ -1,0 +1,20 @@
+Directory: sys/modules/acpi
+Entries:
+- d/acpi_asus_wmi/
+- d/acpi_asus/
+- d/acpi_dock/
+- d/acpi_fujitsu/
+- d/acpi_ged/
+- d/acpi_hp/
+- d/acpi_ibm/
+- d/acpi_panasonic/
+- d/acpi_rapidstart/
+- d/acpi_sbl_wmi/
+- d/acpi_sony/
+- d/acpi_system76/
+- d/acpi_toshiba/
+- d/acpi_video/
+- d/acpi_wmi/
+- d/aibs/
+- f/Makefile
+- f/Makefile.inc

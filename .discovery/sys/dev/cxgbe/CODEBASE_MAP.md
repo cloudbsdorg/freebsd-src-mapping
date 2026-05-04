@@ -1,18 +1,36 @@
-# sys/dev/cxgbe/ — Chelsio 10GbE Driver Codebase Map
-
-**Path:** `sys/dev/cxgbe/`
-**Purpose:** Chelsio T4/T5 10GbE
-
-## Overview
-
-The cxgbe driver supports Chelsio T4/T5 10GbE adapters.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `cxgbe.c` | Main |
-
-## See Also
-
-- `sys/dev/` - Device drivers
+Directory: sys/dev/cxgbe
+Entries:
+- d/common/
+- d/crypto/
+- d/cudbg/
+- d/cxgbei/
+- d/firmware/
+- d/iw_cxgbe/
+- d/nvmf/
+- d/tom/
+- f/adapter.h
+- f/if_cc.c
+- f/if_ccv.c
+- f/if_cxl.c
+- f/if_cxlv.c
+- f/offload.h
+- f/osdep.h
+- f/t4_clip.c
+- f/t4_clip.h
+- f/t4_filter.c
+- f/t4_if.m
+- f/t4_ioctl.h
+- f/t4_iov.c
+- f/t4_l2t.c
+- f/t4_l2t.h
+- f/t4_main.c
+- f/t4_mp_ring.c
+- f/t4_mp_ring.h
+- f/t4_netmap.c
+- f/t4_sched.c
+- f/t4_sge.c
+- f/t4_smt.c
+- f/t4_smt.h
+- f/t4_tpt.c
+- f/t4_tracer.c
+- f/t4_vf.c

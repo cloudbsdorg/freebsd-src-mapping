@@ -1,0 +1,22 @@
+Directory: sys/contrib/device-tree/src/arm64/broadcom
+Entries:
+- d/bcm4908/
+- d/bcmbca/
+- d/northstar2/
+- d/stingray/
+- f/bcm2711-rpi-4-b.dts
+- f/bcm2711-rpi-400.dts
+- f/bcm2711-rpi-cm4-io.dts
+- f/bcm2712-d-rpi-5-b.dts
+- f/bcm2712-rpi-5-b-ovl-rp1.dts
+- f/bcm2712-rpi-5-b.dts
+- f/bcm2712.dtsi
+- f/bcm2837-rpi-2-b.dts
+- f/bcm2837-rpi-3-a-plus.dts
+- f/bcm2837-rpi-3-b-plus.dts
+- f/bcm2837-rpi-3-b.dts
+- f/bcm2837-rpi-cm3-io3.dts
+- f/bcm2837-rpi-zero-2-w.dts
+- f/rp1-common.dtsi
+- f/rp1-nexus.dtsi
+- f/rp1.dtso

@@ -1,0 +1,25 @@
+Directory: sys/modules/ata/atapci/chipsets
+Entries:
+- d/ataacard/
+- d/ataacerlabs/
+- d/ataamd/
+- d/ataati/
+- d/atacenatek/
+- d/atacypress/
+- d/atacyrix/
+- d/atahighpoint/
+- d/ataintel/
+- d/ataite/
+- d/atajmicron/
+- d/atamarvell/
+- d/atamicron/
+- d/atanational/
+- d/atanetcell/
+- d/atanvidia/
+- d/atapromise/
+- d/ataserverworks/
+- d/atasiliconimage/
+- d/atasis/
+- d/atavia/
+- f/Makefile
+- f/Makefile.inc

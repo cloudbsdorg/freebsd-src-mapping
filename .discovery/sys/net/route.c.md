@@ -1,0 +1,81 @@
+PURPOSE
+-
+
+KEY FUNCTIONS
+- p_sockaddr
+- rib_add_redirect
+- rt_addrmsg
+- rt_flushifroutes
+- rt_getifa_fib
+- rt_ifmsg
+- rt_maskedcopy
+- rt_print
+- rt_routemsg
+- rt_routemsg_info
+- rt_table_destroy
+- rt_updatemtu
+- rtioctl_fib
+
+INCLUDES
+- opt_inet.h
+- opt_inet6.h
+- opt_mrouting.h
+- sys/param.h
+- sys/systm.h
+- sys/malloc.h
+- sys/mbuf.h
+- sys/socket.h
+- sys/sysctl.h
+- sys/syslog.h
+- sys/sysproto.h
+- sys/proc.h
+- sys/devctl.h
+- sys/domain.h
+- sys/eventhandler.h
+- sys/kernel.h
+- sys/lock.h
+- sys/rmlock.h
+- net/if.h
+- net/if_var.h
+- net/if_private.h
+- net/if_dl.h
+- net/route.h
+- net/route/route_ctl.h
+- net/route/route_var.h
+- net/route/nhop.h
+- net/vnet.h
+- netinet/in.h
+- netinet/ip_mroute.h
+- netinet6/in6_var.h
+
+DEPENDS_ON
+- opt_inet.h
+- opt_inet6.h
+- opt_mrouting.h
+- sys/param.h
+- sys/systm.h
+- sys/malloc.h
+- sys/mbuf.h
+- sys/socket.h
+- sys/sysctl.h
+- sys/syslog.h
+- sys/sysproto.h
+- sys/proc.h
+- sys/devctl.h
+- sys/domain.h
+- sys/eventhandler.h
+- sys/kernel.h
+- sys/lock.h
+- sys/rmlock.h
+- net/if.h
+- net/if_var.h
+- net/if_private.h
+- net/if_dl.h
+- net/route.h
+- net/route/route_ctl.h
+- net/route/route_var.h
+- net/route/nhop.h
+- net/vnet.h
+- netinet/in.h
+- netinet/ip_mroute.h
+- netinet6/in6_var.h

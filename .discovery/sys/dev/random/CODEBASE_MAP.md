@@ -1,36 +1,23 @@
-# sys/dev/random/ — Random Number Generator Codebase Map
-
-**Path:** `sys/dev/random/`
-**Purpose:** Kernel entropy source
-
-## Overview
-
-The random device provides kernel random number generation.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `randomdev.c` | Device |
-| `random_harvestq.c` | Harvest queue |
-| `random_yarrow.c` | Yarrow |
-
-## Algorithms
-
-| Algorithm | Description |
-|-----------|-------------|
-| Yarrow | Default |
-| ChaCha20 | Fast |
-| NIST SP800-90 | DRBG |
-
-## Key Functions
-
-```c
-void random_harvest(void *, u_int, u_int);
-void random_yarrow_init(void);
-int random_yarrow_read(u_char *, u_int);
-```
-
-## See Also
-
-- `lib/librandom/` - Userland random
+Directory: sys/dev/random
+Entries:
+- d/fenestrasX/
+- f/armv8rng.c
+- f/build.sh
+- f/darn.c
+- f/fortuna.c
+- f/fortuna.h
+- f/hash.c
+- f/hash.h
+- f/ivy.c
+- f/nehemiah.c
+- f/other_algorithm.c
+- f/other_algorithm.h
+- f/random_harvestq.c
+- f/random_harvestq.h
+- f/random_infra.c
+- f/randomdev.c
+- f/randomdev.h
+- f/rdseed.c
+- f/uint128.h
+- f/unit_test.c
+- f/unit_test.h

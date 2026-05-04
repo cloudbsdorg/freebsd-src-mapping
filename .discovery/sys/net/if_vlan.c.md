@@ -1,0 +1,87 @@
+PURPOSE
+-
+
+KEY FUNCTIONS
+- MALLOC_DEFINE
+
+INCLUDES
+- opt_inet.h
+- opt_inet6.h
+- opt_ipsec.h
+- opt_kern_tls.h
+- opt_vlan.h
+- opt_ratelimit.h
+- sys/param.h
+- sys/eventhandler.h
+- sys/kernel.h
+- sys/lock.h
+- sys/malloc.h
+- sys/mbuf.h
+- sys/module.h
+- sys/rmlock.h
+- sys/priv.h
+- sys/queue.h
+- sys/socket.h
+- sys/sockio.h
+- sys/sysctl.h
+- sys/systm.h
+- sys/sx.h
+- sys/taskqueue.h
+- net/bpf.h
+- net/ethernet.h
+- net/if.h
+- net/if_var.h
+- net/if_private.h
+- net/if_clone.h
+- net/if_dl.h
+- net/if_types.h
+- net/if_vlan_var.h
+- net/route.h
+- net/vnet.h
+- netinet/in.h
+- netinet/if_ether.h
+- netlink/netlink.h
+- netlink/netlink_ctl.h
+- netlink/netlink_route.h
+- netlink/route/route_var.h
+
+DEPENDS_ON
+- opt_inet.h
+- opt_inet6.h
+- opt_ipsec.h
+- opt_kern_tls.h
+- opt_vlan.h
+- opt_ratelimit.h
+- sys/param.h
+- sys/eventhandler.h
+- sys/kernel.h
+- sys/lock.h
+- sys/malloc.h
+- sys/mbuf.h
+- sys/module.h
+- sys/rmlock.h
+- sys/priv.h
+- sys/queue.h
+- sys/socket.h
+- sys/sockio.h
+- sys/sysctl.h
+- sys/systm.h
+- sys/sx.h
+- sys/taskqueue.h
+- net/bpf.h
+- net/ethernet.h
+- net/if.h
+- net/if_var.h
+- net/if_private.h
+- net/if_clone.h
+- net/if_dl.h
+- net/if_types.h
+- net/if_vlan_var.h
+- net/route.h
+- net/vnet.h
+- netinet/in.h
+- netinet/if_ether.h
+- netlink/netlink.h
+- netlink/netlink_ctl.h
+- netlink/netlink_route.h
+- netlink/route/route_var.h

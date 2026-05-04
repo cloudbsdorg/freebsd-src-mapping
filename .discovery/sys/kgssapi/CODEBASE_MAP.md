@@ -1,38 +1,33 @@
-# sys/kgssapi/ — GSSAPI Codebase Map
-
-**Path:** `sys/kgssapi/`
-**Purpose:** Kernel GSSAPI interface
-
-## Overview
-
-KGSSAPI provides Generic Security Services API for kernel-level security protocols.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `kgss_api.c` | GSSAPI implementation |
-| `kgss_krb5.c` | Kerberos 5 GSSAPI |
-
-## GSSAPI Functions
-
-```c
-// Context establishment
-gss_ctx_id_t gss_init_sec_context(...);
-OM_uint32 gss_accept_sec_context(...);
-
-// Context management
-OM_uint32 gss_delete_sec_context(...);
-OM_uint32 gss_process_context_token(...);
-
-// Message protection
-OM_uint32 gss_get_mic(...);
-OM_uint32 gss_verify_mic(...);
-OM_uint32 gss_wrap(...);
-OM_uint32 gss_unwrap(...);
-```
-
-## See Also
-
-- `sys/kern/uipc_syscalls.c` - RPC syscalls
-- `crypto/heimdal/` - Kerberos implementation
+Directory: sys/kgssapi
+Entries:
+- d/krb5/
+- f/gss_accept_sec_context.c
+- f/gss_acquire_cred.c
+- f/gss_add_oid_set_member.c
+- f/gss_canonicalize_name.c
+- f/gss_create_empty_oid_set.c
+- f/gss_delete_sec_context.c
+- f/gss_display_status.c
+- f/gss_export_name.c
+- f/gss_get_mic.c
+- f/gss_impl.c
+- f/gss_import_name.c
+- f/gss_init_sec_context.c
+- f/gss_ip_to_dns.c
+- f/gss_names.c
+- f/gss_pname_to_uid.c
+- f/gss_release_buffer.c
+- f/gss_release_cred.c
+- f/gss_release_name.c
+- f/gss_release_oid_set.c
+- f/gss_set_cred_option.c
+- f/gss_test_oid_set_member.c
+- f/gss_unwrap.c
+- f/gss_verify_mic.c
+- f/gss_wrap_size_limit.c
+- f/gss_wrap.c
+- f/gssapi_impl.h
+- f/gssapi.h
+- f/gssd_prot.c
+- f/gssd.x
+- f/kgss_if.m

@@ -1,0 +1,21 @@
+Directory: sys/contrib/device-tree/Bindings/soc/fsl/cpm_qe
+Entries:
+- d/cpm/
+- d/qe/
+- f/cpm.txt
+- f/fsl,cpm1-scc-qmc.yaml
+- f/fsl,cpm1-tsa.yaml
+- f/fsl,qe-firmware.yaml
+- f/fsl,qe-ic.yaml
+- f/fsl,qe-muram.yaml
+- f/fsl,qe-si.yaml
+- f/fsl,qe-siram.yaml
+- f/fsl,qe-tsa.yaml
+- f/fsl,qe-ucc-qmc.yaml
+- f/fsl,qe.yaml
+- f/fsl,ucc-hdlc.yaml
+- f/gpio.txt
+- f/network.txt
+- f/qe.txt
+- f/serial.txt
+- f/uqe_serial.txt

@@ -1,37 +1,26 @@
-# sys/dev/mlx5/ — Mellanox ConnectX Driver Codebase Map
-
-**Path:** `sys/dev/mlx5/`
-**Purpose:** Mellanox ConnectX Ethernet/InfiniBand driver
-
-## Overview
-
-The mlx5 driver supports Mellanox ConnectX-4/5 network adapters.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `mlx5.c` | Main |
-| `mlx5_ib.c` | IB |
-| `mlx5_core/` | Core |
-| `mlx5_en/` | Ethernet |
-
-## Supported Devices
-
-| Device | Description |
-|--------|-------------|
-| ConnectX-4 | 40/56GbE |
-| ConnectX-4 Lx | 25GbE |
-| ConnectX-5 | 100GbE |
-| ConnectX-5 Ex | 100GbE |
-
-## Features
-
-- SR-IOV
-- RDMA (RoCE, IB)
-- Flow director
-- VXLAN offload
-
-## See Also
-
-- `sys/dev/mlx4/` - Mellanox ConnectX-3
+Directory: sys/dev/mlx5
+Entries:
+- d/mlx5_accel/
+- d/mlx5_core/
+- d/mlx5_en/
+- d/mlx5_fpga_tools/
+- d/mlx5_fpga/
+- d/mlx5_ib/
+- d/mlx5_lib/
+- f/cmd.h
+- f/cq.h
+- f/crypto.h
+- f/device.h
+- f/diagnostics.h
+- f/doorbell.h
+- f/driver.h
+- f/fs.h
+- f/mlx5_ifc.h
+- f/mlx5_rdma_if.h
+- f/mlx5io.h
+- f/mpfs.h
+- f/port.h
+- f/qp.h
+- f/srq.h
+- f/tls.h
+- f/vport.h

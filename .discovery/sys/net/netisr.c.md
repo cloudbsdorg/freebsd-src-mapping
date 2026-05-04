@@ -1,0 +1,79 @@
+PURPOSE
+-
+
+KEY FUNCTIONS
+- SYSCTL_NODE
+- netisr_clearqdrops
+- netisr_default_flow2cpu
+- netisr_dispatch
+- netisr_dispatch_src
+- netisr_get_cpucount
+- netisr_get_cpuid
+- netisr_getqdrops
+- netisr_getqlimit
+- netisr_queue
+- netisr_queue_src
+- netisr_register
+- netisr_register_vnet
+- netisr_sched_poll
+- netisr_setqlimit
+- netisr_unregister
+- netisr_unregister_vnet
+
+INCLUDES
+- sys/cdefs.h
+- opt_ddb.h
+- opt_device_polling.h
+- sys/param.h
+- sys/bus.h
+- sys/kernel.h
+- sys/kthread.h
+- sys/malloc.h
+- sys/interrupt.h
+- sys/lock.h
+- sys/mbuf.h
+- sys/mutex.h
+- sys/pcpu.h
+- sys/proc.h
+- sys/rmlock.h
+- sys/sched.h
+- sys/smp.h
+- sys/socket.h
+- sys/sysctl.h
+- sys/systm.h
+- ddb/ddb.h
+- net/if.h
+- net/if_var.h
+- net/if_private.h
+- net/netisr.h
+- net/netisr_internal.h
+- net/vnet.h
+
+DEPENDS_ON
+- sys/cdefs.h
+- opt_ddb.h
+- opt_device_polling.h
+- sys/param.h
+- sys/bus.h
+- sys/kernel.h
+- sys/kthread.h
+- sys/malloc.h
+- sys/interrupt.h
+- sys/lock.h
+- sys/mbuf.h
+- sys/mutex.h
+- sys/pcpu.h
+- sys/proc.h
+- sys/rmlock.h
+- sys/sched.h
+- sys/smp.h
+- sys/socket.h
+- sys/sysctl.h
+- sys/systm.h
+- ddb/ddb.h
+- net/if.h
+- net/if_var.h
+- net/if_private.h
+- net/netisr.h
+- net/netisr_internal.h
+- net/vnet.h

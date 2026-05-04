@@ -1,20 +1,31 @@
-# sys/dev/rtwn/ — Realtek RTL8188EE/8192CE Driver Codebase Map
-
-**Path:** `sys/dev/rtwn/`
-**Purpose:** Realtek RTL8188EE/8192CE 802.11n
-
-## Overview
-
-The rtwn driver supports Realtek RTL8188EE/8192CE wireless.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `rtwn.c` | Main |
-| `rtwn_pci.c` | PCI |
-| `rtwn_usb.c` | USB |
-
-## See Also
-
-- `sys/net80211/` - 802.11 stack
+Directory: sys/dev/rtwn
+Entries:
+- d/pci/
+- d/rtl8188e/
+- d/rtl8192c/
+- d/rtl8192e/
+- d/rtl8812a/
+- d/rtl8821a/
+- d/usb/
+- f/if_rtwn_beacon.c
+- f/if_rtwn_beacon.h
+- f/if_rtwn_calib.c
+- f/if_rtwn_calib.h
+- f/if_rtwn_cam.c
+- f/if_rtwn_cam.h
+- f/if_rtwn_debug.h
+- f/if_rtwn_efuse.c
+- f/if_rtwn_efuse.h
+- f/if_rtwn_fw.c
+- f/if_rtwn_fw.h
+- f/if_rtwn_nop.h
+- f/if_rtwn_ridx.h
+- f/if_rtwn_rx.c
+- f/if_rtwn_rx.h
+- f/if_rtwn_task.c
+- f/if_rtwn_task.h
+- f/if_rtwn_tx.c
+- f/if_rtwn_tx.h
+- f/if_rtwn.c
+- f/if_rtwnreg.h
+- f/if_rtwnvar.h

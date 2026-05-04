@@ -1,0 +1,19 @@
+Directory: sys/contrib/device-tree/Bindings/soc/fsl
+Entries:
+- d/cpm_qe/
+- f/bman-portals.txt
+- f/bman.txt
+- f/fsl,bman-portal.yaml
+- f/fsl,bman.yaml
+- f/fsl,imx23-digctl.yaml
+- f/fsl,layerscape-dcfg.yaml
+- f/fsl,layerscape-scfg.yaml
+- f/fsl,ls1028a-reset.yaml
+- f/fsl,qman-fqd.yaml
+- f/fsl,qman-portal.yaml
+- f/fsl,qman.yaml
+- f/fsl,rcpm.yaml
+- f/guts.txt
+- f/qman-portals.txt
+- f/qman.txt
+- f/rcpm.txt

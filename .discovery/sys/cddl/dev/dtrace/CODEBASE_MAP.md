@@ -1,0 +1,20 @@
+Directory: sys/cddl/dev/dtrace
+Entries:
+- d/aarch64/
+- d/amd64/
+- d/arm/
+- d/i386/
+- d/powerpc/
+- d/riscv/
+- d/x86/
+- f/dtrace_anon.c
+- f/dtrace_cddl.h
+- f/dtrace_debug.c
+- f/dtrace_hacks.c
+- f/dtrace_ioctl.c
+- f/dtrace_load.c
+- f/dtrace_modevent.c
+- f/dtrace_sysctl.c
+- f/dtrace_test.c
+- f/dtrace_unload.c
+- f/dtrace_vtime.c

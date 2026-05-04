@@ -1,26 +1,28 @@
-# sys/dev/iicbus/ — I2C Bus Layer Codebase Map
-
-**Path:** `sys/dev/iicbus/`
-**Purpose:** I2C bus layer
-
-## Overview
-
-The iicbus driver provides the I2C bus layer.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `iicbus.c` | Core |
-| `iicbusvar.h` | Variables |
-
-## I2C Devices
-
-| Device | Description |
-|--------|-------------|
-| `icp/` | ICP |
-| `slaves/` | Slave devices |
-
-## See Also
-
-- `sys/dev/iic/` - I2C core
+Directory: sys/dev/iicbus
+Entries:
+- d/adc/
+- d/controller/
+- d/gpio/
+- d/mux/
+- d/pmic/
+- d/pwm/
+- d/rtc/
+- d/sensor/
+- f/acpi_iicbus.c
+- f/icee.c
+- f/if_ic.c
+- f/iic_recover_bus.c
+- f/iic_recover_bus.h
+- f/iic.c
+- f/iic.h
+- f/iicbb_if.m
+- f/iicbb.c
+- f/iicbus_if.m
+- f/iicbus.c
+- f/iicbus.h
+- f/iichid.c
+- f/iiconf.c
+- f/iiconf.h
+- f/iicsmb.c
+- f/ofw_iicbus_if.m
+- f/ofw_iicbus.c

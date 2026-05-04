@@ -1,0 +1,23 @@
+Directory: sys/dev/qat/include
+Entries:
+- d/common/
+- f/adf_cfg_dev_dbg.h
+- f/adf_cfg_device.h
+- f/adf_cnvnr_freq_counters.h
+- f/adf_dbgfs.h
+- f/adf_dev_err.h
+- f/adf_freebsd_pfvf_ctrs_dbg.h
+- f/adf_fw_counters.h
+- f/adf_gen2_pfvf.h
+- f/adf_gen4_pfvf.h
+- f/adf_gen4_timer.h
+- f/adf_gen4vf_hw_csr_data.h
+- f/adf_heartbeat_dbg.h
+- f/adf_heartbeat.h
+- f/adf_pfvf_vf_msg.h
+- f/adf_ver_dbg.h
+- f/icp_qat_fw_init_admin.h
+- f/icp_qat_fw.h
+- f/icp_qat_hw.h
+- f/qat_ocf_mem_pool.h
+- f/qat_ocf_utils.h

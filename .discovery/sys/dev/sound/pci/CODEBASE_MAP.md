@@ -1,20 +1,55 @@
-# sys/dev/sound/pci/ — PCI Audio Driver Codebase Map
-
-**Path:** `sys/dev/sound/pci/`
-**Purpose:** PCI audio drivers
-
-## Overview
-
-The pci audio directory contains PCI audio drivers.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `ich.c` | Intel ICH |
-| `emu10k1.c` | EMU10K1 |
-| `hda.c` | HD Audio |
-
-## See Also
-
-- `sys/dev/sound/` - Sound subsystem
+Directory: sys/dev/sound/pci
+Entries:
+- d/hda/
+- f/allegro_code.h
+- f/allegro_reg.h
+- f/als4000.c
+- f/als4000.h
+- f/atiixp.c
+- f/atiixp.h
+- f/cmi.c
+- f/cmireg.h
+- f/cs4281.c
+- f/cs4281.h
+- f/cs461x_dsp.h
+- f/csa.c
+- f/csamidi.c
+- f/csapcm.c
+- f/csareg.h
+- f/csavar.h
+- f/emu10k1.c
+- f/emu10kx-midi.c
+- f/emu10kx-pcm.c
+- f/emu10kx.c
+- f/emu10kx.h
+- f/emuxkireg.h
+- f/envy24.c
+- f/envy24.h
+- f/envy24ht.c
+- f/envy24ht.h
+- f/es137x.c
+- f/es137x.h
+- f/fm801.c
+- f/hdsp-pcm.c
+- f/hdsp.c
+- f/hdsp.h
+- f/hdspe-pcm.c
+- f/hdspe.c
+- f/hdspe.h
+- f/ich.c
+- f/ich.h
+- f/maestro3.c
+- f/neomagic-coeff.h
+- f/neomagic.c
+- f/neomagic.h
+- f/solo.c
+- f/spicds.c
+- f/spicds.h
+- f/t4dwave.c
+- f/t4dwave.h
+- f/via8233.c
+- f/via8233.h
+- f/via82c686.c
+- f/via82c686.h
+- f/vibes.c
+- f/vibes.h

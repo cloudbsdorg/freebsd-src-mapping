@@ -1,0 +1,21 @@
+Directory: sys/dev/clk
+Entries:
+- d/allwinner/
+- d/rockchip/
+- d/starfive/
+- d/xilinx/
+- f/clk_bus.c
+- f/clk_div.c
+- f/clk_div.h
+- f/clk_fixed.c
+- f/clk_fixed.h
+- f/clk_gate.c
+- f/clk_gate.h
+- f/clk_link.c
+- f/clk_link.h
+- f/clk_mux.c
+- f/clk_mux.h
+- f/clk.c
+- f/clk.h
+- f/clkdev_if.m
+- f/clknode_if.m

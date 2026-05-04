@@ -1,0 +1,24 @@
+Directory: sys/dev/rtwn/rtl8192c
+Entries:
+- d/pci/
+- d/usb/
+- f/r92c_attach.c
+- f/r92c_beacon.c
+- f/r92c_calib.c
+- f/r92c_chan.c
+- f/r92c_fw_cmd.h
+- f/r92c_fw.c
+- f/r92c_init.c
+- f/r92c_llt.c
+- f/r92c_priv.h
+- f/r92c_reg.h
+- f/r92c_rf.c
+- f/r92c_rom_defs.h
+- f/r92c_rom_image.h
+- f/r92c_rom.c
+- f/r92c_rx_desc.h
+- f/r92c_rx.c
+- f/r92c_tx_desc.h
+- f/r92c_tx.c
+- f/r92c_var.h
+- f/r92c.h

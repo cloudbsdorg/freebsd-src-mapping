@@ -1,0 +1,22 @@
+Directory: sys/dev/rtwn/rtl8188e
+Entries:
+- d/pci/
+- d/usb/
+- f/r88e_beacon.c
+- f/r88e_calib.c
+- f/r88e_chan.c
+- f/r88e_fw_cmd.h
+- f/r88e_fw.c
+- f/r88e_init.c
+- f/r88e_led.c
+- f/r88e_priv.h
+- f/r88e_reg.h
+- f/r88e_rf.c
+- f/r88e_rom_defs.h
+- f/r88e_rom_image.h
+- f/r88e_rom.c
+- f/r88e_rx_desc.h
+- f/r88e_rx.c
+- f/r88e_tx_desc.h
+- f/r88e_tx.c
+- f/r88e.h

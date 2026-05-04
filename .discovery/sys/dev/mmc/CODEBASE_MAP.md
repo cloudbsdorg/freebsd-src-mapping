@@ -1,32 +1,22 @@
-# sys/dev/mmc/ — MMC/SD Card Driver Codebase Map
-
-**Path:** `sys/dev/mmc/`
-**Purpose:** MultiMediaCard and SD card support
-
-## Overview
-
-The mmc driver provides generic MMC/SD card host support.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `mmc.c` | Core |
-| `mmc_subr.c` | Subroutines |
-| `mmc_bus.h` | Bus |
-
-## Key Structures
-
-```c
-struct mmc_host {
-    struct mtx lock;
-    device_t dev;
-    int bus_width;
-    int host_ocr;
-    uint32_t host_caps;
-};
-```
-
-## See Also
-
-- `sys/dev/sdhci/` - SDHCI
+Directory: sys/dev/mmc
+Entries:
+- d/host/
+- f/bridge.h
+- f/mmc_fdt_helpers.c
+- f/mmc_fdt_helpers.h
+- f/mmc_helpers.c
+- f/mmc_helpers.h
+- f/mmc_ioctl.h
+- f/mmc_private.h
+- f/mmc_pwrseq_if.m
+- f/mmc_pwrseq.c
+- f/mmc_subr.c
+- f/mmc_subr.h
+- f/mmc.c
+- f/mmcbr_if.m
+- f/mmcbrvar.h
+- f/mmcbus_if.m
+- f/mmcreg.h
+- f/mmcsd.c
+- f/mmcspi.c
+- f/mmcvar.h

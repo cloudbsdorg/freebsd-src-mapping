@@ -1,18 +1,54 @@
-# sys/modules/netgraph/ — Netgraph Network Framework Module Codebase Map
-
-**Path:** `sys/modules/netgraph/`
-**Purpose:** Netgraph framework module
-
-## Overview
-
-netgraph is the kernel networking graph framework.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `Makefile` | Build |
-
-## See Also
-
-- `sys/netgraph/` - Netgraph
+Directory: sys/modules/netgraph
+Entries:
+- d/async/
+- d/bluetooth/
+- d/bpf/
+- d/bridge/
+- d/car/
+- d/checksum/
+- d/cisco/
+- d/deflate/
+- d/device/
+- d/echo/
+- d/eiface/
+- d/etf/
+- d/ether_echo/
+- d/ether/
+- d/frame_relay/
+- d/gif_demux/
+- d/gif/
+- d/hole/
+- d/hub/
+- d/iface/
+- d/ip_input/
+- d/ipfw/
+- d/ksocket/
+- d/l2tp/
+- d/lmi/
+- d/macfilter/
+- d/mppc/
+- d/nat/
+- d/netflow/
+- d/netgraph/
+- d/one2many/
+- d/patch/
+- d/pipe/
+- d/ppp/
+- d/pppoe/
+- d/pptpgre/
+- d/pred1/
+- d/rfc1490/
+- d/sample/
+- d/socket/
+- d/source/
+- d/split/
+- d/tag/
+- d/tcpmss/
+- d/tee/
+- d/tty/
+- d/UI/
+- d/vjc/
+- d/vlan_rotate/
+- d/vlan/
+- f/Makefile
+- f/Makefile.inc

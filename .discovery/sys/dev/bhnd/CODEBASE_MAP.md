@@ -1,20 +1,24 @@
-# sys/dev/bhnd/ — Broadcom BCMSROM Codebase Map
-
-**Path:** `sys/dev/bhnd/`
-**Purpose:** Broadcom hardware SROM support
-
-## Overview
-
-The bhnd driver provides Broadcom hardware detection.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `bhnd.c` | Main |
-| `bhndvar.h` | Variables |
-| `bhnd_sprom.c` | SPROM |
-
-## See Also
-
-- `sys/dev/bhnd/bhndb/` - BCMA bus
+Directory: sys/dev/bhnd
+Entries:
+- d/bcma/
+- d/bhndb/
+- d/cores/
+- d/nvram/
+- d/siba/
+- d/tools/
+- f/bhnd_bus_if.m
+- f/bhnd_debug.h
+- f/bhnd_erom_if.m
+- f/bhnd_erom_types.h
+- f/bhnd_erom.c
+- f/bhnd_erom.h
+- f/bhnd_eromvar.h
+- f/bhnd_ids.h
+- f/bhnd_match.h
+- f/bhnd_private.h
+- f/bhnd_subr.c
+- f/bhnd_types.h
+- f/bhnd.c
+- f/bhnd.h
+- f/bhndreg.h
+- f/bhndvar.h

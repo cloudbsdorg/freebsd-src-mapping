@@ -1,0 +1,23 @@
+Directory: sys/contrib/libsodium/src/libsodium
+Entries:
+- d/crypto_aead/
+- d/crypto_auth/
+- d/crypto_box/
+- d/crypto_core/
+- d/crypto_generichash/
+- d/crypto_hash/
+- d/crypto_kdf/
+- d/crypto_kx/
+- d/crypto_onetimeauth/
+- d/crypto_pwhash/
+- d/crypto_scalarmult/
+- d/crypto_secretbox/
+- d/crypto_secretstream/
+- d/crypto_shorthash/
+- d/crypto_sign/
+- d/crypto_stream/
+- d/crypto_verify/
+- d/include/
+- d/randombytes/
+- d/sodium/
+- f/Makefile.am

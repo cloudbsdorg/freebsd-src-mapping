@@ -1,0 +1,23 @@
+Directory: sys/dev/hyperv/vmbus
+Entries:
+- d/aarch64/
+- d/amd64/
+- d/i386/
+- d/x86/
+- f/hyperv_busdma.c
+- f/hyperv_common_reg.h
+- f/hyperv_mmu.c
+- f/hyperv_mmu.h
+- f/hyperv_var.h
+- f/hyperv.c
+- f/vmbus_br.c
+- f/vmbus_brvar.h
+- f/vmbus_chan.c
+- f/vmbus_chanvar.h
+- f/vmbus_et.c
+- f/vmbus_if.m
+- f/vmbus_reg.h
+- f/vmbus_res.c
+- f/vmbus_var.h
+- f/vmbus_xact.c
+- f/vmbus.c

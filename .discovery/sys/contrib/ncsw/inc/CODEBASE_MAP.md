@@ -1,0 +1,24 @@
+Directory: sys/contrib/ncsw/inc
+Entries:
+- d/cores/
+- d/etc/
+- d/flib/
+- d/integrations/
+- d/Peripherals/
+- f/core_ext.h
+- f/ctype_ext.h
+- f/ddr_std_ext.h
+- f/debug_ext.h
+- f/endian_ext.h
+- f/enet_ext.h
+- f/error_ext.h
+- f/ncsw_ext.h
+- f/net_ext.h
+- f/std_ext.h
+- f/stdarg_ext.h
+- f/stdlib_ext.h
+- f/string_ext.h
+- f/types_ext.h
+- f/types_freebsd.h
+- f/xx_common.h
+- f/xx_ext.h

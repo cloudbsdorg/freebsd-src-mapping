@@ -1,0 +1,24 @@
+Directory: sys/contrib/device-tree/Bindings/clock/ti
+Entries:
+- d/davinci/
+- f/adpll.txt
+- f/apll.txt
+- f/autoidle.txt
+- f/clockdomain.txt
+- f/composite.txt
+- f/divider.txt
+- f/dpll.txt
+- f/dra7-atl.txt
+- f/fapll.txt
+- f/fixed-factor-clock.txt
+- f/gate.txt
+- f/interface.txt
+- f/mux.txt
+- f/ti,autoidle.yaml
+- f/ti,clksel.yaml
+- f/ti,composite-clock.yaml
+- f/ti,divider-clock.yaml
+- f/ti,fixed-factor-clock.yaml
+- f/ti,gate-clock.yaml
+- f/ti,interface-clock.yaml
+- f/ti,mux-clock.yaml

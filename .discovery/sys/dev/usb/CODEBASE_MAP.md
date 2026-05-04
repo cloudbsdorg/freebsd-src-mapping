@@ -1,47 +1,69 @@
-# sys/dev/usb/ — USB Stack Codebase Map
-
-**Path:** `sys/dev/usb/`
-**Purpose:** USB host controller and device support
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `usb_core.c` | USB core |
-| `usb_hub.c` | Hub support |
-| `usb_host.c` | Host controller |
-| `usb_parse.c` | Descriptor parsing |
-| `usb_request.c` | Control requests |
-| `usb_transfer.c` | Transfers |
-
-## USB Controllers
-
-| Controller | Description |
-|-----------|-------------|
-| `ehci/` | USB 2.0 |
-| `ohci/` | USB 1.1 |
-| `xhci/` | USB 3.0 |
-
-## USB Device Classes
-
-| Class | Description |
-|-------|-------------|
-| `umass/` | Mass storage |
-| `ukbd/` | Keyboard |
-| `ums/` | Mouse |
-| `uaudio/` | Audio |
-| `ubsa/` | Serial |
-| `ucom/` | Serial |
-| `urio/` | Rio MP3 player |
-| `uvic/` | Video |
-
-## Transfer Types
-
-- Control transfer
-- Bulk transfer
-- Interrupt transfer
-- Isochronous transfer
-
-## See Also
-
-- `lib/libusb/` - Userland USB
+Directory: sys/dev/usb
+Entries:
+- d/controller/
+- d/gadget/
+- d/input/
+- d/misc/
+- d/net/
+- d/quirk/
+- d/serial/
+- d/storage/
+- d/template/
+- d/video/
+- d/wlan/
+- f/ufm_ioctl.h
+- f/uftdiio.h
+- f/uled_ioctl.h
+- f/usb_bus.h
+- f/usb_busdma.c
+- f/usb_busdma.h
+- f/usb_cdc.h
+- f/usb_controller.h
+- f/usb_core.c
+- f/usb_core.h
+- f/usb_debug.c
+- f/usb_debug.h
+- f/usb_dev.c
+- f/usb_dev.h
+- f/usb_device.c
+- f/usb_device.h
+- f/usb_dynamic.c
+- f/usb_dynamic.h
+- f/usb_endian.h
+- f/usb_error.c
+- f/usb_fdt_support.c
+- f/usb_fdt_support.h
+- f/usb_freebsd_loader.h
+- f/usb_freebsd.h
+- f/usb_generic.c
+- f/usb_generic.h
+- f/usb_handle_request.c
+- f/usb_hid.c
+- f/usb_hub_acpi.c
+- f/usb_hub_private.h
+- f/usb_hub.c
+- f/usb_hub.h
+- f/usb_if.m
+- f/usb_ioctl.h
+- f/usb_lookup.c
+- f/usb_mbuf.c
+- f/usb_mbuf.h
+- f/usb_msctest.c
+- f/usb_msctest.h
+- f/usb_parse.c
+- f/usb_pci.h
+- f/usb_pf.c
+- f/usb_pf.h
+- f/usb_process.c
+- f/usb_process.h
+- f/usb_request.c
+- f/usb_request.h
+- f/usb_transfer.c
+- f/usb_transfer.h
+- f/usb_util.c
+- f/usb_util.h
+- f/usb.h
+- f/usbdevs
+- f/usbdi_util.h
+- f/usbdi.h
+- f/usbhid.h

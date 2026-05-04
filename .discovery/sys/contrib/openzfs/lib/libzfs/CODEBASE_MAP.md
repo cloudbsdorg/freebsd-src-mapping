@@ -1,0 +1,26 @@
+Directory: sys/contrib/openzfs/lib/libzfs
+Entries:
+- d/os/
+- f/libzfs_changelist.c
+- f/libzfs_config.c
+- f/libzfs_crypto.c
+- f/libzfs_dataset.c
+- f/libzfs_diff.c
+- f/libzfs_impl.h
+- f/libzfs_import.c
+- f/libzfs_iter.c
+- f/libzfs_mnttab.c
+- f/libzfs_mount.c
+- f/libzfs_pool.c
+- f/libzfs_sendrecv.c
+- f/libzfs_share_nfs.c
+- f/libzfs_share.c
+- f/libzfs_share.h
+- f/libzfs_status.c
+- f/libzfs_util.c
+- f/libzfs.abi
+- f/libzfs.pc.in
+- f/libzfs.suppr
+- f/Makefile.am
+- f/THIRDPARTYLICENSE.openssl
+- f/THIRDPARTYLICENSE.openssl.descrip

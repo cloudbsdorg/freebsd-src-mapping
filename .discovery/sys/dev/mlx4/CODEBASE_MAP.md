@@ -1,25 +1,13 @@
-# sys/dev/mlx4/ — Mellanox ConnectX-3 Driver Codebase Map
-
-**Path:** `sys/dev/mlx4/`
-**Purpose:** Mellanox ConnectX-3 InfiniBand/Ethernet
-
-## Overview
-
-The mlx4 driver supports Mellanox ConnectX-3 adapters.
-
-## Key Files
-
-| File | Purpose |
-|------|---------|
-| `mlx4.c` | Main |
-
-## Features
-
-- InfiniBand
-- Ethernet
-- SR-IOV
-- RDMA
-
-## See Also
-
-- `sys/net/` - Network stack
+Directory: sys/dev/mlx4
+Entries:
+- d/mlx4_core/
+- d/mlx4_en/
+- d/mlx4_ib/
+- f/cmd.h
+- f/cq.h
+- f/device.h
+- f/doorbell.h
+- f/driver.h
+- f/qp.h
+- f/srq.h
+- f/stats.h
