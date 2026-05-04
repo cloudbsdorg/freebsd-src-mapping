@@ -1,0 +1,421 @@
+# CODEBASE MAP for dialog
+
+Package: dialog
+Source: contrib/dialog
+
+Top-level contents:
+- CHANGES
+- COPYING
+- README
+- VERSION
+- aclocal.m4
+- argv.c
+- arrows.c
+- buildlist.c
+- buttons.c
+- calendar.c
+- checklist.c
+- columns.c
+- config.guess
+- config.hin
+- config.sub
+- configure
+- configure.in
+- demo.pl
+- dialog-config.in
+- dialog.1
+- dialog.3
+- dialog.c
+- dialog.h
+- dialog.lsm
+- dialog.pl
+- dlg_colors.h
+- dlg_internals.h
+- dlg_keys.c
+- dlg_keys.h
+- editbox.c
+- formbox.c
+- fselect.c
+- guage.c
+- headers-sh.in
+- help.c
+- inputbox.c
+- inputstr.c
+- install-sh
+- makefile.in
+- menubox.c
+- mixedform.c
+- mixedgauge.c
+- mouse.c
+- mousewget.c
+- msgbox.c
+- package/
+- pause.c
+- po/
+- prgbox.c
+- progressbox.c
+- rangebox.c
+- rc.c
+- rename.sh
+- run_test.sh
+- samples/
+- tailbox.c
+- textbox.c
+- timebox.c
+- trace.c
+- treeview.c
+- ttysize.c
+- ui_getc.c
+- util.c
+- version.c
+- yesno.c
+
+Recursive contents:
+- CHANGES
+- COPYING
+- README
+- VERSION
+- aclocal.m4
+- argv.c
+- arrows.c
+- buildlist.c
+- buttons.c
+- calendar.c
+- checklist.c
+- columns.c
+- config.guess
+- config.hin
+- config.sub
+- configure
+- configure.in
+- demo.pl
+- dialog-config.in
+- dialog.1
+- dialog.3
+- dialog.c
+- dialog.h
+- dialog.lsm
+- dialog.pl
+- dlg_colors.h
+- dlg_internals.h
+- dlg_keys.c
+- dlg_keys.h
+- editbox.c
+- formbox.c
+- fselect.c
+- guage.c
+- headers-sh.in
+- help.c
+- inputbox.c
+- inputstr.c
+- install-sh
+- makefile.in
+- menubox.c
+- mixedform.c
+- mixedgauge.c
+- mouse.c
+- mousewget.c
+- msgbox.c
+- package/
+  - debian/
+    - changelog
+    - compat
+    - control
+    - copyright
+    - docs
+    - postinst
+    - rules
+    - source/
+      - format
+    - watch
+  - dialog.map
+  - dialog.spec
+  - dialog.sym
+  - freebsd/
+    - Makefile
+    - distinfo
+    - pkg-descr
+    - pkg-plist
+- pause.c
+- po/
+  - POTFILES.in
+  - an.po
+  - ar.po
+  - ast.po
+  - be@latin.po
+  - bg.po
+  - ca.po
+  - cs.po
+  - cy.po
+  - da.po
+  - de.po
+  - dialog.pot
+  - el.po
+  - eo.po
+  - es.po
+  - et.po
+  - eu.po
+  - fa.po
+  - fi.po
+  - fr.po
+  - fur.po
+  - ga.po
+  - gd.po
+  - gl.po
+  - hi.po
+  - hr.po
+  - hu.po
+  - ia.po
+  - id.po
+  - is.po
+  - it.po
+  - ja.po
+  - ku.po
+  - lt.po
+  - lv.po
+  - makefile.inn
+  - mg.po
+  - mk.po
+  - ms.po
+  - nb.po
+  - nl.po
+  - pl.po
+  - pt.po
+  - pt_BR.po
+  - rm.po
+  - ro.po
+  - ru.po
+  - rw.po
+  - sk.po
+  - sl.po
+  - sq.po
+  - sr.po
+  - sv.po
+  - sw.po
+  - th.po
+  - tr.po
+  - uk.po
+  - vi.po
+  - wa.po
+  - zh_CN.po
+  - zh_TW.po
+- prgbox.c
+- progressbox.c
+- rangebox.c
+- rc.c
+- rename.sh
+- run_test.sh
+- samples/
+  - README
+  - buildlist
+  - buildlist2
+  - buildlist4
+  - calendar
+  - calendar-stdout
+  - calendar2
+  - calendar2-stdout
+  - calendar3
+  - calendar3-stdout
+  - checklist
+  - checklist-8bit
+  - checklist-utf8
+  - checklist1
+  - checklist10
+  - checklist11
+  - checklist12
+  - checklist2
+  - checklist3
+  - checklist4
+  - checklist5
+  - checklist6
+  - checklist7
+  - checklist8
+  - checklist9
+  - checklist9.txt
+  - copifuncs/
+    - copi.ifman1
+    - copi.ifmcfg2
+    - copi.ifmcfg4
+    - copi.ifmcfg5
+    - copi.ifpoll1
+    - copi.ifreq1
+    - copi.rcnews
+    - copi.sendifm2
+    - copi.trnrc
+    - ifpatch
+  - debian.rc
+  - dft-cancel
+  - dft-extra
+  - dft-help
+  - dft-no
+  - dialog.py
+  - dselect
+  - editbox
+  - editbox-utf8
+  - editbox2
+  - editbox3
+  - editbox4
+  - form1
+  - form1-both
+  - form1-extra
+  - form1-help
+  - form1-utf8
+  - form2
+  - form3
+  - form4
+  - form5
+  - form6
+  - fselect
+  - fselect-stdout
+  - fselect0
+  - fselect1
+  - fselect1-stdout
+  - fselect2
+  - fselect2-stdout
+  - gauge
+  - gauge0
+  - gauge0-input-fd
+  - gauge2
+  - infobox
+  - infobox1
+  - infobox2
+  - infobox3
+  - infobox4
+  - infobox5
+  - infobox6
+  - inputbox
+  - inputbox-both
+  - inputbox-extra
+  - inputbox-help
+  - inputbox1
+  - inputbox2
+  - inputbox3
+  - inputbox4
+  - inputbox5
+  - inputbox6-8bit
+  - inputbox6-utf8
+  - inputbox7
+  - inputmenu
+  - inputmenu-stdout
+  - inputmenu1
+  - inputmenu2
+  - inputmenu3
+  - inputmenu4
+  - install/
+    - FDISK.TEST
+    - makefile.in
+    - setup.c
+    - setup.help
+  - killall
+  - listing
+  - menubox
+  - menubox-8bit
+  - menubox-utf8
+  - menubox1
+  - menubox10
+  - menubox11
+  - menubox12
+  - menubox2
+  - menubox3
+  - menubox4
+  - menubox5
+  - menubox6
+  - menubox7
+  - menubox8
+  - menubox9
+  - mixedform
+  - mixedform2
+  - mixedgauge
+  - msgbox
+  - msgbox-help
+  - msgbox-utf8
+  - msgbox1
+  - msgbox2
+  - msgbox3
+  - msgbox4-8bit
+  - msgbox4-eucjp
+  - msgbox4-utf8
+  - msgbox5
+  - msgbox6
+  - msgbox6a
+  - password
+  - password1
+  - password2
+  - passwordform1
+  - passwordform1-utf8
+  - pause
+  - pause-both
+  - pause-extra
+  - pause-help
+  - prgbox
+  - prgbox2
+  - programbox
+  - programbox2
+  - programbox3
+  - progress
+  - progress2
+  - radiolist
+  - radiolist1
+  - radiolist10
+  - radiolist2
+  - radiolist3
+  - radiolist4
+  - rangebox
+  - rangebox2
+  - rangebox3
+  - rangebox4
+  - report-button
+  - report-edit
+  - report-string
+  - report-tempfile
+  - report-yesno
+  - rotated-data
+  - run_test.sh
+  - setup-edit
+  - setup-tempfile
+  - setup-utf8
+  - setup-vars
+  - shortlist
+  - slackware.rc
+  - sourcemage.rc
+  - suse.rc
+  - tailbox
+  - tailboxbg
+  - tailboxbg1
+  - tailboxbg2
+  - testdata-8bit
+  - textbox
+  - textbox-both
+  - textbox-help
+  - textbox.txt
+  - textbox2
+  - textbox3
+  - timebox
+  - timebox-stdout
+  - timebox2
+  - timebox2-stdout
+  - treeview
+  - treeview2
+  - treeview4
+  - wheel
+  - whiptail.rc
+  - with-dquotes
+  - with-squotes
+  - yesno
+  - yesno-both
+  - yesno-extra
+  - yesno-help
+  - yesno-utf8
+  - yesno2
+  - yesno3
+  - yesno4
+- tailbox.c
+- textbox.c
+- timebox.c
+- trace.c
+- treeview.c
+- ttysize.c
+- ui_getc.c
+- util.c
+- version.c
+- yesno.c

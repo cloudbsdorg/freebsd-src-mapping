@@ -1,0 +1,210 @@
+# CODEBASE MAP for ldns
+
+Package: ldns
+Source: contrib/ldns
+
+Top-level contents:
+- Changelog
+- LICENSE
+- Makefile.in
+- README
+- README-Travis.md
+- README.git
+- README.snapshots
+- aclocal.m4
+- acx_nlnetlabs.m4
+- ax_pkg_swig.m4
+- ax_python_devel.m4
+- buffer.c
+- compat/
+- config.guess
+- config.sub
+- configure
+- configure.ac
+- dane.c
+- dname.c
+- dnssec.c
+- dnssec_sign.c
+- dnssec_verify.c
+- dnssec_zone.c
+- drill/
+- duration.c
+- edns.c
+- error.c
+- freebsd-configure.sh
+- higher.c
+- host2str.c
+- host2wire.c
+- install-sh
+- keys.c
+- ldns/
+- libdns.doxygen.in
+- libdns.vim
+- linktest.c
+- ltmain.sh
+- m4/
+- makewin.sh
+- net.c
+- packaging/
+- packet.c
+- parse.c
+- radix.c
+- rbtree.c
+- rdata.c
+- resolver.c
+- rr.c
+- rr_functions.c
+- sha1.c
+- sha2.c
+- str2host.c
+- tsig.c
+- update.c
+- util.c
+- wire2host.c
+- zone.c
+
+Recursive contents:
+- Changelog
+- LICENSE
+- Makefile.in
+- README
+- README-Travis.md
+- README.git
+- README.snapshots
+- aclocal.m4
+- acx_nlnetlabs.m4
+- ax_pkg_swig.m4
+- ax_python_devel.m4
+- buffer.c
+- compat/
+  - b64_ntop.c
+  - b64_pton.c
+  - calloc.c
+  - ctime_r.c
+  - fake-rfc2553.c
+  - fake-rfc2553.h
+  - gmtime_r.c
+  - inet_aton.c
+  - inet_ntop.c
+  - inet_pton.c
+  - isascii.c
+  - isblank.c
+  - localtime_r.c
+  - malloc.c
+  - memmove.c
+  - realloc.c
+  - snprintf.c
+  - strlcpy.c
+  - timegm.c
+- config.guess
+- config.sub
+- configure
+- configure.ac
+- dane.c
+- dname.c
+- dnssec.c
+- dnssec_sign.c
+- dnssec_verify.c
+- dnssec_zone.c
+- drill/
+  - ChangeLog.22-nov-2005
+  - README
+  - REGRESSIONS
+  - chasetrace.c
+  - dnssec.c
+  - drill.1
+  - drill.1.in
+  - drill.c
+  - drill.h
+  - drill_util.c
+  - drill_util.h
+  - error.c
+  - install-sh
+  - root.c
+  - securetrace.c
+  - work.c
+- duration.c
+- edns.c
+- error.c
+- freebsd-configure.sh
+- higher.c
+- host2str.c
+- host2wire.c
+- install-sh
+- keys.c
+- ldns/
+  - buffer.h
+  - common.h
+  - common.h.in
+  - config.h
+  - config.h.in
+  - dane.h
+  - dname.h
+  - dnssec.h
+  - dnssec_sign.h
+  - dnssec_verify.h
+  - dnssec_zone.h
+  - duration.h
+  - edns.h
+  - error.h
+  - higher.h
+  - host2str.h
+  - host2wire.h
+  - internal.h
+  - keys.h
+  - ldns.h
+  - net.h
+  - net.h.in
+  - packet.h
+  - parse.h
+  - radix.h
+  - rbtree.h
+  - rdata.h
+  - resolver.h
+  - rr.h
+  - rr_functions.h
+  - sha1.h
+  - sha2.h
+  - str2host.h
+  - tsig.h
+  - update.h
+  - util.h
+  - util.h.in
+  - wire2host.h
+  - zone.h
+- libdns.doxygen.in
+- libdns.vim
+- linktest.c
+- ltmain.sh
+- m4/
+  - ax_config_feature.m4
+  - ax_have_poll.m4
+  - libtool.m4
+  - ltoptions.m4
+  - ltsugar.m4
+  - ltversion.m4
+  - lt~obsolete.m4
+- makewin.sh
+- net.c
+- packaging/
+  - fedora/
+    - ldns.spec
+  - ldns-config.1
+  - ldns-config.in
+  - libldns.pc.in
+- packet.c
+- parse.c
+- radix.c
+- rbtree.c
+- rdata.c
+- resolver.c
+- rr.c
+- rr_functions.c
+- sha1.c
+- sha2.c
+- str2host.c
+- tsig.c
+- update.c
+- util.c
+- wire2host.c
+- zone.c

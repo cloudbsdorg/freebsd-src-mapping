@@ -1,0 +1,1073 @@
+# CODEBASE MAP for bmake
+
+Package: bmake
+Source: contrib/bmake
+
+Top-level contents:
+- ChangeLog
+- FILES
+- LICENSE
+- Makefile
+- Makefile.config.in
+- PSD.doc/
+- README
+- VERSION
+- _strtol.h
+- aclocal.m4
+- arch.c
+- bmake.1
+- bmake.cat1
+- boot-strap
+- bsd.after-import.mk
+- buf.c
+- buf.h
+- compat.c
+- cond.c
+- config.h.in
+- configure
+- configure.in
+- dir.c
+- dir.h
+- dirname.c
+- filemon/
+- find_lib.sh
+- for.c
+- getopt.c
+- hash.c
+- hash.h
+- import.sh
+- install-sh
+- job.c
+- job.h
+- lst.c
+- lst.h
+- machine.sh
+- main.c
+- make-bootstrap.sh.in
+- make-conf.h
+- make.1
+- make.c
+- make.h
+- make_malloc.c
+- make_malloc.h
+- makefile.in
+- meta.c
+- meta.h
+- metachar.c
+- metachar.h
+- missing/
+- mk/
+- mkdeps.sh
+- os.sh
+- parse.c
+- pathnames.h
+- ranlib.h
+- realpath.c
+- setenv.c
+- sigact.h
+- sigaction.c
+- sigcompat.c
+- str.c
+- str.h
+- stresep.c
+- strlcpy.c
+- suff.c
+- targ.c
+- trace.c
+- trace.h
+- unit-tests/
+- util.c
+- var.c
+- wait.h
+
+Recursive contents:
+- ChangeLog
+- FILES
+- LICENSE
+- Makefile
+- Makefile.config.in
+- PSD.doc/
+  - Makefile
+  - tutorial.ms
+- README
+- VERSION
+- _strtol.h
+- aclocal.m4
+- arch.c
+- bmake.1
+- bmake.cat1
+- boot-strap
+- bsd.after-import.mk
+- buf.c
+- buf.h
+- compat.c
+- cond.c
+- config.h.in
+- configure
+- configure.in
+- dir.c
+- dir.h
+- dirname.c
+- filemon/
+  - filemon.h
+  - filemon_dev.c
+  - filemon_ktrace.c
+- find_lib.sh
+- for.c
+- getopt.c
+- hash.c
+- hash.h
+- import.sh
+- install-sh
+- job.c
+- job.h
+- lst.c
+- lst.h
+- machine.sh
+- main.c
+- make-bootstrap.sh.in
+- make-conf.h
+- make.1
+- make.c
+- make.h
+- make_malloc.c
+- make_malloc.h
+- makefile.in
+- meta.c
+- meta.h
+- metachar.c
+- metachar.h
+- missing/
+  - sys/
+    - cdefs.h
+- mk/
+  - ChangeLog
+  - FILES
+  - README
+  - auto.dep.mk
+  - auto.obj.mk
+  - autoconf.mk
+  - autodep.mk
+  - cc-wrap.mk
+  - ccm.dep.mk
+  - compiler.mk
+  - cython.mk
+  - dep.mk
+  - dirdeps-cache-update.mk
+  - dirdeps-options.mk
+  - dirdeps-targets.mk
+  - dirdeps.mk
+  - dirdeps2dplibs.mk
+  - doc.mk
+  - dpadd.mk
+  - files.mk
+  - final.mk
+  - gendirdeps.mk
+  - genfiles.mk
+  - host-target.mk
+  - host.libnames.mk
+  - inc.mk
+  - init.mk
+  - install-mk
+  - install-new.mk
+  - install-sh
+  - java.mk
+  - jobs.mk
+  - ldorder.mk
+  - lib.mk
+  - libnames.mk
+  - libs.mk
+  - links.mk
+  - man.mk
+  - manifest.mk
+  - meta.autodep.mk
+  - meta.stage.mk
+  - meta.subdir.mk
+  - meta.sys.mk
+  - meta2deps.py
+  - meta2deps.sh
+  - mk-files.txt
+  - mkopt.sh
+  - newlog.sh
+  - nls.mk
+  - obj.mk
+  - options.mk
+  - own.mk
+  - posix.mk
+  - prlist.mk
+  - prog.mk
+  - progs.mk
+  - rst2htm.mk
+  - rust.mk
+  - scripts.mk
+  - setopts.sh
+  - srctop.mk
+  - stage-install.sh
+  - subdir.mk
+  - suffixes.mk
+  - sys/
+    - AIX.mk
+    - Cygwin.mk
+    - Darwin.mk
+    - Generic.mk
+    - HP-UX.mk
+    - IRIX.mk
+    - Linux.mk
+    - NetBSD.mk
+    - OSF1.mk
+    - OpenBSD.mk
+    - SCO_SV.mk
+    - SunOS.mk
+    - UnixWare.mk
+  - sys.clean-env.mk
+  - sys.debug.mk
+  - sys.dependfile.mk
+  - sys.dirdeps.mk
+  - sys.mk
+  - sys.vars.mk
+  - target-flags.mk
+  - warnings.mk
+  - whats.mk
+  - yacc.mk
+- mkdeps.sh
+- os.sh
+- parse.c
+- pathnames.h
+- ranlib.h
+- realpath.c
+- setenv.c
+- sigact.h
+- sigaction.c
+- sigcompat.c
+- str.c
+- str.h
+- stresep.c
+- strlcpy.c
+- suff.c
+- targ.c
+- trace.c
+- trace.h
+- unit-tests/
+  - Makefile
+  - Makefile.config.in
+  - archive-suffix.exp
+  - archive-suffix.mk
+  - archive.exp
+  - archive.mk
+  - char-005c-reverse-solidus.exp
+  - char-005c-reverse-solidus.mk
+  - check-expect.lua
+  - cmd-errors-jobs.exp
+  - cmd-errors-jobs.mk
+  - cmd-errors-lint.exp
+  - cmd-errors-lint.mk
+  - cmd-errors.exp
+  - cmd-errors.mk
+  - cmd-interrupt.exp
+  - cmd-interrupt.mk
+  - cmdline-redirect-stdin.exp
+  - cmdline-redirect-stdin.mk
+  - cmdline-undefined.exp
+  - cmdline-undefined.mk
+  - cmdline.exp
+  - cmdline.mk
+  - comment.exp
+  - comment.mk
+  - compat-error.exp
+  - compat-error.mk
+  - cond-cmp-numeric-eq.exp
+  - cond-cmp-numeric-eq.mk
+  - cond-cmp-numeric-ge.exp
+  - cond-cmp-numeric-ge.mk
+  - cond-cmp-numeric-gt.exp
+  - cond-cmp-numeric-gt.mk
+  - cond-cmp-numeric-le.exp
+  - cond-cmp-numeric-le.mk
+  - cond-cmp-numeric-lt.exp
+  - cond-cmp-numeric-lt.mk
+  - cond-cmp-numeric-ne.exp
+  - cond-cmp-numeric-ne.mk
+  - cond-cmp-numeric.exp
+  - cond-cmp-numeric.mk
+  - cond-cmp-string.exp
+  - cond-cmp-string.mk
+  - cond-cmp-unary.exp
+  - cond-cmp-unary.mk
+  - cond-eof.exp
+  - cond-eof.mk
+  - cond-func-commands.exp
+  - cond-func-commands.mk
+  - cond-func-defined.exp
+  - cond-func-defined.mk
+  - cond-func-empty.exp
+  - cond-func-empty.mk
+  - cond-func-exists.exp
+  - cond-func-exists.mk
+  - cond-func-make-main.exp
+  - cond-func-make-main.mk
+  - cond-func-make.exp
+  - cond-func-make.mk
+  - cond-func-target.exp
+  - cond-func-target.mk
+  - cond-func.exp
+  - cond-func.mk
+  - cond-late.exp
+  - cond-late.mk
+  - cond-op-and-lint.exp
+  - cond-op-and-lint.mk
+  - cond-op-and.exp
+  - cond-op-and.mk
+  - cond-op-not.exp
+  - cond-op-not.mk
+  - cond-op-or-lint.exp
+  - cond-op-or-lint.mk
+  - cond-op-or.exp
+  - cond-op-or.mk
+  - cond-op-parentheses.exp
+  - cond-op-parentheses.mk
+  - cond-op.exp
+  - cond-op.mk
+  - cond-short.exp
+  - cond-short.mk
+  - cond-token-number.exp
+  - cond-token-number.mk
+  - cond-token-plain.exp
+  - cond-token-plain.mk
+  - cond-token-string.exp
+  - cond-token-string.mk
+  - cond-token-var.exp
+  - cond-token-var.mk
+  - cond-undef-lint.exp
+  - cond-undef-lint.mk
+  - counter-append.exp
+  - counter-append.mk
+  - counter.exp
+  - counter.mk
+  - dep-colon-bug-cross-file.exp
+  - dep-colon-bug-cross-file.mk
+  - dep-colon.exp
+  - dep-colon.mk
+  - dep-double-colon-indep.exp
+  - dep-double-colon-indep.mk
+  - dep-double-colon.exp
+  - dep-double-colon.mk
+  - dep-duplicate.exp
+  - dep-duplicate.mk
+  - dep-exclam.exp
+  - dep-exclam.mk
+  - dep-none.exp
+  - dep-none.mk
+  - dep-op-missing.exp
+  - dep-op-missing.mk
+  - dep-percent.exp
+  - dep-percent.mk
+  - dep-var.exp
+  - dep-var.mk
+  - dep-wildcards.exp
+  - dep-wildcards.mk
+  - dep.exp
+  - dep.mk
+  - depsrc-end.exp
+  - depsrc-end.mk
+  - depsrc-exec.exp
+  - depsrc-exec.mk
+  - depsrc-ignore.exp
+  - depsrc-ignore.mk
+  - depsrc-made.exp
+  - depsrc-made.mk
+  - depsrc-make.exp
+  - depsrc-make.mk
+  - depsrc-meta.exp
+  - depsrc-meta.mk
+  - depsrc-nometa.exp
+  - depsrc-nometa.mk
+  - depsrc-nometa_cmp.exp
+  - depsrc-nometa_cmp.mk
+  - depsrc-nopath.exp
+  - depsrc-nopath.mk
+  - depsrc-notmain.exp
+  - depsrc-notmain.mk
+  - depsrc-optional.exp
+  - depsrc-optional.mk
+  - depsrc-phony.exp
+  - depsrc-phony.mk
+  - depsrc-precious.exp
+  - depsrc-precious.mk
+  - depsrc-recursive.exp
+  - depsrc-recursive.mk
+  - depsrc-silent.exp
+  - depsrc-silent.mk
+  - depsrc-use.exp
+  - depsrc-use.mk
+  - depsrc-usebefore-double-colon.exp
+  - depsrc-usebefore-double-colon.mk
+  - depsrc-usebefore.exp
+  - depsrc-usebefore.mk
+  - depsrc-wait.exp
+  - depsrc-wait.mk
+  - depsrc.exp
+  - depsrc.mk
+  - deptgt-begin-fail-indirect.exp
+  - deptgt-begin-fail-indirect.mk
+  - deptgt-begin-fail.exp
+  - deptgt-begin-fail.mk
+  - deptgt-begin.exp
+  - deptgt-begin.mk
+  - deptgt-default.exp
+  - deptgt-default.mk
+  - deptgt-delete_on_error.exp
+  - deptgt-delete_on_error.mk
+  - deptgt-end-fail-all.exp
+  - deptgt-end-fail-all.mk
+  - deptgt-end-fail-indirect.exp
+  - deptgt-end-fail-indirect.mk
+  - deptgt-end-fail.exp
+  - deptgt-end-fail.mk
+  - deptgt-end-jobs.exp
+  - deptgt-end-jobs.mk
+  - deptgt-end.exp
+  - deptgt-end.mk
+  - deptgt-error.exp
+  - deptgt-error.mk
+  - deptgt-ignore.exp
+  - deptgt-ignore.mk
+  - deptgt-interrupt.exp
+  - deptgt-interrupt.mk
+  - deptgt-main.exp
+  - deptgt-main.mk
+  - deptgt-makeflags.exp
+  - deptgt-makeflags.mk
+  - deptgt-no_parallel.exp
+  - deptgt-no_parallel.mk
+  - deptgt-nopath.exp
+  - deptgt-nopath.mk
+  - deptgt-notparallel.exp
+  - deptgt-notparallel.mk
+  - deptgt-objdir.exp
+  - deptgt-objdir.mk
+  - deptgt-order.exp
+  - deptgt-order.mk
+  - deptgt-path-suffix.exp
+  - deptgt-path-suffix.mk
+  - deptgt-path.exp
+  - deptgt-path.mk
+  - deptgt-phony.exp
+  - deptgt-phony.mk
+  - deptgt-posix.exp
+  - deptgt-posix.mk
+  - deptgt-precious.exp
+  - deptgt-precious.mk
+  - deptgt-shell.exp
+  - deptgt-shell.mk
+  - deptgt-silent-jobs.exp
+  - deptgt-silent-jobs.mk
+  - deptgt-silent.exp
+  - deptgt-silent.mk
+  - deptgt-stale.exp
+  - deptgt-stale.mk
+  - deptgt-suffixes.exp
+  - deptgt-suffixes.mk
+  - deptgt.exp
+  - deptgt.mk
+  - dir-expand-path.exp
+  - dir-expand-path.mk
+  - dir.exp
+  - dir.mk
+  - directive-dinclude.exp
+  - directive-dinclude.mk
+  - directive-elif.exp
+  - directive-elif.mk
+  - directive-elifdef.exp
+  - directive-elifdef.mk
+  - directive-elifmake.exp
+  - directive-elifmake.mk
+  - directive-elifndef.exp
+  - directive-elifndef.mk
+  - directive-elifnmake.exp
+  - directive-elifnmake.mk
+  - directive-else.exp
+  - directive-else.mk
+  - directive-endfor.exp
+  - directive-endfor.mk
+  - directive-endif.exp
+  - directive-endif.mk
+  - directive-error.exp
+  - directive-error.mk
+  - directive-export-env.exp
+  - directive-export-env.mk
+  - directive-export-gmake.exp
+  - directive-export-gmake.mk
+  - directive-export-impl.exp
+  - directive-export-impl.mk
+  - directive-export-literal.exp
+  - directive-export-literal.mk
+  - directive-export.exp
+  - directive-export.mk
+  - directive-for-break.exp
+  - directive-for-break.mk
+  - directive-for-empty.exp
+  - directive-for-empty.mk
+  - directive-for-errors.exp
+  - directive-for-errors.mk
+  - directive-for-escape.exp
+  - directive-for-escape.mk
+  - directive-for-generating-endif.exp
+  - directive-for-generating-endif.mk
+  - directive-for-if.exp
+  - directive-for-if.mk
+  - directive-for-lines.exp
+  - directive-for-lines.mk
+  - directive-for-null.exp
+  - directive-for-null.mk
+  - directive-for.exp
+  - directive-for.mk
+  - directive-hyphen-include.exp
+  - directive-hyphen-include.mk
+  - directive-if-nested.exp
+  - directive-if-nested.mk
+  - directive-if.exp
+  - directive-if.mk
+  - directive-ifdef.exp
+  - directive-ifdef.mk
+  - directive-ifmake.exp
+  - directive-ifmake.mk
+  - directive-ifndef.exp
+  - directive-ifndef.mk
+  - directive-ifnmake.exp
+  - directive-ifnmake.mk
+  - directive-include-fatal.exp
+  - directive-include-fatal.mk
+  - directive-include-guard.exp
+  - directive-include-guard.mk
+  - directive-include.exp
+  - directive-include.mk
+  - directive-info.exp
+  - directive-info.mk
+  - directive-misspellings.exp
+  - directive-misspellings.mk
+  - directive-sinclude.exp
+  - directive-sinclude.mk
+  - directive-undef.exp
+  - directive-undef.mk
+  - directive-unexport-env.exp
+  - directive-unexport-env.mk
+  - directive-unexport.exp
+  - directive-unexport.mk
+  - directive-warning.exp
+  - directive-warning.mk
+  - directive.exp
+  - directive.mk
+  - dollar.exp
+  - dollar.mk
+  - doterror.exp
+  - doterror.mk
+  - dotwait.exp
+  - dotwait.mk
+  - error.exp
+  - error.mk
+  - escape.exp
+  - escape.mk
+  - export-all.exp
+  - export-all.mk
+  - export-env.exp
+  - export-env.mk
+  - export-variants.exp
+  - export-variants.mk
+  - export.exp
+  - export.mk
+  - gnode-submake.exp
+  - gnode-submake.mk
+  - hanoi-include.exp
+  - hanoi-include.mk
+  - impsrc.exp
+  - impsrc.mk
+  - include-main.exp
+  - include-main.mk
+  - include-sub.inc
+  - include-subsub.inc
+  - job-flags.exp
+  - job-flags.mk
+  - job-output-long-lines.exp
+  - job-output-long-lines.mk
+  - job-output-null.exp
+  - job-output-null.mk
+  - job-output.exp
+  - job-output.mk
+  - jobs-empty-commands-error.exp
+  - jobs-empty-commands-error.mk
+  - jobs-empty-commands.exp
+  - jobs-empty-commands.mk
+  - jobs-error-indirect.exp
+  - jobs-error-indirect.mk
+  - jobs-error-nested-make.exp
+  - jobs-error-nested-make.mk
+  - jobs-error-nested.exp
+  - jobs-error-nested.mk
+  - lint.exp
+  - lint.mk
+  - make-exported.exp
+  - make-exported.mk
+  - meta-cmd-cmp.exp
+  - meta-cmd-cmp.mk
+  - meta-ignore.inc
+  - meta-output.exp
+  - meta-output.mk
+  - moderrs.exp
+  - moderrs.mk
+  - modmisc.exp
+  - modmisc.mk
+  - objdir-writable.exp
+  - objdir-writable.mk
+  - opt-backwards.exp
+  - opt-backwards.mk
+  - opt-chdir.exp
+  - opt-chdir.mk
+  - opt-debug-all.exp
+  - opt-debug-all.mk
+  - opt-debug-archive.exp
+  - opt-debug-archive.mk
+  - opt-debug-cond.exp
+  - opt-debug-cond.mk
+  - opt-debug-curdir.exp
+  - opt-debug-curdir.mk
+  - opt-debug-dir.exp
+  - opt-debug-dir.mk
+  - opt-debug-errors-jobs.exp
+  - opt-debug-errors-jobs.mk
+  - opt-debug-errors.exp
+  - opt-debug-errors.mk
+  - opt-debug-file.exp
+  - opt-debug-file.mk
+  - opt-debug-for.exp
+  - opt-debug-for.mk
+  - opt-debug-graph1.exp
+  - opt-debug-graph1.mk
+  - opt-debug-graph2.exp
+  - opt-debug-graph2.mk
+  - opt-debug-graph3.exp
+  - opt-debug-graph3.mk
+  - opt-debug-hash.exp
+  - opt-debug-hash.mk
+  - opt-debug-jobs.exp
+  - opt-debug-jobs.mk
+  - opt-debug-lint.exp
+  - opt-debug-lint.mk
+  - opt-debug-loud.exp
+  - opt-debug-loud.mk
+  - opt-debug-making.exp
+  - opt-debug-making.mk
+  - opt-debug-meta.exp
+  - opt-debug-meta.mk
+  - opt-debug-no-rm.exp
+  - opt-debug-no-rm.mk
+  - opt-debug-parse.exp
+  - opt-debug-parse.mk
+  - opt-debug-suff.exp
+  - opt-debug-suff.mk
+  - opt-debug-targets.exp
+  - opt-debug-targets.mk
+  - opt-debug-var.exp
+  - opt-debug-var.mk
+  - opt-debug-varraw.exp
+  - opt-debug-varraw.mk
+  - opt-debug-x-trace.exp
+  - opt-debug-x-trace.mk
+  - opt-debug.exp
+  - opt-debug.mk
+  - opt-define.exp
+  - opt-define.mk
+  - opt-env.exp
+  - opt-env.mk
+  - opt-file.exp
+  - opt-file.mk
+  - opt-ignore.exp
+  - opt-ignore.mk
+  - opt-include-dir.exp
+  - opt-include-dir.mk
+  - opt-jobs-internal.exp
+  - opt-jobs-internal.mk
+  - opt-jobs-no-action.exp
+  - opt-jobs-no-action.mk
+  - opt-jobs.exp
+  - opt-jobs.mk
+  - opt-keep-going-indirect.exp
+  - opt-keep-going-indirect.mk
+  - opt-keep-going-multiple.exp
+  - opt-keep-going-multiple.mk
+  - opt-keep-going.exp
+  - opt-keep-going.mk
+  - opt-m-include-dir.exp
+  - opt-m-include-dir.mk
+  - opt-no-action-at-all.exp
+  - opt-no-action-at-all.mk
+  - opt-no-action-runflags.exp
+  - opt-no-action-runflags.mk
+  - opt-no-action-touch.exp
+  - opt-no-action-touch.mk
+  - opt-no-action.exp
+  - opt-no-action.mk
+  - opt-query.exp
+  - opt-query.mk
+  - opt-raw.exp
+  - opt-raw.mk
+  - opt-silent.exp
+  - opt-silent.mk
+  - opt-touch-jobs.exp
+  - opt-touch-jobs.mk
+  - opt-touch.exp
+  - opt-touch.mk
+  - opt-tracefile.exp
+  - opt-tracefile.mk
+  - opt-var-expanded.exp
+  - opt-var-expanded.mk
+  - opt-var-literal.exp
+  - opt-var-literal.mk
+  - opt-version.exp
+  - opt-version.mk
+  - opt-warnings-as-errors.exp
+  - opt-warnings-as-errors.mk
+  - opt-where-am-i.exp
+  - opt-where-am-i.mk
+  - opt-x-reduce-exported.exp
+  - opt-x-reduce-exported.mk
+  - opt.exp
+  - opt.mk
+  - order.exp
+  - order.mk
+  - parse-var.exp
+  - parse-var.mk
+  - parse.exp
+  - parse.mk
+  - phony-end.exp
+  - phony-end.mk
+  - posix-execution.exp
+  - posix-execution.mk
+  - posix-expansion.exp
+  - posix-expansion.mk
+  - posix-varassign.exp
+  - posix-varassign.mk
+  - posix.exp
+  - posix.mk
+  - posix1.exp
+  - posix1.mk
+  - recursive.exp
+  - recursive.mk
+  - sh-dots.exp
+  - sh-dots.mk
+  - sh-errctl.exp
+  - sh-errctl.mk
+  - sh-flags.exp
+  - sh-flags.mk
+  - sh-jobs-error.exp
+  - sh-jobs-error.mk
+  - sh-jobs.exp
+  - sh-jobs.mk
+  - sh-leading-at.exp
+  - sh-leading-at.mk
+  - sh-leading-hyphen.exp
+  - sh-leading-hyphen.mk
+  - sh-leading-plus.exp
+  - sh-leading-plus.mk
+  - sh-meta-chars.exp
+  - sh-meta-chars.mk
+  - sh-multi-line.exp
+  - sh-multi-line.mk
+  - sh-single-line.exp
+  - sh-single-line.mk
+  - sh.exp
+  - sh.mk
+  - shell-csh.exp
+  - shell-csh.mk
+  - shell-custom.exp
+  - shell-custom.mk
+  - shell-ksh.exp
+  - shell-ksh.mk
+  - shell-sh.exp
+  - shell-sh.mk
+  - suff-add-later.exp
+  - suff-add-later.mk
+  - suff-clear-regular.exp
+  - suff-clear-regular.mk
+  - suff-clear-single.exp
+  - suff-clear-single.mk
+  - suff-incomplete.exp
+  - suff-incomplete.mk
+  - suff-lookup.exp
+  - suff-lookup.mk
+  - suff-main-several.exp
+  - suff-main-several.mk
+  - suff-main.exp
+  - suff-main.mk
+  - suff-phony.exp
+  - suff-phony.mk
+  - suff-rebuild.exp
+  - suff-rebuild.mk
+  - suff-self.exp
+  - suff-self.mk
+  - suff-transform-debug.exp
+  - suff-transform-debug.mk
+  - suff-transform-endless.exp
+  - suff-transform-endless.mk
+  - suff-transform-expand.exp
+  - suff-transform-expand.mk
+  - suff-transform-select.exp
+  - suff-transform-select.mk
+  - suff-use.exp
+  - suff-use.mk
+  - suff.exp
+  - suff.mk
+  - sunshcmd.exp
+  - sunshcmd.mk
+  - ternary.exp
+  - ternary.mk
+  - unexport-env.exp
+  - unexport-env.mk
+  - unexport.exp
+  - unexport.mk
+  - use-inference.exp
+  - use-inference.mk
+  - var-eval-short.exp
+  - var-eval-short.mk
+  - var-op-append.exp
+  - var-op-append.mk
+  - var-op-assign.exp
+  - var-op-assign.mk
+  - var-op-default.exp
+  - var-op-default.mk
+  - var-op-expand.exp
+  - var-op-expand.mk
+  - var-op-shell.exp
+  - var-op-shell.mk
+  - var-op-sunsh.exp
+  - var-op-sunsh.mk
+  - var-op.exp
+  - var-op.mk
+  - var-readonly.exp
+  - var-readonly.mk
+  - var-recursive.exp
+  - var-recursive.mk
+  - var-scope-cmdline.exp
+  - var-scope-cmdline.mk
+  - var-scope-env.exp
+  - var-scope-env.mk
+  - var-scope-global.exp
+  - var-scope-global.mk
+  - var-scope-local-legacy.exp
+  - var-scope-local-legacy.mk
+  - var-scope-local.exp
+  - var-scope-local.mk
+  - var-scope.exp
+  - var-scope.mk
+  - varcmd.exp
+  - varcmd.mk
+  - vardebug.exp
+  - vardebug.mk
+  - varfind.exp
+  - varfind.mk
+  - varmisc.exp
+  - varmisc.mk
+  - varmod-assign-shell.exp
+  - varmod-assign-shell.mk
+  - varmod-assign.exp
+  - varmod-assign.mk
+  - varmod-defined.exp
+  - varmod-defined.mk
+  - varmod-edge.exp
+  - varmod-edge.mk
+  - varmod-exclam-shell.exp
+  - varmod-exclam-shell.mk
+  - varmod-extension.exp
+  - varmod-extension.mk
+  - varmod-gmtime.exp
+  - varmod-gmtime.mk
+  - varmod-hash.exp
+  - varmod-hash.mk
+  - varmod-head.exp
+  - varmod-head.mk
+  - varmod-ifelse.exp
+  - varmod-ifelse.mk
+  - varmod-indirect.exp
+  - varmod-indirect.mk
+  - varmod-l-name-to-value.exp
+  - varmod-l-name-to-value.mk
+  - varmod-localtime.exp
+  - varmod-localtime.mk
+  - varmod-loop-delete.exp
+  - varmod-loop-delete.mk
+  - varmod-loop-varname.exp
+  - varmod-loop-varname.mk
+  - varmod-loop.exp
+  - varmod-loop.mk
+  - varmod-match-escape.exp
+  - varmod-match-escape.mk
+  - varmod-match.exp
+  - varmod-match.mk
+  - varmod-mtime.exp
+  - varmod-mtime.mk
+  - varmod-no-match.exp
+  - varmod-no-match.mk
+  - varmod-order-numeric.exp
+  - varmod-order-numeric.mk
+  - varmod-order-reverse.exp
+  - varmod-order-reverse.mk
+  - varmod-order-shuffle.exp
+  - varmod-order-shuffle.mk
+  - varmod-order-string.exp
+  - varmod-order-string.mk
+  - varmod-order.exp
+  - varmod-order.mk
+  - varmod-path.exp
+  - varmod-path.mk
+  - varmod-quote-dollar.exp
+  - varmod-quote-dollar.mk
+  - varmod-quote.exp
+  - varmod-quote.mk
+  - varmod-range.exp
+  - varmod-range.mk
+  - varmod-remember.exp
+  - varmod-remember.mk
+  - varmod-root.exp
+  - varmod-root.mk
+  - varmod-select-words.exp
+  - varmod-select-words.mk
+  - varmod-shell.exp
+  - varmod-shell.mk
+  - varmod-subst-regex.exp
+  - varmod-subst-regex.mk
+  - varmod-subst.exp
+  - varmod-subst.mk
+  - varmod-sun-shell.exp
+  - varmod-sun-shell.mk
+  - varmod-sun-shell1.exp
+  - varmod-sun-shell1.mk
+  - varmod-sysv.exp
+  - varmod-sysv.mk
+  - varmod-tail.exp
+  - varmod-tail.mk
+  - varmod-to-abs.exp
+  - varmod-to-abs.mk
+  - varmod-to-lower.exp
+  - varmod-to-lower.mk
+  - varmod-to-many-words.exp
+  - varmod-to-many-words.mk
+  - varmod-to-one-word.exp
+  - varmod-to-one-word.mk
+  - varmod-to-separator.exp
+  - varmod-to-separator.mk
+  - varmod-to-title.exp
+  - varmod-to-title.mk
+  - varmod-to-upper.exp
+  - varmod-to-upper.mk
+  - varmod-undefined.exp
+  - varmod-undefined.mk
+  - varmod-unique.exp
+  - varmod-unique.mk
+  - varmod.exp
+  - varmod.mk
+  - varname-circumflex.exp
+  - varname-circumflex.mk
+  - varname-dollar.exp
+  - varname-dollar.mk
+  - varname-dot-alltargets.exp
+  - varname-dot-alltargets.mk
+  - varname-dot-curdir.exp
+  - varname-dot-curdir.mk
+  - varname-dot-includedfromdir.exp
+  - varname-dot-includedfromdir.mk
+  - varname-dot-includedfromfile.exp
+  - varname-dot-includedfromfile.mk
+  - varname-dot-includes.exp
+  - varname-dot-includes.mk
+  - varname-dot-libs.exp
+  - varname-dot-libs.mk
+  - varname-dot-make-dependfile.exp
+  - varname-dot-make-dependfile.mk
+  - varname-dot-make-expand_variables.exp
+  - varname-dot-make-expand_variables.mk
+  - varname-dot-make-exported.exp
+  - varname-dot-make-exported.mk
+  - varname-dot-make-jobs-prefix.exp
+  - varname-dot-make-jobs-prefix.mk
+  - varname-dot-make-jobs.exp
+  - varname-dot-make-jobs.mk
+  - varname-dot-make-level.exp
+  - varname-dot-make-level.mk
+  - varname-dot-make-makefile_preference.exp
+  - varname-dot-make-makefile_preference.mk
+  - varname-dot-make-makefiles.exp
+  - varname-dot-make-makefiles.mk
+  - varname-dot-make-meta-bailiwick.exp
+  - varname-dot-make-meta-bailiwick.mk
+  - varname-dot-make-meta-created.exp
+  - varname-dot-make-meta-created.mk
+  - varname-dot-make-meta-files.exp
+  - varname-dot-make-meta-files.mk
+  - varname-dot-make-meta-ignore_filter.exp
+  - varname-dot-make-meta-ignore_filter.mk
+  - varname-dot-make-meta-ignore_paths.exp
+  - varname-dot-make-meta-ignore_paths.mk
+  - varname-dot-make-meta-ignore_patterns.exp
+  - varname-dot-make-meta-ignore_patterns.mk
+  - varname-dot-make-meta-prefix.exp
+  - varname-dot-make-meta-prefix.mk
+  - varname-dot-make-mode.exp
+  - varname-dot-make-mode.mk
+  - varname-dot-make-path_filemon.exp
+  - varname-dot-make-path_filemon.mk
+  - varname-dot-make-pid.exp
+  - varname-dot-make-pid.mk
+  - varname-dot-make-ppid.exp
+  - varname-dot-make-ppid.mk
+  - varname-dot-make-save_dollars.exp
+  - varname-dot-make-save_dollars.mk
+  - varname-dot-makeflags.exp
+  - varname-dot-makeflags.mk
+  - varname-dot-makeoverrides.exp
+  - varname-dot-makeoverrides.mk
+  - varname-dot-newline.exp
+  - varname-dot-newline.mk
+  - varname-dot-objdir.exp
+  - varname-dot-objdir.mk
+  - varname-dot-parsedir.exp
+  - varname-dot-parsedir.mk
+  - varname-dot-parsefile.exp
+  - varname-dot-parsefile.mk
+  - varname-dot-path.exp
+  - varname-dot-path.mk
+  - varname-dot-shell.exp
+  - varname-dot-shell.mk
+  - varname-dot-suffixes.exp
+  - varname-dot-suffixes.mk
+  - varname-dot-targets.exp
+  - varname-dot-targets.mk
+  - varname-empty.exp
+  - varname-empty.mk
+  - varname-make.exp
+  - varname-make.mk
+  - varname-make_print_var_on_error-jobs.exp
+  - varname-make_print_var_on_error-jobs.mk
+  - varname-make_print_var_on_error.exp
+  - varname-make_print_var_on_error.mk
+  - varname-make_stack_trace.exp
+  - varname-make_stack_trace.mk
+  - varname-makefile.exp
+  - varname-makefile.mk
+  - varname-makeflags.exp
+  - varname-makeflags.mk
+  - varname-pwd.exp
+  - varname-pwd.mk
+  - varname-vpath.exp
+  - varname-vpath.mk
+  - varname.exp
+  - varname.mk
+  - varparse-dynamic.exp
+  - varparse-dynamic.mk
+  - varparse-errors.exp
+  - varparse-errors.mk
+  - varparse-mod.exp
+  - varparse-mod.mk
+  - varparse-undef-partial.exp
+  - varparse-undef-partial.mk
+- util.c
+- var.c
+- wait.h

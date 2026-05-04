@@ -1,0 +1,50 @@
+# CODEBASE MAP for libcxxrt
+
+Package: libcxxrt
+Source: contrib/libcxxrt
+
+Top-level contents:
+- FREEBSD-upgrade
+- LICENSE
+- abi_namespace.h
+- atomic.h
+- auxhelper.cc
+- cxxabi.h
+- dwarf_eh.h
+- dynamic_cast.cc
+- exception.cc
+- guard.cc
+- libelftc_dem_gnu3.c
+- memory.cc
+- noexception.cc
+- stdexcept.cc
+- stdexcept.h
+- terminate.cc
+- typeinfo.cc
+- typeinfo.h
+- unwind-arm.h
+- unwind-itanium.h
+- unwind.h
+
+Recursive contents:
+- FREEBSD-upgrade
+- LICENSE
+- abi_namespace.h
+- atomic.h
+- auxhelper.cc
+- cxxabi.h
+- dwarf_eh.h
+- dynamic_cast.cc
+- exception.cc
+- guard.cc
+- libelftc_dem_gnu3.c
+- memory.cc
+- noexception.cc
+- stdexcept.cc
+- stdexcept.h
+- terminate.cc
+- typeinfo.cc
+- typeinfo.h
+- unwind-arm.h
+- unwind-itanium.h
+- unwind.h

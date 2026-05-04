@@ -1,0 +1,92 @@
+# CODEBASE MAP for bsddialog
+
+Package: bsddialog
+Source: contrib/bsddialog
+
+Top-level contents:
+- .gitignore
+- CHANGELOG
+- LICENSE
+- Makefile
+- README.md
+- examples_library/
+- examples_utility/
+- lib/
+- screenshot.png
+- utility/
+
+Recursive contents:
+- .gitignore
+- CHANGELOG
+- LICENSE
+- Makefile
+- README.md
+- examples_library/
+  - calendar.c
+  - checklist.c
+  - compile
+  - datebox.c
+  - form.c
+  - gauge.c
+  - infobox.c
+  - menu.c
+  - mixedgauge.c
+  - mixedlist.c
+  - msgbox.c
+  - pause.c
+  - radiolist.c
+  - rangebox.c
+  - slider.c
+  - textbox.c
+  - theme.c
+  - timebox.c
+  - yesno.c
+- examples_utility/
+  - calendar.sh
+  - checklist.sh
+  - datebox.sh
+  - form.sh
+  - gauge.sh
+  - infobox.sh
+  - inputbox.sh
+  - menu.sh
+  - mixedform.sh
+  - mixedgauge.sh
+  - msgbox.sh
+  - passwordbox.sh
+  - passwordform.sh
+  - pause.sh
+  - radiolist.sh
+  - rangebox.sh
+  - slider.sh
+  - timebox.sh
+  - yesno.sh
+- lib/
+  - GNUmakefile
+  - Makefile
+  - barbox.c
+  - bsddialog.3
+  - bsddialog.h
+  - bsddialog_progressview.h
+  - bsddialog_theme.h
+  - datebox.c
+  - formbox.c
+  - lib_util.c
+  - lib_util.h
+  - libbsddialog.c
+  - menubox.c
+  - messagebox.c
+  - slider.c
+  - textbox.c
+  - theme.c
+  - timebox.c
+- screenshot.png
+- utility/
+  - GNUmakefile
+  - Makefile
+  - bsddialog.1
+  - bsddialog.c
+  - util.h
+  - util_builders.c
+  - util_cli.c
+  - util_theme.c

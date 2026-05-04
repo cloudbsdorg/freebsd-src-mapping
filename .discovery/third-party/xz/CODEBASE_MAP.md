@@ -1,0 +1,255 @@
+# CODEBASE MAP for xz
+
+Package: xz
+Source: contrib/xz
+
+Top-level contents:
+- AUTHORS
+- COPYING
+- COPYING.0BSD
+- ChangeLog
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- README
+- THANKS
+- TODO
+- doxygen/
+- src/
+
+Recursive contents:
+- AUTHORS
+- COPYING
+- COPYING.0BSD
+- ChangeLog
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- README
+- THANKS
+- TODO
+- doxygen/
+  - Doxyfile
+  - update-doxygen
+- src/
+  - common/
+    - my_landlock.h
+    - mythread.h
+    - sysdefs.h
+    - tuklib_common.h
+    - tuklib_config.h
+    - tuklib_cpucores.c
+    - tuklib_cpucores.h
+    - tuklib_exit.c
+    - tuklib_exit.h
+    - tuklib_gettext.h
+    - tuklib_integer.h
+    - tuklib_mbstr.h
+    - tuklib_mbstr_fw.c
+    - tuklib_mbstr_nonprint.c
+    - tuklib_mbstr_nonprint.h
+    - tuklib_mbstr_width.c
+    - tuklib_mbstr_wrap.c
+    - tuklib_mbstr_wrap.h
+    - tuklib_open_stdxxx.c
+    - tuklib_open_stdxxx.h
+    - tuklib_physmem.c
+    - tuklib_physmem.h
+    - tuklib_progname.c
+    - tuklib_progname.h
+  - liblzma/
+    - api/
+      - lzma/
+        - base.h
+        - bcj.h
+        - block.h
+        - check.h
+        - container.h
+        - delta.h
+        - filter.h
+        - hardware.h
+        - index.h
+        - index_hash.h
+        - lzma12.h
+        - stream_flags.h
+        - version.h
+        - vli.h
+      - lzma.h
+    - check/
+      - check.c
+      - check.h
+      - crc32_arm64.h
+      - crc32_fast.c
+      - crc32_loongarch.h
+      - crc32_small.c
+      - crc32_table_be.h
+      - crc32_table_le.h
+      - crc32_tablegen.c
+      - crc32_x86.S
+      - crc64_fast.c
+      - crc64_small.c
+      - crc64_table_be.h
+      - crc64_table_le.h
+      - crc64_tablegen.c
+      - crc64_x86.S
+      - crc_clmul_consts_gen.c
+      - crc_common.h
+      - crc_x86_clmul.h
+    - common/
+      - alone_decoder.c
+      - alone_decoder.h
+      - alone_encoder.c
+      - auto_decoder.c
+      - block_buffer_decoder.c
+      - block_buffer_encoder.c
+      - block_buffer_encoder.h
+      - block_decoder.c
+      - block_decoder.h
+      - block_encoder.c
+      - block_encoder.h
+      - block_header_decoder.c
+      - block_header_encoder.c
+      - block_util.c
+      - common.c
+      - common.h
+      - easy_buffer_encoder.c
+      - easy_decoder_memusage.c
+      - easy_encoder.c
+      - easy_encoder_memusage.c
+      - easy_preset.c
+      - easy_preset.h
+      - file_info.c
+      - filter_buffer_decoder.c
+      - filter_buffer_encoder.c
+      - filter_common.c
+      - filter_common.h
+      - filter_decoder.c
+      - filter_decoder.h
+      - filter_encoder.c
+      - filter_encoder.h
+      - filter_flags_decoder.c
+      - filter_flags_encoder.c
+      - hardware_cputhreads.c
+      - hardware_physmem.c
+      - index.c
+      - index.h
+      - index_decoder.c
+      - index_decoder.h
+      - index_encoder.c
+      - index_encoder.h
+      - index_hash.c
+      - lzip_decoder.c
+      - lzip_decoder.h
+      - memcmplen.h
+      - microlzma_decoder.c
+      - microlzma_encoder.c
+      - outqueue.c
+      - outqueue.h
+      - stream_buffer_decoder.c
+      - stream_buffer_encoder.c
+      - stream_decoder.c
+      - stream_decoder.h
+      - stream_decoder_mt.c
+      - stream_encoder.c
+      - stream_encoder_mt.c
+      - stream_flags_common.c
+      - stream_flags_common.h
+      - stream_flags_decoder.c
+      - stream_flags_encoder.c
+      - string_conversion.c
+      - vli_decoder.c
+      - vli_encoder.c
+      - vli_size.c
+    - delta/
+      - delta_common.c
+      - delta_common.h
+      - delta_decoder.c
+      - delta_decoder.h
+      - delta_encoder.c
+      - delta_encoder.h
+      - delta_private.h
+    - liblzma.pc.in
+    - liblzma_generic.map
+    - liblzma_linux.map
+    - lz/
+      - lz_decoder.c
+      - lz_decoder.h
+      - lz_encoder.c
+      - lz_encoder.h
+      - lz_encoder_hash.h
+      - lz_encoder_hash_table.h
+      - lz_encoder_mf.c
+    - lzma/
+      - fastpos.h
+      - fastpos_table.c
+      - fastpos_tablegen.c
+      - lzma2_decoder.c
+      - lzma2_decoder.h
+      - lzma2_encoder.c
+      - lzma2_encoder.h
+      - lzma_common.h
+      - lzma_decoder.c
+      - lzma_decoder.h
+      - lzma_encoder.c
+      - lzma_encoder.h
+      - lzma_encoder_optimum_fast.c
+      - lzma_encoder_optimum_normal.c
+      - lzma_encoder_presets.c
+      - lzma_encoder_private.h
+    - rangecoder/
+      - price.h
+      - price_table.c
+      - price_tablegen.c
+      - range_common.h
+      - range_decoder.h
+      - range_encoder.h
+    - simple/
+      - arm.c
+      - arm64.c
+      - armthumb.c
+      - ia64.c
+      - powerpc.c
+      - riscv.c
+      - simple_coder.c
+      - simple_coder.h
+      - simple_decoder.c
+      - simple_decoder.h
+      - simple_encoder.c
+      - simple_encoder.h
+      - simple_private.h
+      - sparc.c
+      - x86.c
+    - validate_map.sh
+  - lzmainfo/
+    - lzmainfo.1
+    - lzmainfo.c
+  - xz/
+    - args.c
+    - args.h
+    - coder.c
+    - coder.h
+    - file_io.c
+    - file_io.h
+    - hardware.c
+    - hardware.h
+    - list.c
+    - list.h
+    - main.c
+    - main.h
+    - message.c
+    - message.h
+    - mytime.c
+    - mytime.h
+    - options.c
+    - options.h
+    - private.h
+    - sandbox.c
+    - sandbox.h
+    - signals.c
+    - signals.h
+    - suffix.c
+    - suffix.h
+    - util.c
+    - util.h
+    - xz.1
+  - xzdec/
+    - xzdec.1
+    - xzdec.c

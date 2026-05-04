@@ -1,0 +1,238 @@
+# CODEBASE MAP for libcbor
+
+Package: libcbor
+Source: contrib/libcbor
+
+Top-level contents:
+- .circleci/
+- .cirrus.yml
+- .clang-format
+- .github/
+- .gitignore
+- .readthedocs.yaml
+- .vscode/
+- BUILD
+- CHANGELOG.md
+- CMakeLists.txt
+- CMakeModules/
+- CONTRIBUTING.md
+- Doxyfile
+- LICENSE.md
+- MODULE.bazel
+- README.md
+- clang-format.sh
+- codecov.yml
+- doc/
+- examples/
+- misc/
+- oss-fuzz/
+- release.sh
+- src/
+- test/
+
+Recursive contents:
+- .circleci/
+  - config.yml
+- .cirrus.yml
+- .clang-format
+- .github/
+  - ISSUE_TEMPLATE/
+    - bug_report.md
+  - PULL_REQUEST_TEMPLATE
+  - workflows/
+    - fuzz-pr.yml
+    - fuzz.yml
+- .gitignore
+- .readthedocs.yaml
+- .vscode/
+  - settings.json
+- BUILD
+- CHANGELOG.md
+- CMakeLists.txt
+- CMakeModules/
+  - FindCJSON.cmake
+  - FindCMocka.cmake
+  - JoinPaths.cmake
+  - LibFindMacros.cmake
+- CONTRIBUTING.md
+- Doxyfile
+- LICENSE.md
+- MODULE.bazel
+- README.md
+- clang-format.sh
+- codecov.yml
+- doc/
+  - Makefile
+  - doxy_frontpage.md
+  - make.bat
+  - source/
+    - api/
+      - decoding.rst
+      - encoding.rst
+      - item_reference_counting.rst
+      - item_types.rst
+      - streaming_decoding.rst
+      - streaming_encoding.rst
+      - type_0_1_integers.rst
+      - type_2_byte_strings.rst
+      - type_3_strings.rst
+      - type_4_arrays.rst
+      - type_5_maps.rst
+      - type_6_tags.rst
+      - type_7_floats_ctrls.rst
+    - api.rst
+    - changelog.rst
+    - conf.py
+    - development.rst
+    - getting_started.rst
+    - img/
+      - win_1.png
+      - win_2.png
+      - win_3.png
+      - win_4.png
+      - win_5.png
+      - win_6.png
+    - index.rst
+    - internal.rst
+    - requirements.in
+    - requirements.txt
+    - standard_conformance.rst
+    - tests.rst
+    - tutorial.rst
+- examples/
+  - CMakeLists.txt
+  - bazel/
+    - MODULE.bazel
+    - README.md
+    - src/
+      - BUILD
+      - hello.cc
+      - hello.h
+      - hello_test.cc
+      - main.cc
+    - third_party/
+      - BUILD
+      - libcbor/
+        - BUILD
+        - cbor/
+          - cbor_export.h
+          - configuration.h
+  - cbor2cjson.c
+  - cbor_sequence.c
+  - cjson2cbor.c
+  - crash_course.c
+  - create_items.c
+  - data/
+    - all_types.cbor
+    - floats.cbor
+    - indef_string.cbor
+    - integer.cbor
+    - json_example.json
+    - map.cbor
+    - nested_array.cbor
+    - tagged_date.cbor
+  - hello.c
+  - readfile.c
+  - sort.c
+  - streaming_array.c
+  - streaming_parser.c
+- misc/
+  - asan_suppressions.osx.supp
+  - bytes.rb
+  - file_to_bytes.rb
+  - hooks/
+    - pre-commit
+  - repeat.rb
+  - seq.rb
+  - update_version.py
+- oss-fuzz/
+  - build.sh
+  - cbor_load_fuzzer.cc
+- release.sh
+- src/
+  - CMakeLists.txt
+  - allocators.c
+  - cbor/
+    - arrays.c
+    - arrays.h
+    - bytestrings.c
+    - bytestrings.h
+    - callbacks.c
+    - callbacks.h
+    - common.c
+    - common.h
+    - configuration.h.in
+    - data.h
+    - encoding.c
+    - encoding.h
+    - floats_ctrls.c
+    - floats_ctrls.h
+    - internal/
+      - builder_callbacks.c
+      - builder_callbacks.h
+      - encoders.c
+      - encoders.h
+      - loaders.c
+      - loaders.h
+      - memory_utils.c
+      - memory_utils.h
+      - stack.c
+      - stack.h
+      - unicode.c
+      - unicode.h
+    - ints.c
+    - ints.h
+    - maps.c
+    - maps.h
+    - serialization.c
+    - serialization.h
+    - streaming.c
+    - streaming.h
+    - strings.c
+    - strings.h
+    - tags.c
+    - tags.h
+  - cbor.c
+  - cbor.h
+  - libcbor.pc.in
+  - libcborConfig.cmake.in
+- test/
+  - CMakeLists.txt
+  - array_encoders_test.c
+  - array_test.c
+  - assertions.c
+  - assertions.h
+  - bad_inputs_test.c
+  - bytestring_encoders_test.c
+  - bytestring_test.c
+  - callbacks_test.c
+  - cbor_serialize_test.c
+  - cbor_stream_decode_test.c
+  - copy_test.c
+  - cpp_linkage_test.cpp
+  - data/
+    - callbacks.cbor
+    - callbacks.diag
+    - pretty.cbor
+    - pretty.diag
+  - float_ctrl_encoders_test.c
+  - float_ctrl_test.c
+  - fuzz_test.c
+  - map_encoders_test.c
+  - map_test.c
+  - memory_utils_test.c
+  - negint_encoders_test.c
+  - negint_test.c
+  - pretty_printer_test.c
+  - stack_over_limit_test.c
+  - stream_expectations.c
+  - stream_expectations.h
+  - string_encoders_test.c
+  - string_test.c
+  - tag_encoders_test.c
+  - tag_test.c
+  - test_allocator.c
+  - test_allocator.h
+  - uint_encoders_test.c
+  - uint_test.c
+  - unicode_test.c

@@ -1,0 +1,52 @@
+# CODEBASE MAP for terminus
+
+Package: terminus
+Source: contrib/terminus
+
+Top-level contents:
+- AUTHORS
+- OFL.TXT
+- ter-u12b.bdf
+- ter-u12n.bdf
+- ter-u14b.bdf
+- ter-u14n.bdf
+- ter-u14v.bdf
+- ter-u16b.bdf
+- ter-u16n.bdf
+- ter-u16v.bdf
+- ter-u18b.bdf
+- ter-u18n.bdf
+- ter-u20b.bdf
+- ter-u20n.bdf
+- ter-u22b.bdf
+- ter-u22n.bdf
+- ter-u24b.bdf
+- ter-u24n.bdf
+- ter-u28b.bdf
+- ter-u28n.bdf
+- ter-u32b.bdf
+- ter-u32n.bdf
+
+Recursive contents:
+- AUTHORS
+- OFL.TXT
+- ter-u12b.bdf
+- ter-u12n.bdf
+- ter-u14b.bdf
+- ter-u14n.bdf
+- ter-u14v.bdf
+- ter-u16b.bdf
+- ter-u16n.bdf
+- ter-u16v.bdf
+- ter-u18b.bdf
+- ter-u18n.bdf
+- ter-u20b.bdf
+- ter-u20n.bdf
+- ter-u22b.bdf
+- ter-u22n.bdf
+- ter-u24b.bdf
+- ter-u24n.bdf
+- ter-u28b.bdf
+- ter-u28n.bdf
+- ter-u32b.bdf
+- ter-u32n.bdf

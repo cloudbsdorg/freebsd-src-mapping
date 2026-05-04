@@ -1,0 +1,187 @@
+# CODEBASE MAP for atf
+
+Package: atf
+Source: contrib/atf
+
+Top-level contents:
+- .cirrus.yml
+- .gitignore
+- .travis.yml
+- AUTHORS
+- COPYING
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- Kyuafile
+- NEWS
+- README
+- README.md
+- atf-c/
+- atf-c++/
+- atf-c++.hpp
+- atf-c.h
+- atf-sh/
+- config.h
+- doc/
+- test-programs/
+
+Recursive contents:
+- .cirrus.yml
+- .gitignore
+- .travis.yml
+- AUTHORS
+- COPYING
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- Kyuafile
+- NEWS
+- README
+- README.md
+- atf-c/
+  - .gitignore
+  - Kyuafile
+  - atf-c.3
+  - atf_c_test.c
+  - build.c
+  - build.h
+  - build_test.c
+  - check.c
+  - check.h
+  - check_test.c
+  - defs.h
+  - defs.h.in
+  - detail/
+    - Kyuafile
+    - dynstr.c
+    - dynstr.h
+    - dynstr_test.c
+    - env.c
+    - env.h
+    - env_test.c
+    - fs.c
+    - fs.h
+    - fs_test.c
+    - list.c
+    - list.h
+    - list_test.c
+    - map.c
+    - map.h
+    - map_test.c
+    - process.c
+    - process.h
+    - process_helpers.c
+    - process_test.c
+    - sanity.c
+    - sanity.h
+    - sanity_test.c
+    - test_helpers.c
+    - test_helpers.h
+    - text.c
+    - text.h
+    - text_test.c
+    - tp_main.c
+    - user.c
+    - user.h
+    - user_test.c
+    - version_helper.c
+  - error.c
+  - error.h
+  - error_fwd.h
+  - error_test.c
+  - h_build.h
+  - macros.h
+  - macros_h_test.c
+  - macros_test.c
+  - pkg_config_test.sh
+  - tc.c
+  - tc.h
+  - tc_test.c
+  - tp.c
+  - tp.h
+  - tp_test.c
+  - unused_test.c
+  - utils.c
+  - utils.h
+  - utils_test.c
+- atf-c++/
+  - Kyuafile
+  - atf-c++.3
+  - atf_c++_test.cpp
+  - build.cpp
+  - build.hpp
+  - build_test.cpp
+  - check.cpp
+  - check.hpp
+  - check_test.cpp
+  - detail/
+    - Kyuafile
+    - application.cpp
+    - application.hpp
+    - application_test.cpp
+    - auto_array.hpp
+    - auto_array_test.cpp
+    - env.cpp
+    - env.hpp
+    - env_test.cpp
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - fs.cpp
+    - fs.hpp
+    - fs_test.cpp
+    - process.cpp
+    - process.hpp
+    - process_test.cpp
+    - sanity.hpp
+    - test_helpers.cpp
+    - test_helpers.hpp
+    - text.cpp
+    - text.hpp
+    - text_test.cpp
+    - version_helper.cpp
+  - macros.hpp
+  - macros_hpp_test.cpp
+  - macros_test.cpp
+  - pkg_config_test.sh
+  - tests.cpp
+  - tests.hpp
+  - tests_test.cpp
+  - unused_test.cpp
+  - utils.cpp
+  - utils.hpp
+  - utils_test.cpp
+- atf-c++.hpp
+- atf-c.h
+- atf-sh/
+  - .gitignore
+  - Kyuafile
+  - atf-check.1
+  - atf-check.cpp
+  - atf-check_test.sh
+  - atf-sh.1
+  - atf-sh.3
+  - atf-sh.cpp
+  - atf_check_test.sh
+  - config_test.sh
+  - integration_test.sh
+  - libatf-sh.subr
+  - misc_helpers.sh
+  - normalize_test.sh
+  - tc_test.sh
+  - tp_test.sh
+- config.h
+- doc/
+  - .gitignore
+  - atf-test-case.4
+  - atf-test-program.1
+  - atf.7.in
+- test-programs/
+  - Kyuafile
+  - c_helpers.c
+  - common.sh
+  - config_test.sh
+  - cpp_helpers.cpp
+  - expect_test.sh
+  - meta_data_test.sh
+  - result_test.sh
+  - sh_helpers.sh
+  - srcdir_test.sh

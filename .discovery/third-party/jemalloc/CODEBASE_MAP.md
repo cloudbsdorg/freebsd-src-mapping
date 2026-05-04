@@ -1,0 +1,286 @@
+# CODEBASE MAP for jemalloc
+
+Package: jemalloc
+Source: contrib/jemalloc
+
+Top-level contents:
+- COPYING
+- ChangeLog
+- FREEBSD-Xlist
+- FREEBSD-diffs
+- FREEBSD-upgrade
+- INSTALL.md
+- Makefile.in
+- README
+- TUNING.md
+- VERSION
+- autogen.sh
+- bin/
+- build-aux/
+- config.stamp.in
+- configure.ac
+- doc/
+- doc_internal/
+- include/
+- jemalloc.pc.in
+- m4/
+- run_tests.sh
+- scripts/
+- src/
+
+Recursive contents:
+- COPYING
+- ChangeLog
+- FREEBSD-Xlist
+- FREEBSD-diffs
+- FREEBSD-upgrade
+- INSTALL.md
+- Makefile.in
+- README
+- TUNING.md
+- VERSION
+- autogen.sh
+- bin/
+  - jemalloc-config.in
+  - jemalloc.sh.in
+  - jeprof.in
+- build-aux/
+  - config.guess
+  - config.sub
+  - install-sh
+- config.stamp.in
+- configure.ac
+- doc/
+  - html.xsl.in
+  - jemalloc.xml.in
+  - manpages.xsl.in
+  - stylesheet.xsl
+- doc_internal/
+  - PROFILING_INTERNALS.md
+  - jemalloc.svg
+- include/
+  - jemalloc/
+    - internal/
+      - activity_callback.h
+      - arena_externs.h
+      - arena_inlines_a.h
+      - arena_inlines_b.h
+      - arena_stats.h
+      - arena_structs.h
+      - arena_types.h
+      - assert.h
+      - atomic.h
+      - atomic_c11.h
+      - atomic_gcc_atomic.h
+      - atomic_gcc_sync.h
+      - atomic_msvc.h
+      - background_thread_externs.h
+      - background_thread_inlines.h
+      - background_thread_structs.h
+      - base.h
+      - bin.h
+      - bin_info.h
+      - bin_stats.h
+      - bin_types.h
+      - bit_util.h
+      - bitmap.h
+      - buf_writer.h
+      - cache_bin.h
+      - ckh.h
+      - counter.h
+      - ctl.h
+      - decay.h
+      - div.h
+      - ecache.h
+      - edata.h
+      - edata_cache.h
+      - ehooks.h
+      - emap.h
+      - emitter.h
+      - eset.h
+      - exp_grow.h
+      - extent.h
+      - extent_dss.h
+      - extent_mmap.h
+      - fb.h
+      - fxp.h
+      - hash.h
+      - hook.h
+      - hpa.h
+      - hpa_hooks.h
+      - hpa_opts.h
+      - hpdata.h
+      - inspect.h
+      - jemalloc_internal_decls.h
+      - jemalloc_internal_defs.h.in
+      - jemalloc_internal_externs.h
+      - jemalloc_internal_includes.h
+      - jemalloc_internal_inlines_a.h
+      - jemalloc_internal_inlines_b.h
+      - jemalloc_internal_inlines_c.h
+      - jemalloc_internal_macros.h
+      - jemalloc_internal_types.h
+      - jemalloc_preamble.h.in
+      - large_externs.h
+      - lockedint.h
+      - log.h
+      - malloc_io.h
+      - mpsc_queue.h
+      - mutex.h
+      - mutex_prof.h
+      - nstime.h
+      - pa.h
+      - pac.h
+      - pages.h
+      - pai.h
+      - peak.h
+      - peak_event.h
+      - ph.h
+      - private_namespace.sh
+      - private_symbols.sh
+      - prng.h
+      - prof_data.h
+      - prof_externs.h
+      - prof_hook.h
+      - prof_inlines.h
+      - prof_log.h
+      - prof_recent.h
+      - prof_stats.h
+      - prof_structs.h
+      - prof_sys.h
+      - prof_types.h
+      - psset.h
+      - public_namespace.sh
+      - public_unnamespace.sh
+      - ql.h
+      - qr.h
+      - quantum.h
+      - rb.h
+      - rtree.h
+      - rtree_tsd.h
+      - safety_check.h
+      - san.h
+      - san_bump.h
+      - sc.h
+      - sec.h
+      - sec_opts.h
+      - seq.h
+      - slab_data.h
+      - smoothstep.h
+      - smoothstep.sh
+      - spin.h
+      - stats.h
+      - sz.h
+      - tcache_externs.h
+      - tcache_inlines.h
+      - tcache_structs.h
+      - tcache_types.h
+      - test_hooks.h
+      - thread_event.h
+      - ticker.h
+      - tsd.h
+      - tsd_generic.h
+      - tsd_malloc_thread_cleanup.h
+      - tsd_tls.h
+      - tsd_types.h
+      - tsd_win.h
+      - typed_list.h
+      - util.h
+      - witness.h
+    - jemalloc.sh
+    - jemalloc_defs.h.in
+    - jemalloc_macros.h.in
+    - jemalloc_mangle.sh
+    - jemalloc_protos.h.in
+    - jemalloc_rename.sh
+    - jemalloc_typedefs.h.in
+  - msvc_compat/
+    - C99/
+      - stdbool.h
+      - stdint.h
+    - strings.h
+    - windows_extra.h
+- jemalloc.pc.in
+- m4/
+  - ax_cxx_compile_stdcxx.m4
+- run_tests.sh
+- scripts/
+  - check-formatting.sh
+  - freebsd/
+    - before_install.sh
+    - before_script.sh
+    - script.sh
+  - gen_run_tests.py
+  - gen_travis.py
+  - linux/
+    - before_install.sh
+  - windows/
+    - before_install.sh
+    - before_script.sh
+    - script.sh
+- src/
+  - arena.c
+  - background_thread.c
+  - base.c
+  - bin.c
+  - bin_info.c
+  - bitmap.c
+  - buf_writer.c
+  - cache_bin.c
+  - ckh.c
+  - counter.c
+  - ctl.c
+  - decay.c
+  - div.c
+  - ecache.c
+  - edata.c
+  - edata_cache.c
+  - ehooks.c
+  - emap.c
+  - eset.c
+  - exp_grow.c
+  - extent.c
+  - extent_dss.c
+  - extent_mmap.c
+  - fxp.c
+  - hook.c
+  - hpa.c
+  - hpa_hooks.c
+  - hpdata.c
+  - inspect.c
+  - jemalloc.c
+  - jemalloc_cpp.cpp
+  - large.c
+  - log.c
+  - malloc_io.c
+  - mutex.c
+  - nstime.c
+  - pa.c
+  - pa_extra.c
+  - pac.c
+  - pages.c
+  - pai.c
+  - peak_event.c
+  - prof.c
+  - prof_data.c
+  - prof_log.c
+  - prof_recent.c
+  - prof_stats.c
+  - prof_sys.c
+  - psset.c
+  - rtree.c
+  - safety_check.c
+  - san.c
+  - san_bump.c
+  - sc.c
+  - sec.c
+  - stats.c
+  - sz.c
+  - tcache.c
+  - test_hooks.c
+  - thread_event.c
+  - ticker.c
+  - ticker.py
+  - tsd.c
+  - witness.c
+  - zone.c

@@ -1,0 +1,337 @@
+# CODEBASE MAP for libevent
+
+Package: libevent
+Source: contrib/libevent
+
+Top-level contents:
+- CMakeLists.txt
+- ChangeLog
+- ChangeLog-1.4
+- ChangeLog-2.0
+- Doxyfile
+- LICENSE
+- Makefile.am
+- Makefile.in
+- Makefile.nmake
+- README.md
+- WIN32-Code/
+- aclocal.m4
+- arc4random.c
+- autogen.sh
+- buffer.c
+- buffer_iocp.c
+- bufferevent-internal.h
+- bufferevent.c
+- bufferevent_async.c
+- bufferevent_filter.c
+- bufferevent_openssl.c
+- bufferevent_pair.c
+- bufferevent_ratelim.c
+- bufferevent_sock.c
+- build-aux/
+- changelist-internal.h
+- cmake/
+- compat/
+- config.h.in
+- configure
+- configure.ac
+- defer-internal.h
+- devpoll.c
+- doxygen.am
+- epoll.c
+- epoll_sub.c
+- epolltable-internal.h
+- evbuffer-internal.h
+- evconfig-private.h
+- evconfig-private.h.cmake
+- evconfig-private.h.in
+- evdns.c
+- event-config.h.cmake
+- event-internal.h
+- event.c
+- event_iocp.c
+- event_rpcgen.py
+- event_tagging.c
+- evmap-internal.h
+- evmap.c
+- evport.c
+- evrpc-internal.h
+- evrpc.c
+- evsignal-internal.h
+- evthread-internal.h
+- evthread.c
+- evthread_pthread.c
+- evthread_win32.c
+- evutil.c
+- evutil_rand.c
+- evutil_time.c
+- ht-internal.h
+- http-internal.h
+- http.c
+- include/
+- iocp-internal.h
+- ipv6-internal.h
+- kqueue-internal.h
+- kqueue.c
+- libevent.pc.in
+- libevent_core.pc.in
+- libevent_extra.pc.in
+- libevent_openssl.pc.in
+- libevent_pthreads.pc.in
+- listener.c
+- log-internal.h
+- log.c
+- m4/
+- make-event-config.sed
+- minheap-internal.h
+- mm-internal.h
+- openssl-compat.h
+- poll.c
+- ratelim-internal.h
+- sample/
+- select.c
+- signal.c
+- strlcpy-internal.h
+- strlcpy.c
+- test/
+- time-internal.h
+- util-internal.h
+- whatsnew-2.0.txt
+- whatsnew-2.1.txt
+- win32select.c
+
+Recursive contents:
+- CMakeLists.txt
+- ChangeLog
+- ChangeLog-1.4
+- ChangeLog-2.0
+- Doxyfile
+- LICENSE
+- Makefile.am
+- Makefile.in
+- Makefile.nmake
+- README.md
+- WIN32-Code/
+  - getopt.c
+  - getopt.h
+  - getopt_long.c
+  - nmake/
+    - evconfig-private.h
+    - event2/
+      - event-config.h
+  - tree.h
+- aclocal.m4
+- arc4random.c
+- autogen.sh
+- buffer.c
+- buffer_iocp.c
+- bufferevent-internal.h
+- bufferevent.c
+- bufferevent_async.c
+- bufferevent_filter.c
+- bufferevent_openssl.c
+- bufferevent_pair.c
+- bufferevent_ratelim.c
+- bufferevent_sock.c
+- build-aux/
+  - compile
+  - config.guess
+  - config.sub
+  - depcomp
+  - install-sh
+  - ltmain.sh
+  - missing
+  - test-driver
+- changelist-internal.h
+- cmake/
+  - AddCompilerFlags.cmake
+  - AddEventLibrary.cmake
+  - COPYING-CMAKE-SCRIPTS
+  - CheckConstExists.cmake
+  - CheckFileOffsetBits.c
+  - CheckFileOffsetBits.cmake
+  - CheckFunctionKeywords.cmake
+  - CheckPrototypeDefinition.c.in
+  - CheckPrototypeDefinition.cmake
+  - CheckWorkingKqueue.cmake
+  - CodeCoverage.cmake
+  - Copyright.txt
+  - LibeventConfig.cmake.in
+  - LibeventConfigVersion.cmake.in
+  - Macros.cmake
+  - Uninstall.cmake.in
+  - UseDoxygen.cmake
+  - VersionViaGit.cmake
+- compat/
+  - sys/
+    - queue.h
+- config.h.in
+- configure
+- configure.ac
+- defer-internal.h
+- devpoll.c
+- doxygen.am
+- epoll.c
+- epoll_sub.c
+- epolltable-internal.h
+- evbuffer-internal.h
+- evconfig-private.h
+- evconfig-private.h.cmake
+- evconfig-private.h.in
+- evdns.c
+- event-config.h.cmake
+- event-internal.h
+- event.c
+- event_iocp.c
+- event_rpcgen.py
+- event_tagging.c
+- evmap-internal.h
+- evmap.c
+- evport.c
+- evrpc-internal.h
+- evrpc.c
+- evsignal-internal.h
+- evthread-internal.h
+- evthread.c
+- evthread_pthread.c
+- evthread_win32.c
+- evutil.c
+- evutil_rand.c
+- evutil_time.c
+- ht-internal.h
+- http-internal.h
+- http.c
+- include/
+  - evdns.h
+  - event.h
+  - event2/
+    - buffer.h
+    - buffer_compat.h
+    - bufferevent.h
+    - bufferevent_compat.h
+    - bufferevent_ssl.h
+    - bufferevent_struct.h
+    - dns.h
+    - dns_compat.h
+    - dns_struct.h
+    - event.h
+    - event_compat.h
+    - event_struct.h
+    - http.h
+    - http_compat.h
+    - http_struct.h
+    - keyvalq_struct.h
+    - listener.h
+    - rpc.h
+    - rpc_compat.h
+    - rpc_struct.h
+    - tag.h
+    - tag_compat.h
+    - thread.h
+    - util.h
+    - visibility.h
+  - evhttp.h
+  - evrpc.h
+  - evutil.h
+  - include.am
+- iocp-internal.h
+- ipv6-internal.h
+- kqueue-internal.h
+- kqueue.c
+- libevent.pc.in
+- libevent_core.pc.in
+- libevent_extra.pc.in
+- libevent_openssl.pc.in
+- libevent_pthreads.pc.in
+- listener.c
+- log-internal.h
+- log.c
+- m4/
+  - ac_backport_259_ssizet.m4
+  - acx_pthread.m4
+  - ax_check_funcs_ex.m4
+  - ax_prog_doxygen.m4
+  - libevent_openssl.m4
+  - libtool.m4
+  - ltoptions.m4
+  - ltsugar.m4
+  - ltversion.m4
+  - lt~obsolete.m4
+  - ntp_pkg_config.m4
+- make-event-config.sed
+- minheap-internal.h
+- mm-internal.h
+- openssl-compat.h
+- poll.c
+- ratelim-internal.h
+- sample/
+  - dns-example.c
+  - event-read-fifo.c
+  - hello-world.c
+  - hostcheck.c
+  - hostcheck.h
+  - http-connect.c
+  - http-server.c
+  - https-client.c
+  - include.am
+  - le-proxy.c
+  - openssl_hostname_validation.c
+  - openssl_hostname_validation.h
+  - signal-test.c
+  - time-test.c
+- select.c
+- signal.c
+- strlcpy-internal.h
+- strlcpy.c
+- test/
+  - Makefile.nmake
+  - bench.c
+  - bench_cascade.c
+  - bench_http.c
+  - bench_httpclient.c
+  - check-dumpevents.py
+  - include.am
+  - print-winsock-errors.c
+  - regress.c
+  - regress.gen.c
+  - regress.gen.h
+  - regress.h
+  - regress.rpc
+  - regress_buffer.c
+  - regress_bufferevent.c
+  - regress_dns.c
+  - regress_et.c
+  - regress_finalize.c
+  - regress_http.c
+  - regress_iocp.c
+  - regress_listener.c
+  - regress_main.c
+  - regress_minheap.c
+  - regress_rpc.c
+  - regress_ssl.c
+  - regress_testutils.c
+  - regress_testutils.h
+  - regress_thread.c
+  - regress_thread.h
+  - regress_util.c
+  - regress_zlib.c
+  - rpcgen_wrapper.sh
+  - test-changelist.c
+  - test-closed.c
+  - test-dumpevents.c
+  - test-eof.c
+  - test-fdleak.c
+  - test-init.c
+  - test-ratelim.c
+  - test-time.c
+  - test-weof.c
+  - test.sh
+  - tinytest.c
+  - tinytest.h
+  - tinytest_local.h
+  - tinytest_macros.h
+- time-internal.h
+- util-internal.h
+- whatsnew-2.0.txt
+- whatsnew-2.1.txt
+- win32select.c

@@ -1,0 +1,52 @@
+# CODEBASE MAP for flex
+
+Package: flex
+Source: contrib/flex
+
+Top-level contents:
+- COPYING
+- ChangeLog
+- NEWS
+- ONEWS
+- README.md
+- src/
+
+Recursive contents:
+- COPYING
+- ChangeLog
+- NEWS
+- ONEWS
+- README.md
+- src/
+  - FlexLexer.h
+  - buf.c
+  - ccl.c
+  - dfa.c
+  - ecs.c
+  - filter.c
+  - flex.skl
+  - flexdef.h
+  - flexint.h
+  - gen.c
+  - libmain.c
+  - libyywrap.c
+  - main.c
+  - misc.c
+  - mkskel.sh
+  - nfa.c
+  - options.c
+  - options.h
+  - parse.y
+  - regex.c
+  - scan.l
+  - scanflags.c
+  - scanopt.c
+  - scanopt.h
+  - sym.c
+  - tables.c
+  - tables.h
+  - tables_shared.c
+  - tables_shared.h
+  - tblcmp.c
+  - version.h
+  - yylex.c

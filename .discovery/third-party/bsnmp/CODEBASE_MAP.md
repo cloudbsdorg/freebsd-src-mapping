@@ -1,0 +1,120 @@
+# CODEBASE MAP for bsnmp
+
+Package: bsnmp
+Source: contrib/bsnmp
+
+Top-level contents:
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- NEWS
+- README
+- TODO
+- VERSION
+- gensnmpdef/
+- gensnmptree/
+- lib/
+- oid-list
+- snmp_mibII/
+- snmp_ntp/
+- snmp_target/
+- snmp_usm/
+- snmp_vacm/
+- snmpd/
+- tests/
+
+Recursive contents:
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- NEWS
+- README
+- TODO
+- VERSION
+- gensnmpdef/
+  - gensnmpdef.1
+  - gensnmpdef.c
+- gensnmptree/
+  - gensnmptree.1
+  - gensnmptree.c
+- lib/
+  - asn1.3
+  - asn1.c
+  - asn1.h
+  - bsnmpagent.3
+  - bsnmpclient.3
+  - bsnmplib.3
+  - snmp.c
+  - snmp.h
+  - snmpagent.c
+  - snmpagent.h
+  - snmpclient.c
+  - snmpclient.h
+  - snmpcrypto.c
+  - snmppriv.h
+  - support.c
+  - support.h
+  - tc.def
+- oid-list
+- snmp_mibII/
+  - BEGEMOT-IP-MIB.txt
+  - BEGEMOT-MIB2-MIB.txt
+  - mibII.c
+  - mibII.h
+  - mibII_begemot.c
+  - mibII_ifmib.c
+  - mibII_ifstack.c
+  - mibII_interfaces.c
+  - mibII_ip.c
+  - mibII_ipaddr.c
+  - mibII_nettomedia.c
+  - mibII_rcvaddr.c
+  - mibII_route.c
+  - mibII_tcp.c
+  - mibII_tree.def
+  - mibII_udp.c
+  - snmp_mibII.3
+  - snmp_mibII.h
+- snmp_ntp/
+  - BEGEMOT-NTP-MIB.txt
+  - NTP-MIB.txt
+  - NTP-PROXY-MIB.txt
+  - ntp_tree.def
+  - snmp_ntp.c
+- snmp_target/
+  - snmp_target.3
+  - target_snmp.c
+  - target_tree.def
+- snmp_usm/
+  - snmp_usm.3
+  - usm_snmp.c
+  - usm_tree.def
+- snmp_vacm/
+  - snmp_vacm.3
+  - vacm_snmp.c
+  - vacm_tree.def
+- snmpd/
+  - BEGEMOT-MIB.txt
+  - BEGEMOT-SNMPD.txt
+  - FOKUS-MIB.txt
+  - action.c
+  - bsnmpd.1
+  - config.c
+  - export.c
+  - main.c
+  - snmpd.config
+  - snmpd.h
+  - snmpd.sh
+  - snmpmod.3
+  - snmpmod.h
+  - trans_inet.c
+  - trans_inet.h
+  - trans_lsock.c
+  - trans_lsock.h
+  - trans_udp.h
+  - trap.c
+  - tree.def
+- tests/
+  - asn1.cc
+  - catch.hpp
+  - constbuf.h
+  - main.cc
+  - snmp_parse_server.cc

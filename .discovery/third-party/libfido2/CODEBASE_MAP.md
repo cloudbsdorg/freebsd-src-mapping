@@ -1,0 +1,295 @@
+# CODEBASE MAP for libfido2
+
+Package: libfido2
+Source: contrib/libfido2
+
+Top-level contents:
+- .actions/
+- .gitattributes
+- .github/
+- .gitignore
+- CMakeLists.txt
+- LICENSE
+- NEWS
+- README.adoc
+- SECURITY.md
+- examples/
+- fuzz/
+- man/
+- openbsd-compat/
+- regress/
+- src/
+- tools/
+- udev/
+- windows/
+
+Recursive contents:
+- .actions/
+  - build-bsd
+  - build-linux-clang
+  - build-linux-gcc
+  - build-linux-i686-w64-mingw32-gcc
+  - build-linux-openssl3-clang
+  - build-linux-openssl3-gcc
+  - build-linux-openssl3-i686-w64-mingw32-gcc
+  - build-osx-clang
+  - fuzz-linux
+  - llvm.gpg
+  - run-shellcheck
+  - setup_clang
+- .gitattributes
+- .github/
+  - ISSUE_TEMPLATE/
+    - bug_report.md
+    - config.yml
+  - workflows/
+    - alpine_builds.yml
+    - bsd_builds.yml
+    - cifuzz_oss.yml
+    - codeql-analysis.yml
+    - cygwin_builds.yml
+    - linux_builds.yml
+    - linux_fuzz.yml
+    - macos_builds.yml
+    - openssl3.yml
+    - shellcheck.yml
+    - windows_builds.yml
+- .gitignore
+- CMakeLists.txt
+- LICENSE
+- NEWS
+- README.adoc
+- SECURITY.md
+- examples/
+  - CMakeLists.txt
+  - README.adoc
+  - assert.c
+  - cred.c
+  - extern.h
+  - info.c
+  - manifest.c
+  - reset.c
+  - retries.c
+  - select.c
+  - setpin.c
+  - util.c
+- fuzz/
+  - CMakeLists.txt
+  - Dockerfile
+  - Makefile
+  - README
+  - build-coverage
+  - clock.c
+  - dummy.h
+  - export.gnu
+  - functions.txt
+  - fuzz_assert.c
+  - fuzz_attobj.c
+  - fuzz_bio.c
+  - fuzz_cred.c
+  - fuzz_credman.c
+  - fuzz_hid.c
+  - fuzz_largeblob.c
+  - fuzz_mgmt.c
+  - fuzz_netlink.c
+  - fuzz_pcsc.c
+  - libfuzzer.c
+  - mutator_aux.c
+  - mutator_aux.h
+  - pcsc.c
+  - preload-fuzz.c
+  - preload-snoop.c
+  - prng.c
+  - report.tgz
+  - summary.txt
+  - udev.c
+  - uniform_random.c
+  - wiredata_fido2.h
+  - wiredata_u2f.h
+  - wrap.c
+  - wrapped.sym
+- man/
+  - CMakeLists.txt
+  - NOTES
+  - check.sh
+  - dyc.css
+  - eddsa_pk_new.3
+  - es256_pk_new.3
+  - es384_pk_new.3
+  - fido2-assert.1
+  - fido2-cred.1
+  - fido2-token.1
+  - fido_assert_allow_cred.3
+  - fido_assert_new.3
+  - fido_assert_set_authdata.3
+  - fido_assert_verify.3
+  - fido_bio_dev_get_info.3
+  - fido_bio_enroll_new.3
+  - fido_bio_info_new.3
+  - fido_bio_template.3
+  - fido_cbor_info_new.3
+  - fido_cred_exclude.3
+  - fido_cred_new.3
+  - fido_cred_set_authdata.3
+  - fido_cred_verify.3
+  - fido_credman_metadata_new.3
+  - fido_dev_enable_entattest.3
+  - fido_dev_get_assert.3
+  - fido_dev_get_touch_begin.3
+  - fido_dev_info_manifest.3
+  - fido_dev_largeblob_get.3
+  - fido_dev_make_cred.3
+  - fido_dev_open.3
+  - fido_dev_set_io_functions.3
+  - fido_dev_set_pin.3
+  - fido_init.3
+  - fido_strerr.3
+  - rs256_pk_new.3
+  - style.css
+- openbsd-compat/
+  - bsd-asprintf.c
+  - bsd-getline.c
+  - bsd-getpagesize.c
+  - clock_gettime.c
+  - endian_win32.c
+  - err.h
+  - explicit_bzero.c
+  - explicit_bzero_win32.c
+  - freezero.c
+  - getopt.h
+  - getopt_long.c
+  - openbsd-compat.h
+  - posix_ioctl_check.c
+  - posix_win.c
+  - posix_win.h
+  - readpassphrase.c
+  - readpassphrase.h
+  - readpassphrase_win32.c
+  - recallocarray.c
+  - strlcat.c
+  - strlcpy.c
+  - strsep.c
+  - time.h
+  - timingsafe_bcmp.c
+  - types.h
+- regress/
+  - CMakeLists.txt
+  - assert.c
+  - compress.c
+  - cred.c
+  - dev.c
+  - eddsa.c
+  - es256.c
+  - es384.c
+  - extern.h
+  - mock.c
+  - rs256.c
+- src/
+  - CMakeLists.txt
+  - aes256.c
+  - assert.c
+  - authkey.c
+  - bio.c
+  - blob.c
+  - blob.h
+  - buf.c
+  - cbor.c
+  - compress.c
+  - config.c
+  - cred.c
+  - credman.c
+  - dev.c
+  - diff_exports.sh
+  - ecdh.c
+  - eddsa.c
+  - err.c
+  - es256.c
+  - es384.c
+  - export.gnu
+  - export.llvm
+  - export.msvc
+  - extern.h
+  - fallthrough.h
+  - fido/
+    - bio.h
+    - config.h
+    - credman.h
+    - eddsa.h
+    - err.h
+    - es256.h
+    - es384.h
+    - param.h
+    - rs256.h
+    - types.h
+  - fido.h
+  - hid.c
+  - hid_freebsd.c
+  - hid_hidapi.c
+  - hid_linux.c
+  - hid_netbsd.c
+  - hid_openbsd.c
+  - hid_osx.c
+  - hid_unix.c
+  - hid_win.c
+  - info.c
+  - io.c
+  - iso7816.c
+  - iso7816.h
+  - largeblob.c
+  - libfido2.pc.in
+  - log.c
+  - netlink.c
+  - netlink.h
+  - nfc.c
+  - nfc_linux.c
+  - packed.h
+  - pcsc.c
+  - pin.c
+  - random.c
+  - reset.c
+  - rs1.c
+  - rs256.c
+  - time.c
+  - touch.c
+  - tpm.c
+  - types.c
+  - u2f.c
+  - util.c
+  - webauthn.h
+  - winhello.c
+- tools/
+  - CMakeLists.txt
+  - assert_get.c
+  - assert_verify.c
+  - base64.c
+  - bio.c
+  - config.c
+  - cred_make.c
+  - cred_verify.c
+  - credman.c
+  - extern.h
+  - fido2-assert.c
+  - fido2-attach.sh
+  - fido2-cred.c
+  - fido2-detach.sh
+  - fido2-token.c
+  - fido2-unprot.sh
+  - include_check.sh
+  - largeblob.c
+  - pin.c
+  - test.sh
+  - token.c
+  - util.c
+- udev/
+  - 70-u2f.rules
+  - CMakeLists.txt
+  - check.sh
+  - fidodevs
+  - genrules.awk
+- windows/
+  - build.ps1
+  - const.ps1
+  - cygwin.gpg
+  - cygwin.ps1
+  - libressl.gpg
+  - release.ps1

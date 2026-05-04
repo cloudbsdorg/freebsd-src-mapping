@@ -1,0 +1,655 @@
+# CODEBASE MAP for ncurses
+
+Package: ncurses
+Source: contrib/ncurses
+
+Top-level contents:
+- ANNOUNCE
+- AUTHORS
+- COPYING
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- INSTALL
+- MANIFEST
+- Makefile.in
+- Makefile.os2
+- NEWS
+- README
+- README.MinGW
+- README.emx
+- TO-DO
+- VERSION
+- aclocal.m4
+- announce.html.in
+- config.guess
+- config.sub
+- configure
+- configure.in
+- dist.mk
+- doc/
+- form/
+- include/
+- install-sh
+- man/
+- menu/
+- misc/
+- mk-0th.awk
+- mk-1st.awk
+- mk-2nd.awk
+- mk-hdr.awk
+- ncurses/
+- panel/
+- progs/
+
+Recursive contents:
+- ANNOUNCE
+- AUTHORS
+- COPYING
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- INSTALL
+- MANIFEST
+- Makefile.in
+- Makefile.os2
+- NEWS
+- README
+- README.MinGW
+- README.emx
+- TO-DO
+- VERSION
+- aclocal.m4
+- announce.html.in
+- config.guess
+- config.sub
+- configure
+- configure.in
+- dist.mk
+- doc/
+  - hackguide.doc
+  - ncurses-intro.doc
+- form/
+  - Makefile.in
+  - READ.ME
+  - f_trace.c
+  - fld_arg.c
+  - fld_attr.c
+  - fld_current.c
+  - fld_def.c
+  - fld_dup.c
+  - fld_ftchoice.c
+  - fld_ftlink.c
+  - fld_info.c
+  - fld_just.c
+  - fld_link.c
+  - fld_max.c
+  - fld_move.c
+  - fld_newftyp.c
+  - fld_opts.c
+  - fld_pad.c
+  - fld_page.c
+  - fld_stat.c
+  - fld_type.c
+  - fld_user.c
+  - form.h
+  - form.priv.h
+  - frm_cursor.c
+  - frm_data.c
+  - frm_def.c
+  - frm_driver.c
+  - frm_hook.c
+  - frm_opts.c
+  - frm_page.c
+  - frm_post.c
+  - frm_req_name.c
+  - frm_scale.c
+  - frm_sub.c
+  - frm_user.c
+  - frm_win.c
+  - fty_alnum.c
+  - fty_alpha.c
+  - fty_enum.c
+  - fty_generic.c
+  - fty_int.c
+  - fty_ipv4.c
+  - fty_num.c
+  - fty_regex.c
+  - headers
+  - llib-lform
+  - llib-lformt
+  - llib-lformtw
+  - llib-lformw
+  - modules
+- include/
+  - Caps
+  - Caps-ncurses
+  - Caps.aix4
+  - Caps.hpux11
+  - Caps.keys
+  - Caps.osf1r5
+  - Caps.uwin
+  - MKhashsize.sh
+  - MKkey_defs.sh
+  - MKncurses_def.sh
+  - MKparametrized.sh
+  - MKterm.h.awk.in
+  - Makefile.in
+  - capdefaults.c
+  - curses.events
+  - curses.h.in
+  - curses.tail
+  - curses.wide
+  - edit_cfg.sh
+  - hashed_db.h
+  - headers
+  - nc_access.h
+  - nc_alloc.h
+  - nc_panel.h
+  - nc_string.h
+  - nc_termios.h
+  - nc_tparm.h
+  - nc_win32.h.in
+  - ncurses_cfg.hin
+  - ncurses_defs
+  - ncurses_dll.h.in
+  - term_entry.h
+  - termcap.h.in
+  - tic.h
+  - unctrl.h.in
+- install-sh
+- man/
+  - MKada_config.in
+  - MKncu_config.in
+  - MKterminfo.sh
+  - Makefile.in
+  - captoinfo.1m
+  - clear.1
+  - curs_add_wch.3x
+  - curs_add_wchstr.3x
+  - curs_addch.3x
+  - curs_addchstr.3x
+  - curs_addstr.3x
+  - curs_addwstr.3x
+  - curs_attr.3x
+  - curs_beep.3x
+  - curs_bkgd.3x
+  - curs_bkgrnd.3x
+  - curs_border.3x
+  - curs_border_set.3x
+  - curs_clear.3x
+  - curs_color.3x
+  - curs_delch.3x
+  - curs_deleteln.3x
+  - curs_extend.3x
+  - curs_get_wch.3x
+  - curs_get_wstr.3x
+  - curs_getcchar.3x
+  - curs_getch.3x
+  - curs_getstr.3x
+  - curs_getyx.3x
+  - curs_in_wch.3x
+  - curs_in_wchstr.3x
+  - curs_inch.3x
+  - curs_inchstr.3x
+  - curs_initscr.3x
+  - curs_inopts.3x
+  - curs_ins_wch.3x
+  - curs_ins_wstr.3x
+  - curs_insch.3x
+  - curs_insstr.3x
+  - curs_instr.3x
+  - curs_inwstr.3x
+  - curs_kernel.3x
+  - curs_legacy.3x
+  - curs_memleaks.3x
+  - curs_mouse.3x
+  - curs_move.3x
+  - curs_opaque.3x
+  - curs_outopts.3x
+  - curs_overlay.3x
+  - curs_pad.3x
+  - curs_print.3x
+  - curs_printw.3x
+  - curs_refresh.3x
+  - curs_scanw.3x
+  - curs_scr_dump.3x
+  - curs_scroll.3x
+  - curs_slk.3x
+  - curs_sp_funcs.3x
+  - curs_termattrs.3x
+  - curs_termcap.3x
+  - curs_terminfo.3x
+  - curs_threads.3x
+  - curs_touch.3x
+  - curs_trace.3x
+  - curs_util.3x
+  - curs_variables.3x
+  - curs_window.3x
+  - default_colors.3x
+  - define_key.3x
+  - form.3x
+  - form_cursor.3x
+  - form_data.3x
+  - form_driver.3x
+  - form_field.3x
+  - form_field_attributes.3x
+  - form_field_buffer.3x
+  - form_field_info.3x
+  - form_field_just.3x
+  - form_field_new.3x
+  - form_field_opts.3x
+  - form_field_userptr.3x
+  - form_field_validation.3x
+  - form_fieldtype.3x
+  - form_hook.3x
+  - form_new.3x
+  - form_new_page.3x
+  - form_opts.3x
+  - form_page.3x
+  - form_post.3x
+  - form_requestname.3x
+  - form_userptr.3x
+  - form_variables.3x
+  - form_win.3x
+  - infocmp.1m
+  - infotocap.1m
+  - key_defined.3x
+  - keybound.3x
+  - keyok.3x
+  - legacy_coding.3x
+  - make_sed.sh
+  - man_db.renames.in
+  - manhtml.aliases
+  - manhtml.externs
+  - manlinks.sed
+  - menu.3x
+  - menu_attributes.3x
+  - menu_cursor.3x
+  - menu_driver.3x
+  - menu_format.3x
+  - menu_hook.3x
+  - menu_items.3x
+  - menu_mark.3x
+  - menu_new.3x
+  - menu_opts.3x
+  - menu_pattern.3x
+  - menu_post.3x
+  - menu_requestname.3x
+  - menu_spacing.3x
+  - menu_userptr.3x
+  - menu_win.3x
+  - mitem_current.3x
+  - mitem_name.3x
+  - mitem_new.3x
+  - mitem_opts.3x
+  - mitem_userptr.3x
+  - mitem_value.3x
+  - mitem_visible.3x
+  - ncurses.3x
+  - new_pair.3x
+  - panel.3x
+  - resizeterm.3x
+  - scr_dump.5
+  - tabs.1
+  - term.5
+  - term.7
+  - term_variables.3x
+  - terminfo.head
+  - terminfo.tail
+  - tic.1m
+  - toe.1m
+  - tput.1
+  - tset.1
+  - user_caps.5
+  - wresize.3x
+- menu/
+  - Makefile.in
+  - READ.ME
+  - eti.h
+  - headers
+  - llib-lmenu
+  - llib-lmenut
+  - llib-lmenutw
+  - llib-lmenuw
+  - m_attribs.c
+  - m_cursor.c
+  - m_driver.c
+  - m_format.c
+  - m_global.c
+  - m_hook.c
+  - m_item_cur.c
+  - m_item_nam.c
+  - m_item_new.c
+  - m_item_opt.c
+  - m_item_top.c
+  - m_item_use.c
+  - m_item_val.c
+  - m_item_vis.c
+  - m_items.c
+  - m_new.c
+  - m_opts.c
+  - m_pad.c
+  - m_pattern.c
+  - m_post.c
+  - m_req_name.c
+  - m_scale.c
+  - m_spacing.c
+  - m_sub.c
+  - m_trace.c
+  - m_userptr.c
+  - m_win.c
+  - menu.h
+  - menu.priv.h
+  - mf_common.h
+  - modules
+- misc/
+  - Makefile.in
+  - chkdef.cmd
+  - cleantic.cmd
+  - cmpdef.cmd
+  - csort
+  - emx.src
+  - form.def
+  - form.ref
+  - gen-pkgconfig.in
+  - gen_edit.sh
+  - magic
+  - makedef.cmd
+  - makellib
+  - menu.def
+  - menu.ref
+  - ncu2openbsd
+  - ncurses-config.in
+  - ncurses.def
+  - ncurses.ref
+  - ncurses.supp
+  - panel.def
+  - panel.ref
+  - run_tic.in
+  - shlib
+  - tabset/
+    - std
+    - stdcrt
+    - vt100
+    - vt300
+  - tdlint
+  - terminfo.src
+- mk-0th.awk
+- mk-1st.awk
+- mk-2nd.awk
+- mk-hdr.awk
+- ncurses/
+  - Makefile.in
+  - README
+  - README.IZ
+  - SigAction.h
+  - base/
+    - MKkeyname.awk
+    - MKlib_gen.sh
+    - MKunctrl.awk
+    - README
+    - define_key.c
+    - key_defined.c
+    - keybound.c
+    - keyok.c
+    - legacy_coding.c
+    - lib_addch.c
+    - lib_addstr.c
+    - lib_beep.c
+    - lib_bkgd.c
+    - lib_box.c
+    - lib_chgat.c
+    - lib_clear.c
+    - lib_clearok.c
+    - lib_clrbot.c
+    - lib_clreol.c
+    - lib_color.c
+    - lib_colorset.c
+    - lib_delch.c
+    - lib_delwin.c
+    - lib_dft_fgbg.c
+    - lib_driver.c
+    - lib_echo.c
+    - lib_endwin.c
+    - lib_erase.c
+    - lib_flash.c
+    - lib_freeall.c
+    - lib_getch.c
+    - lib_getstr.c
+    - lib_hline.c
+    - lib_immedok.c
+    - lib_inchstr.c
+    - lib_initscr.c
+    - lib_insch.c
+    - lib_insdel.c
+    - lib_insnstr.c
+    - lib_instr.c
+    - lib_isendwin.c
+    - lib_leaveok.c
+    - lib_mouse.c
+    - lib_move.c
+    - lib_mvwin.c
+    - lib_newterm.c
+    - lib_newwin.c
+    - lib_nl.c
+    - lib_overlay.c
+    - lib_pad.c
+    - lib_printw.c
+    - lib_redrawln.c
+    - lib_refresh.c
+    - lib_restart.c
+    - lib_scanw.c
+    - lib_screen.c
+    - lib_scroll.c
+    - lib_scrollok.c
+    - lib_scrreg.c
+    - lib_set_term.c
+    - lib_slk.c
+    - lib_slkatr_set.c
+    - lib_slkatrof.c
+    - lib_slkatron.c
+    - lib_slkatrset.c
+    - lib_slkattr.c
+    - lib_slkclear.c
+    - lib_slkcolor.c
+    - lib_slkinit.c
+    - lib_slklab.c
+    - lib_slkrefr.c
+    - lib_slkset.c
+    - lib_slktouch.c
+    - lib_touch.c
+    - lib_ungetch.c
+    - lib_vline.c
+    - lib_wattroff.c
+    - lib_wattron.c
+    - lib_winch.c
+    - lib_window.c
+    - nc_panel.c
+    - new_pair.c
+    - resizeterm.c
+    - safe_sprintf.c
+    - sigaction.c
+    - tries.c
+    - use_window.c
+    - version.c
+    - vsscanf.c
+    - wresize.c
+  - build.priv.h
+  - curses.priv.h
+  - fifo_defs.h
+  - llib-lncurses
+  - llib-lncursest
+  - llib-lncursestw
+  - llib-lncursesw
+  - llib-ltic
+  - llib-ltict
+  - llib-ltictw
+  - llib-lticw
+  - llib-ltinfo
+  - llib-ltinfot
+  - llib-ltinfotw
+  - llib-ltinfow
+  - modules
+  - new_pair.h
+  - report_ctype.c
+  - report_hashing.c
+  - report_offsets.c
+  - term.priv.h
+  - tinfo/
+    - MKcaptab.awk
+    - MKcaptab.sh
+    - MKcodes.awk
+    - MKfallback.sh
+    - MKkeys_list.sh
+    - MKnames.awk
+    - MKuserdefs.sh
+    - README
+    - access.c
+    - add_tries.c
+    - alloc_entry.c
+    - alloc_ttype.c
+    - captoinfo.c
+    - comp_error.c
+    - comp_expand.c
+    - comp_hash.c
+    - comp_parse.c
+    - comp_scan.c
+    - db_iterator.c
+    - doalloc.c
+    - entries.c
+    - free_ttype.c
+    - getenv_num.c
+    - hashed_db.c
+    - home_terminfo.c
+    - init_keytry.c
+    - lib_acs.c
+    - lib_baudrate.c
+    - lib_cur_term.c
+    - lib_data.c
+    - lib_has_cap.c
+    - lib_kernel.c
+    - lib_longname.c
+    - lib_napms.c
+    - lib_options.c
+    - lib_print.c
+    - lib_raw.c
+    - lib_setup.c
+    - lib_termcap.c
+    - lib_termname.c
+    - lib_tgoto.c
+    - lib_ti.c
+    - lib_tparm.c
+    - lib_tputs.c
+    - lib_ttyflags.c
+    - lib_win32con.c
+    - lib_win32util.c
+    - make_hash.c
+    - make_keys.c
+    - name_match.c
+    - obsolete.c
+    - parse_entry.c
+    - read_entry.c
+    - read_termcap.c
+    - strings.c
+    - tinfo_driver.c
+    - trim_sgr0.c
+    - use_screen.c
+    - write_entry.c
+  - trace/
+    - README
+    - lib_trace.c
+    - lib_traceatr.c
+    - lib_tracebits.c
+    - lib_tracechr.c
+    - lib_tracedmp.c
+    - lib_tracemse.c
+    - trace_buf.c
+    - trace_tries.c
+    - trace_xnames.c
+    - varargs.c
+    - visbuf.c
+  - tty/
+    - MKexpanded.sh
+    - hardscroll.c
+    - hashmap.c
+    - lib_mvcur.c
+    - lib_tstp.c
+    - lib_twait.c
+    - lib_vidattr.c
+    - tty_update.c
+  - wcwidth.h
+  - widechar/
+    - charable.c
+    - lib_add_wch.c
+    - lib_box_set.c
+    - lib_cchar.c
+    - lib_erasewchar.c
+    - lib_get_wch.c
+    - lib_get_wstr.c
+    - lib_hline_set.c
+    - lib_in_wch.c
+    - lib_in_wchnstr.c
+    - lib_ins_wch.c
+    - lib_inwstr.c
+    - lib_key_name.c
+    - lib_pecho_wchar.c
+    - lib_slk_wset.c
+    - lib_unget_wch.c
+    - lib_vid_attr.c
+    - lib_vline_set.c
+    - lib_wacs.c
+    - lib_wunctrl.c
+    - widechars.c
+  - win32con/
+    - gettimeofday.c
+    - wcwidth.c
+    - win32_driver.c
+- panel/
+  - Makefile.in
+  - headers
+  - llib-lpanel
+  - llib-lpanelt
+  - llib-lpaneltw
+  - llib-lpanelw
+  - modules
+  - p_above.c
+  - p_below.c
+  - p_bottom.c
+  - p_delete.c
+  - p_hidden.c
+  - p_hide.c
+  - p_move.c
+  - p_new.c
+  - p_replace.c
+  - p_show.c
+  - p_top.c
+  - p_update.c
+  - p_user.c
+  - p_win.c
+  - panel.c
+  - panel.h
+  - panel.priv.h
+- progs/
+  - MKtermsort.sh
+  - Makefile.in
+  - capconvert
+  - clear.c
+  - clear.sh
+  - clear_cmd.c
+  - clear_cmd.h
+  - dump_entry.c
+  - dump_entry.h
+  - infocmp.c
+  - modules
+  - progs.priv.h
+  - reset_cmd.c
+  - reset_cmd.h
+  - tabs.c
+  - tic.c
+  - toe.c
+  - tparm_type.c
+  - tparm_type.h
+  - tput.c
+  - transform.c
+  - tset.c
+  - tty_settings.c
+  - tty_settings.h

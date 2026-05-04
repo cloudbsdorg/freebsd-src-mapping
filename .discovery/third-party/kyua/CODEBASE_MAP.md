@@ -1,0 +1,624 @@
+# CODEBASE MAP for kyua
+
+Package: kyua
+Source: contrib/kyua
+
+Top-level contents:
+- .cirrus.yml
+- .gitignore
+- .travis.yml
+- AUTHORS
+- CONTRIBUTING.md
+- CONTRIBUTORS
+- Doxyfile.in
+- INSTALL.md
+- Kyuafile
+- LICENSE
+- Makefile.am
+- NEWS.md
+- README.md
+- admin/
+- bootstrap/
+- cli/
+- configure.ac
+- doc/
+- drivers/
+- engine/
+- examples/
+- integration/
+- m4/
+- main.cpp
+- misc/
+- model/
+- os/
+- store/
+- utils/
+
+Recursive contents:
+- .cirrus.yml
+- .gitignore
+- .travis.yml
+- AUTHORS
+- CONTRIBUTING.md
+- CONTRIBUTORS
+- Doxyfile.in
+- INSTALL.md
+- Kyuafile
+- LICENSE
+- Makefile.am
+- NEWS.md
+- README.md
+- admin/
+  - .gitignore
+  - Makefile.am.inc
+  - build-bintray-dist.sh
+  - check-api-docs.awk
+  - check-style-common.awk
+  - check-style-cpp.awk
+  - check-style-make.awk
+  - check-style-man.awk
+  - check-style-shell.awk
+  - check-style.sh
+  - clean-all.sh
+  - travis-build.sh
+  - travis-install-deps.sh
+- bootstrap/
+  - .gitignore
+  - Kyuafile
+  - Makefile.am.inc
+  - atf_helpers.cpp
+  - plain_helpers.cpp
+  - testsuite.at
+- cli/
+  - Kyuafile
+  - Makefile.am.inc
+  - cmd_about.cpp
+  - cmd_about.hpp
+  - cmd_about_test.cpp
+  - cmd_config.cpp
+  - cmd_config.hpp
+  - cmd_config_test.cpp
+  - cmd_db_exec.cpp
+  - cmd_db_exec.hpp
+  - cmd_db_exec_test.cpp
+  - cmd_db_migrate.cpp
+  - cmd_db_migrate.hpp
+  - cmd_debug.cpp
+  - cmd_debug.hpp
+  - cmd_debug_test.cpp
+  - cmd_help.cpp
+  - cmd_help.hpp
+  - cmd_help_test.cpp
+  - cmd_list.cpp
+  - cmd_list.hpp
+  - cmd_list_test.cpp
+  - cmd_report.cpp
+  - cmd_report.hpp
+  - cmd_report_html.cpp
+  - cmd_report_html.hpp
+  - cmd_report_junit.cpp
+  - cmd_report_junit.hpp
+  - cmd_test.cpp
+  - cmd_test.hpp
+  - cmd_test_test.cpp
+  - common.cpp
+  - common.hpp
+  - common.ipp
+  - common_test.cpp
+  - config.cpp
+  - config.hpp
+  - config_test.cpp
+  - main.cpp
+  - main.hpp
+  - main_test.cpp
+- configure.ac
+- doc/
+  - .gitignore
+  - Kyuafile
+  - Makefile.am.inc
+  - build-root.mdoc
+  - kyua-about.1.in
+  - kyua-config.1.in
+  - kyua-db-exec.1.in
+  - kyua-db-migrate.1.in
+  - kyua-debug.1.in
+  - kyua-help.1.in
+  - kyua-list.1.in
+  - kyua-report-html.1.in
+  - kyua-report-junit.1.in
+  - kyua-report.1.in
+  - kyua-test.1.in
+  - kyua.1.in
+  - kyua.conf.5.in
+  - kyuafile.5.in
+  - manbuild.sh
+  - manbuild_test.sh
+  - results-file-flag-read.mdoc
+  - results-file-flag-write.mdoc
+  - results-files-report-example.mdoc
+  - results-files.mdoc
+  - test-filters.mdoc
+  - test-isolation.mdoc
+- drivers/
+  - Kyuafile
+  - Makefile.am.inc
+  - debug_test.cpp
+  - debug_test.hpp
+  - list_tests.cpp
+  - list_tests.hpp
+  - list_tests_helpers.cpp
+  - list_tests_test.cpp
+  - report_junit.cpp
+  - report_junit.hpp
+  - report_junit_test.cpp
+  - run_tests.cpp
+  - run_tests.hpp
+  - scan_results.cpp
+  - scan_results.hpp
+  - scan_results_test.cpp
+- engine/
+  - Kyuafile
+  - Makefile.am.inc
+  - atf.cpp
+  - atf.hpp
+  - atf_helpers.cpp
+  - atf_list.cpp
+  - atf_list.hpp
+  - atf_list_test.cpp
+  - atf_result.cpp
+  - atf_result.hpp
+  - atf_result_fwd.hpp
+  - atf_result_test.cpp
+  - atf_test.cpp
+  - config.cpp
+  - config.hpp
+  - config_fwd.hpp
+  - config_test.cpp
+  - debugger.hpp
+  - exceptions.cpp
+  - exceptions.hpp
+  - exceptions_test.cpp
+  - execenv/
+    - execenv.cpp
+    - execenv.hpp
+    - execenv_host.cpp
+    - execenv_host.hpp
+  - filters.cpp
+  - filters.hpp
+  - filters_fwd.hpp
+  - filters_test.cpp
+  - kyuafile.cpp
+  - kyuafile.hpp
+  - kyuafile_fwd.hpp
+  - kyuafile_test.cpp
+  - plain.cpp
+  - plain.hpp
+  - plain_helpers.cpp
+  - plain_test.cpp
+  - requirements.cpp
+  - requirements.hpp
+  - requirements_test.cpp
+  - scanner.cpp
+  - scanner.hpp
+  - scanner_fwd.hpp
+  - scanner_test.cpp
+  - scheduler.cpp
+  - scheduler.hpp
+  - scheduler_fwd.hpp
+  - scheduler_test.cpp
+  - tap.cpp
+  - tap.hpp
+  - tap_helpers.cpp
+  - tap_parser.cpp
+  - tap_parser.hpp
+  - tap_parser_fwd.hpp
+  - tap_parser_test.cpp
+  - tap_test.cpp
+- examples/
+  - Kyuafile
+  - Kyuafile.top
+  - Makefile.am.inc
+  - kyua.conf
+  - syntax_test.cpp
+- integration/
+  - Kyuafile
+  - Makefile.am.inc
+  - cmd_about_test.sh
+  - cmd_config_test.sh
+  - cmd_db_exec_test.sh
+  - cmd_db_migrate_test.sh
+  - cmd_debug_test.sh
+  - cmd_help_test.sh
+  - cmd_list_test.sh
+  - cmd_report_html_test.sh
+  - cmd_report_junit_test.sh
+  - cmd_report_test.sh
+  - cmd_test_test.sh
+  - global_test.sh
+  - helpers/
+    - .gitignore
+    - Makefile.am.inc
+    - bad_test_program.cpp
+    - bogus_test_cases.cpp
+    - config.cpp
+    - dump_env.cpp
+    - expect_all_pass.cpp
+    - expect_some_fail.cpp
+    - interrupts.cpp
+    - metadata.cpp
+    - race.cpp
+    - simple_all_pass.cpp
+    - simple_some_fail.cpp
+  - utils.sh
+- m4/
+  - ax_cxx_compile_stdcxx.m4
+  - compiler-features.m4
+  - compiler-flags.m4
+  - developer-mode.m4
+  - doxygen.m4
+  - fs.m4
+  - getopt.m4
+  - memory.m4
+  - signals.m4
+  - uname.m4
+- main.cpp
+- misc/
+  - Makefile.am.inc
+  - context.html
+  - index.html
+  - report.css
+  - test_result.html
+- model/
+  - Kyuafile
+  - Makefile.am.inc
+  - README
+  - context.cpp
+  - context.hpp
+  - context_fwd.hpp
+  - context_test.cpp
+  - exceptions.cpp
+  - exceptions.hpp
+  - exceptions_test.cpp
+  - metadata.cpp
+  - metadata.hpp
+  - metadata_fwd.hpp
+  - metadata_test.cpp
+  - test_case.cpp
+  - test_case.hpp
+  - test_case_fwd.hpp
+  - test_case_test.cpp
+  - test_program.cpp
+  - test_program.hpp
+  - test_program_fwd.hpp
+  - test_program_test.cpp
+  - test_result.cpp
+  - test_result.hpp
+  - test_result_fwd.hpp
+  - test_result_test.cpp
+  - types.hpp
+- os/
+  - freebsd/
+    - execenv_jail.cpp
+    - execenv_jail.hpp
+    - execenv_jail_manager.cpp
+    - execenv_jail_manager.hpp
+    - execenv_jail_stub.cpp
+    - main.cpp
+    - main.hpp
+    - reqs_checker_kmods.cpp
+    - reqs_checker_kmods.hpp
+    - utils/
+      - jail.cpp
+      - jail.hpp
+- store/
+  - Kyuafile
+  - Makefile.am.inc
+  - dbtypes.cpp
+  - dbtypes.hpp
+  - dbtypes_test.cpp
+  - exceptions.cpp
+  - exceptions.hpp
+  - exceptions_test.cpp
+  - layout.cpp
+  - layout.hpp
+  - layout_fwd.hpp
+  - layout_test.cpp
+  - metadata.cpp
+  - metadata.hpp
+  - metadata_fwd.hpp
+  - metadata_test.cpp
+  - migrate.cpp
+  - migrate.hpp
+  - migrate_test.cpp
+  - migrate_v1_v2.sql
+  - migrate_v2_v3.sql
+  - read_backend.cpp
+  - read_backend.hpp
+  - read_backend_fwd.hpp
+  - read_backend_test.cpp
+  - read_transaction.cpp
+  - read_transaction.hpp
+  - read_transaction_fwd.hpp
+  - read_transaction_test.cpp
+  - schema_inttest.cpp
+  - schema_v1.sql
+  - schema_v2.sql
+  - schema_v3.sql
+  - testdata_v1.sql
+  - testdata_v2.sql
+  - testdata_v3_1.sql
+  - testdata_v3_2.sql
+  - testdata_v3_3.sql
+  - testdata_v3_4.sql
+  - transaction_test.cpp
+  - write_backend.cpp
+  - write_backend.hpp
+  - write_backend_fwd.hpp
+  - write_backend_test.cpp
+  - write_transaction.cpp
+  - write_transaction.hpp
+  - write_transaction_fwd.hpp
+  - write_transaction_test.cpp
+- utils/
+  - .gitignore
+  - Kyuafile
+  - Makefile.am.inc
+  - auto_array.hpp
+  - auto_array.ipp
+  - auto_array_fwd.hpp
+  - auto_array_test.cpp
+  - cmdline/
+    - Kyuafile
+    - Makefile.am.inc
+    - base_command.cpp
+    - base_command.hpp
+    - base_command.ipp
+    - base_command_fwd.hpp
+    - base_command_test.cpp
+    - commands_map.hpp
+    - commands_map.ipp
+    - commands_map_fwd.hpp
+    - commands_map_test.cpp
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - globals.cpp
+    - globals.hpp
+    - globals_test.cpp
+    - options.cpp
+    - options.hpp
+    - options_fwd.hpp
+    - options_test.cpp
+    - parser.cpp
+    - parser.hpp
+    - parser.ipp
+    - parser_fwd.hpp
+    - parser_test.cpp
+    - ui.cpp
+    - ui.hpp
+    - ui_fwd.hpp
+    - ui_mock.cpp
+    - ui_mock.hpp
+    - ui_test.cpp
+  - config/
+    - Kyuafile
+    - Makefile.am.inc
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - keys.cpp
+    - keys.hpp
+    - keys_fwd.hpp
+    - keys_test.cpp
+    - lua_module.cpp
+    - lua_module.hpp
+    - lua_module_test.cpp
+    - nodes.cpp
+    - nodes.hpp
+    - nodes.ipp
+    - nodes_fwd.hpp
+    - nodes_test.cpp
+    - parser.cpp
+    - parser.hpp
+    - parser_fwd.hpp
+    - parser_test.cpp
+    - tree.cpp
+    - tree.hpp
+    - tree.ipp
+    - tree_fwd.hpp
+    - tree_test.cpp
+  - datetime.cpp
+  - datetime.hpp
+  - datetime_fwd.hpp
+  - datetime_test.cpp
+  - defs.hpp.in
+  - env.cpp
+  - env.hpp
+  - env_test.cpp
+  - format/
+    - Kyuafile
+    - Makefile.am.inc
+    - containers.hpp
+    - containers.ipp
+    - containers_test.cpp
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - formatter.cpp
+    - formatter.hpp
+    - formatter.ipp
+    - formatter_fwd.hpp
+    - formatter_test.cpp
+    - macros.hpp
+  - fs/
+    - Kyuafile
+    - Makefile.am.inc
+    - auto_cleaners.cpp
+    - auto_cleaners.hpp
+    - auto_cleaners_fwd.hpp
+    - auto_cleaners_test.cpp
+    - directory.cpp
+    - directory.hpp
+    - directory_fwd.hpp
+    - directory_test.cpp
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - lua_module.cpp
+    - lua_module.hpp
+    - lua_module_test.cpp
+    - operations.cpp
+    - operations.hpp
+    - operations_test.cpp
+    - path.cpp
+    - path.hpp
+    - path_fwd.hpp
+    - path_test.cpp
+  - logging/
+    - Kyuafile
+    - Makefile.am.inc
+    - macros.hpp
+    - macros_test.cpp
+    - operations.cpp
+    - operations.hpp
+    - operations_fwd.hpp
+    - operations_test.cpp
+  - memory.cpp
+  - memory.hpp
+  - memory_test.cpp
+  - noncopyable.hpp
+  - optional.hpp
+  - optional.ipp
+  - optional_fwd.hpp
+  - optional_test.cpp
+  - passwd.cpp
+  - passwd.hpp
+  - passwd_fwd.hpp
+  - passwd_test.cpp
+  - process/
+    - .gitignore
+    - Kyuafile
+    - Makefile.am.inc
+    - child.cpp
+    - child.hpp
+    - child.ipp
+    - child_fwd.hpp
+    - child_test.cpp
+    - deadline_killer.cpp
+    - deadline_killer.hpp
+    - deadline_killer_fwd.hpp
+    - deadline_killer_test.cpp
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - executor.cpp
+    - executor.hpp
+    - executor.ipp
+    - executor_fwd.hpp
+    - executor_pid_test.cpp
+    - executor_test.cpp
+    - fdstream.cpp
+    - fdstream.hpp
+    - fdstream_fwd.hpp
+    - fdstream_test.cpp
+    - helpers.cpp
+    - isolation.cpp
+    - isolation.hpp
+    - isolation_test.cpp
+    - operations.cpp
+    - operations.hpp
+    - operations_fwd.hpp
+    - operations_test.cpp
+    - status.cpp
+    - status.hpp
+    - status_fwd.hpp
+    - status_test.cpp
+    - system.cpp
+    - system.hpp
+    - systembuf.cpp
+    - systembuf.hpp
+    - systembuf_fwd.hpp
+    - systembuf_test.cpp
+  - sanity.cpp
+  - sanity.hpp
+  - sanity_fwd.hpp
+  - sanity_test.cpp
+  - signals/
+    - Kyuafile
+    - Makefile.am.inc
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - interrupts.cpp
+    - interrupts.hpp
+    - interrupts_fwd.hpp
+    - interrupts_test.cpp
+    - misc.cpp
+    - misc.hpp
+    - misc_test.cpp
+    - programmer.cpp
+    - programmer.hpp
+    - programmer_fwd.hpp
+    - programmer_test.cpp
+    - timer.cpp
+    - timer.hpp
+    - timer_fwd.hpp
+    - timer_test.cpp
+  - sqlite/
+    - Kyuafile
+    - Makefile.am.inc
+    - c_gate.cpp
+    - c_gate.hpp
+    - c_gate_fwd.hpp
+    - c_gate_test.cpp
+    - database.cpp
+    - database.hpp
+    - database_fwd.hpp
+    - database_test.cpp
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - statement.cpp
+    - statement.hpp
+    - statement.ipp
+    - statement_fwd.hpp
+    - statement_test.cpp
+    - test_utils.hpp
+    - transaction.cpp
+    - transaction.hpp
+    - transaction_fwd.hpp
+    - transaction_test.cpp
+  - stacktrace.cpp
+  - stacktrace.hpp
+  - stacktrace_helper.cpp
+  - stacktrace_test.cpp
+  - stream.cpp
+  - stream.hpp
+  - stream_test.cpp
+  - test_utils.ipp
+  - text/
+    - Kyuafile
+    - Makefile.am.inc
+    - exceptions.cpp
+    - exceptions.hpp
+    - exceptions_test.cpp
+    - operations.cpp
+    - operations.hpp
+    - operations.ipp
+    - operations_test.cpp
+    - regex.cpp
+    - regex.hpp
+    - regex_fwd.hpp
+    - regex_test.cpp
+    - table.cpp
+    - table.hpp
+    - table_fwd.hpp
+    - table_test.cpp
+    - templates.cpp
+    - templates.hpp
+    - templates_fwd.hpp
+    - templates_test.cpp
+  - units.cpp
+  - units.hpp
+  - units_fwd.hpp
+  - units_test.cpp

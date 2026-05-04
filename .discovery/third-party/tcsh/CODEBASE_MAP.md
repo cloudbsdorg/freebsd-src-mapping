@@ -1,0 +1,557 @@
+# CODEBASE MAP for tcsh
+
+Package: tcsh
+Source: contrib/tcsh
+
+Top-level contents:
+- FAQ
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- Fixes
+- NewThings
+- Ported
+- README.md
+- WishList
+- Y2K
+- complete.tcsh
+- config/
+- config_f.h
+- csh-mode.el
+- dot.login
+- dot.tcshrc
+- dotlock.c
+- dotlock.h
+- ed.chared.c
+- ed.decls.h
+- ed.defns.c
+- ed.h
+- ed.init.c
+- ed.inputl.c
+- ed.refresh.c
+- ed.screen.c
+- ed.term.c
+- ed.term.h
+- ed.xmap.c
+- eight-bit.me
+- gethost.c
+- glob.3
+- glob.c
+- glob.h
+- host.defs
+- ma.setp.c
+- mi.termios.c
+- mi.varargs.h
+- mi.wait.h
+- nls/
+- patchlevel.h
+- pathnames.h
+- sh.c
+- sh.char.c
+- sh.char.h
+- sh.decls.h
+- sh.dir.c
+- sh.dir.h
+- sh.dol.c
+- sh.err.c
+- sh.exec.c
+- sh.exp.c
+- sh.file.c
+- sh.func.c
+- sh.glob.c
+- sh.h
+- sh.hist.c
+- sh.init.c
+- sh.lex.c
+- sh.misc.c
+- sh.parse.c
+- sh.print.c
+- sh.proc.c
+- sh.proc.h
+- sh.sem.c
+- sh.set.c
+- sh.time.c
+- sh.types.h
+- snames.h
+- src.desc
+- tc.alloc.c
+- tc.bind.c
+- tc.const.c
+- tc.decls.h
+- tc.disc.c
+- tc.func.c
+- tc.h
+- tc.nls.c
+- tc.nls.h
+- tc.os.c
+- tc.os.h
+- tc.printf.c
+- tc.prompt.c
+- tc.sched.c
+- tc.sig.c
+- tc.sig.h
+- tc.str.c
+- tc.vers.c
+- tc.wait.h
+- tc.who.c
+- tcsh.man
+- tcsh.man.new
+- tcsh.man2html
+- termcap.vms
+- tw.color.c
+- tw.comp.c
+- tw.decls.h
+- tw.h
+- tw.help.c
+- tw.init.c
+- tw.parse.c
+- tw.spell.c
+- vms.termcap.c
+
+Recursive contents:
+- FAQ
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- Fixes
+- NewThings
+- Ported
+- README.md
+- WishList
+- Y2K
+- complete.tcsh
+- config/
+  - bsd4.4
+- config_f.h
+- csh-mode.el
+- dot.login
+- dot.tcshrc
+- dotlock.c
+- dotlock.h
+- ed.chared.c
+- ed.decls.h
+- ed.defns.c
+- ed.h
+- ed.init.c
+- ed.inputl.c
+- ed.refresh.c
+- ed.screen.c
+- ed.term.c
+- ed.term.h
+- ed.xmap.c
+- eight-bit.me
+- gethost.c
+- glob.3
+- glob.c
+- glob.h
+- host.defs
+- ma.setp.c
+- mi.termios.c
+- mi.varargs.h
+- mi.wait.h
+- nls/
+  - C/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - Makefile.in
+  - catgen
+  - et/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - finnish/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - french/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - german/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - greek/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - italian/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - ja/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set15
+    - set16
+    - set17
+    - set18
+    - set2
+    - set21
+    - set24
+    - set29
+    - set3
+    - set30
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+  - russian/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - spanish/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+  - ukrainian/
+    - charset
+    - set1
+    - set10
+    - set11
+    - set12
+    - set13
+    - set14
+    - set15
+    - set16
+    - set17
+    - set18
+    - set19
+    - set2
+    - set20
+    - set21
+    - set22
+    - set23
+    - set24
+    - set25
+    - set26
+    - set27
+    - set29
+    - set3
+    - set30
+    - set31
+    - set4
+    - set5
+    - set6
+    - set7
+    - set8
+    - set9
+- patchlevel.h
+- pathnames.h
+- sh.c
+- sh.char.c
+- sh.char.h
+- sh.decls.h
+- sh.dir.c
+- sh.dir.h
+- sh.dol.c
+- sh.err.c
+- sh.exec.c
+- sh.exp.c
+- sh.file.c
+- sh.func.c
+- sh.glob.c
+- sh.h
+- sh.hist.c
+- sh.init.c
+- sh.lex.c
+- sh.misc.c
+- sh.parse.c
+- sh.print.c
+- sh.proc.c
+- sh.proc.h
+- sh.sem.c
+- sh.set.c
+- sh.time.c
+- sh.types.h
+- snames.h
+- src.desc
+- tc.alloc.c
+- tc.bind.c
+- tc.const.c
+- tc.decls.h
+- tc.disc.c
+- tc.func.c
+- tc.h
+- tc.nls.c
+- tc.nls.h
+- tc.os.c
+- tc.os.h
+- tc.printf.c
+- tc.prompt.c
+- tc.sched.c
+- tc.sig.c
+- tc.sig.h
+- tc.str.c
+- tc.vers.c
+- tc.wait.h
+- tc.who.c
+- tcsh.man
+- tcsh.man.new
+- tcsh.man2html
+- termcap.vms
+- tw.color.c
+- tw.comp.c
+- tw.decls.h
+- tw.h
+- tw.help.c
+- tw.init.c
+- tw.parse.c
+- tw.spell.c
+- vms.termcap.c

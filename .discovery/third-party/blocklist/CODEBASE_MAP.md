@@ -1,0 +1,107 @@
+# CODEBASE MAP for blocklist
+
+Package: blocklist
+Source: contrib/blocklist
+
+Top-level contents:
+- FreeBSD-upgrade
+- Makefile
+- Makefile.inc
+- README
+- TODO
+- bin/
+- diff/
+- etc/
+- freebsd-changes.sh
+- include/
+- lib/
+- libexec/
+- port/
+- test/
+
+Recursive contents:
+- FreeBSD-upgrade
+- Makefile
+- Makefile.inc
+- README
+- TODO
+- bin/
+  - Makefile
+  - blacklistctl.8
+  - blacklistctl.c
+  - blacklistd.8
+  - blacklistd.c
+  - blacklistd.conf.5
+  - blocklistctl.8
+  - blocklistctl.c
+  - blocklistd.8
+  - blocklistd.c
+  - blocklistd.conf.5
+  - conf.c
+  - conf.h
+  - internal.c
+  - internal.h
+  - old_internal.c
+  - old_internal.h
+  - run.c
+  - run.h
+  - state.c
+  - state.h
+  - support.c
+  - support.h
+- diff/
+  - ftpd.diff
+  - named.diff
+  - postfix.diff
+  - proftpd.diff
+  - ssh.diff
+- etc/
+  - Makefile
+  - blocklistd.conf
+  - ipf.conf
+  - npf.conf
+  - rc.d/
+    - Makefile
+    - blocklistd
+- freebsd-changes.sh
+- include/
+  - Makefile
+  - bl.h
+  - blacklist.h
+  - blocklist.h
+  - old_bl.h
+- lib/
+  - Makefile
+  - bl.c
+  - blacklist.c
+  - blocklist.c
+  - libblacklist.3
+  - libblocklist.3
+  - old_bl.c
+  - shlib_version
+- libexec/
+  - Makefile
+  - blocklistd-helper
+- port/
+  - Makefile.am
+  - _strtoi.h
+  - clock_gettime.c
+  - config.h
+  - configure.ac
+  - fgetln.c
+  - fparseln.c
+  - getprogname.c
+  - m4/
+    - .cvsignore
+  - pidfile.c
+  - popenve.c
+  - port.h
+  - sockaddr_snprintf.c
+  - strlcat.c
+  - strlcpy.c
+  - strtoi.c
+  - vsyslog_r.c
+- test/
+  - Makefile
+  - cltest.c
+  - srvtest.c

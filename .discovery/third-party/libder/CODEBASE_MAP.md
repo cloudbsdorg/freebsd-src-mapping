@@ -1,0 +1,58 @@
+# CODEBASE MAP for libder
+
+Package: libder
+Source: contrib/libder
+
+Top-level contents:
+- .cirrus.yml
+- .github/
+- .gitignore
+- CMakeLists.txt
+- LICENSE
+- README.md
+- derdump/
+- libder/
+- tests/
+
+Recursive contents:
+- .cirrus.yml
+- .github/
+  - workflows/
+    - build.yml
+- .gitignore
+- CMakeLists.txt
+- LICENSE
+- README.md
+- derdump/
+  - .gitignore
+  - CMakeLists.txt
+  - derdump.1
+  - derdump.c
+- libder/
+  - CMakeLists.txt
+  - libder.3
+  - libder.c
+  - libder.h
+  - libder_error.c
+  - libder_obj.3
+  - libder_obj.c
+  - libder_private.h
+  - libder_read.3
+  - libder_read.c
+  - libder_type.3
+  - libder_type.c
+  - libder_write.3
+  - libder_write.c
+- tests/
+  - .gitignore
+  - CMakeLists.txt
+  - fuzz_parallel.c
+  - fuzz_stream.c
+  - fuzz_write.c
+  - fuzzers.h
+  - make_corpus.c
+  - repo.priv
+  - repo.pub
+  - test_common.h
+  - test_privkey.c
+  - test_pubkey.c

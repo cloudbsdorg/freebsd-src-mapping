@@ -1,0 +1,106 @@
+# CODEBASE MAP for lutok
+
+Package: lutok
+Source: contrib/lutok
+
+Top-level contents:
+- .gitignore
+- .travis.yml
+- AUTHORS
+- COPYING
+- Doxyfile.in
+- INSTALL
+- Kyuafile
+- Makefile.am
+- NEWS
+- README
+- admin/
+- c_gate.cpp
+- c_gate.hpp
+- c_gate_test.cpp
+- configure.ac
+- debug.cpp
+- debug.hpp
+- debug_test.cpp
+- examples/
+- examples_test.sh
+- exceptions.cpp
+- exceptions.hpp
+- exceptions_test.cpp
+- include/
+- lutok.pc.in
+- m4/
+- operations.cpp
+- operations.hpp
+- operations_test.cpp
+- stack_cleaner.cpp
+- stack_cleaner.hpp
+- stack_cleaner_test.cpp
+- state.cpp
+- state.hpp
+- state.ipp
+- state_test.cpp
+- test_utils.hpp
+
+Recursive contents:
+- .gitignore
+- .travis.yml
+- AUTHORS
+- COPYING
+- Doxyfile.in
+- INSTALL
+- Kyuafile
+- Makefile.am
+- NEWS
+- README
+- admin/
+  - .gitignore
+  - clean-all.sh
+  - travis-build.sh
+  - travis-install-deps.sh
+- c_gate.cpp
+- c_gate.hpp
+- c_gate_test.cpp
+- configure.ac
+- debug.cpp
+- debug.hpp
+- debug_test.cpp
+- examples/
+  - Makefile
+  - bindings.cpp
+  - hello.cpp
+  - interpreter.cpp
+  - raii.cpp
+- examples_test.sh
+- exceptions.cpp
+- exceptions.hpp
+- exceptions_test.cpp
+- include/
+  - lutok/
+    - README
+    - c_gate.hpp
+    - debug.hpp
+    - exceptions.hpp
+    - operations.hpp
+    - stack_cleaner.hpp
+    - state.hpp
+    - state.ipp
+- lutok.pc.in
+- m4/
+  - .gitignore
+  - compiler-features.m4
+  - compiler-flags.m4
+  - developer-mode.m4
+  - doxygen.m4
+  - lua.m4
+- operations.cpp
+- operations.hpp
+- operations_test.cpp
+- stack_cleaner.cpp
+- stack_cleaner.hpp
+- stack_cleaner_test.cpp
+- state.cpp
+- state.hpp
+- state.ipp
+- state_test.cpp
+- test_utils.hpp

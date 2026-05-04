@@ -1,0 +1,214 @@
+# CODEBASE MAP for nvi
+
+Package: nvi
+Source: contrib/nvi
+
+Top-level contents:
+- CMakeLists.txt
+- INSTALL.md
+- LICENSE
+- README
+- catalog/
+- cl/
+- common/
+- ex/
+- files/
+- man/
+- regex/
+- vi/
+
+Recursive contents:
+- CMakeLists.txt
+- INSTALL.md
+- LICENSE
+- README
+- catalog/
+  - Makefile
+  - README
+  - dump.c
+  - dutch.base
+  - dutch.owner
+  - english.owner
+  - french.base
+  - german.base
+  - german.owner
+  - polish.base
+  - polish.owner
+  - ru_RU.KOI8-R.base
+  - ru_RU.KOI8-R.owner
+  - spanish.base
+  - swedish.base
+  - swedish.owner
+  - tr_TR.ISO8859-9.base
+  - tr_TR.ISO8859-9.owner
+  - tr_TR.UTF-8.base
+  - tr_TR.UTF-8.owner
+  - uk_UA.KOI8-U.base
+  - uk_UA.KOI8-U.owner
+  - zh_CN.GB2312.base
+  - zh_CN.GB2312.owner
+- cl/
+  - README.signal
+  - cl.h
+  - cl_funcs.c
+  - cl_main.c
+  - cl_read.c
+  - cl_screen.c
+  - cl_term.c
+  - extern.h
+- common/
+  - args.h
+  - common.h
+  - conv.c
+  - conv.h
+  - cut.c
+  - cut.h
+  - delete.c
+  - encoding.c
+  - exf.c
+  - exf.h
+  - extern.h
+  - gs.h
+  - key.c
+  - key.h
+  - line.c
+  - log.c
+  - log.h
+  - main.c
+  - mark.c
+  - mark.h
+  - mem.h
+  - msg.c
+  - msg.h
+  - multibyte.h
+  - options.awk
+  - options.c
+  - options.h
+  - options_def.h
+  - options_f.c
+  - put.c
+  - recover.c
+  - screen.c
+  - screen.h
+  - search.c
+  - seq.c
+  - seq.h
+  - util.c
+  - util.h
+- ex/
+  - ex.awk
+  - ex.c
+  - ex.h
+  - ex_abbrev.c
+  - ex_append.c
+  - ex_args.c
+  - ex_argv.c
+  - ex_at.c
+  - ex_bang.c
+  - ex_cd.c
+  - ex_cmd.c
+  - ex_cscope.c
+  - ex_def.h
+  - ex_delete.c
+  - ex_display.c
+  - ex_edit.c
+  - ex_equal.c
+  - ex_file.c
+  - ex_filter.c
+  - ex_global.c
+  - ex_init.c
+  - ex_join.c
+  - ex_map.c
+  - ex_mark.c
+  - ex_mkexrc.c
+  - ex_move.c
+  - ex_open.c
+  - ex_preserve.c
+  - ex_print.c
+  - ex_put.c
+  - ex_quit.c
+  - ex_read.c
+  - ex_screen.c
+  - ex_script.c
+  - ex_set.c
+  - ex_shell.c
+  - ex_shift.c
+  - ex_source.c
+  - ex_stop.c
+  - ex_subst.c
+  - ex_tag.c
+  - ex_txt.c
+  - ex_undo.c
+  - ex_usage.c
+  - ex_util.c
+  - ex_version.c
+  - ex_visual.c
+  - ex_write.c
+  - ex_yank.c
+  - ex_z.c
+  - extern.h
+  - script.h
+  - tag.h
+- files/
+  - config.h.in
+  - pathnames.h.in
+  - recover.in
+- man/
+  - vi.1
+- regex/
+  - COPYRIGHT
+  - WHATSNEW
+  - cclass.h
+  - cname.h
+  - engine.c
+  - re_format.7
+  - regcomp.c
+  - regerror.c
+  - regex.3
+  - regex.h
+  - regex2.h
+  - regexec.c
+  - regfree.c
+  - utils.h
+- vi/
+  - extern.h
+  - getc.c
+  - v_at.c
+  - v_ch.c
+  - v_cmd.c
+  - v_delete.c
+  - v_ex.c
+  - v_increment.c
+  - v_init.c
+  - v_itxt.c
+  - v_left.c
+  - v_mark.c
+  - v_match.c
+  - v_paragraph.c
+  - v_put.c
+  - v_redraw.c
+  - v_replace.c
+  - v_right.c
+  - v_screen.c
+  - v_scroll.c
+  - v_search.c
+  - v_section.c
+  - v_sentence.c
+  - v_status.c
+  - v_txt.c
+  - v_ulcase.c
+  - v_undo.c
+  - v_util.c
+  - v_word.c
+  - v_xchar.c
+  - v_yank.c
+  - v_z.c
+  - v_zexit.c
+  - vi.c
+  - vi.h
+  - vs_line.c
+  - vs_msg.c
+  - vs_refresh.c
+  - vs_relative.c
+  - vs_smap.c
+  - vs_split.c

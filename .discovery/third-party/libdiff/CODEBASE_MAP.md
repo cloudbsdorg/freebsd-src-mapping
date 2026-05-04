@@ -1,0 +1,197 @@
+# CODEBASE MAP for libdiff
+
+Package: libdiff
+Source: contrib/libdiff
+
+Top-level contents:
+- .gitignore
+- LICENCE
+- README
+- compat/
+- diff/
+- diff-version.mk
+- include/
+- lib/
+- man/
+- test/
+
+Recursive contents:
+- .gitignore
+- LICENCE
+- README
+- compat/
+  - getprogname_linux.c
+  - include/
+    - stdlib.h
+    - string.h
+    - sys/
+      - types.h
+  - merge.c
+  - reallocarray.c
+  - recallocarray.c
+  - strlcat.c
+  - strlcpy.c
+- diff/
+  - GNUmakefile
+  - Makefile
+  - diff.c
+- diff-version.mk
+- include/
+  - arraylist.h
+  - diff_main.h
+  - diff_output.h
+- lib/
+  - GNUmakefile
+  - diff_atomize_text.c
+  - diff_debug.h
+  - diff_internal.h
+  - diff_main.c
+  - diff_myers.c
+  - diff_output.c
+  - diff_output_edscript.c
+  - diff_output_plain.c
+  - diff_output_unidiff.c
+  - diff_patience.c
+- man/
+  - diff.1
+- test/
+  - GNUmakefile
+  - Makefile
+  - README
+  - arraylist_test/
+    - GNUmakefile
+    - Makefile
+  - arraylist_test.c
+  - expect.arraylist_test
+  - expect.results_test
+  - expect001.diff
+  - expect002.diff
+  - expect003.diff
+  - expect004.diff
+  - expect005.diff
+  - expect006.diff
+  - expect007.diff
+  - expect008.diff
+  - expect009.diff
+  - expect010.diff
+  - expect011.diff
+  - expect012.diff
+  - expect013.diff
+  - expect014.diff
+  - expect015.diff
+  - expect016.diff
+  - expect018.diff
+  - expect019.diff
+  - expect021.diff
+  - expect101.diff
+  - expect102.diff
+  - expect103.diff
+  - expect104.diff
+  - expect105.diff
+  - expect106.diff
+  - expect107.diff
+  - expect108.diff
+  - expect109.diff
+  - expect110.diff
+  - expect111.diff
+  - expect112.diff
+  - expect113.diff
+  - expect114.diff
+  - expect115.diff
+  - expect116.diff
+  - expect117.diff
+  - expect123.diff
+  - expect124.diff
+  - expect125.diff
+  - expect126.diff
+  - results_test/
+    - GNUmakefile
+    - Makefile
+  - results_test.c
+  - test001.left.txt
+  - test001.right.txt
+  - test002.left.txt
+  - test002.right.txt
+  - test003.left.txt
+  - test003.right.txt
+  - test004.left.txt
+  - test004.right.txt
+  - test005.left.txt
+  - test005.right.txt
+  - test006.left.txt
+  - test006.right.txt
+  - test007.left.txt
+  - test007.right.txt
+  - test008.left.txt
+  - test008.right.txt
+  - test009.left.txt
+  - test009.right.txt
+  - test010.left.txt
+  - test010.right.txt
+  - test011.left.txt
+  - test011.right.txt
+  - test012.left.txt
+  - test012.right.txt
+  - test013.left-w.txt
+  - test013.right-w.txt
+  - test014.left.txt
+  - test014.right.txt
+  - test015.left.txt
+  - test015.right.txt
+  - test016.left.txt
+  - test016.right.txt
+  - test017.left-U0.txt
+  - test017.right-U0.txt
+  - test018.left-T.txt
+  - test018.right-T.txt
+  - test019.left.txt
+  - test019.right.txt
+  - test020.left.txt
+  - test020.right.txt
+  - test021.left.txt
+  - test021.right.txt
+  - test101.left-P.txt
+  - test101.right-P.txt
+  - test102.left-P.txt
+  - test102.right-P.txt
+  - test103.left-P.txt
+  - test103.right-P.txt
+  - test104.left-P.txt
+  - test104.right-P.txt
+  - test105.left-P.txt
+  - test105.right-P.txt
+  - test106.left-P.txt
+  - test106.right-P.txt
+  - test107.left-P.txt
+  - test107.right-P.txt
+  - test108.left-P.txt
+  - test108.right-P.txt
+  - test109.left-P.txt
+  - test109.right-P.txt
+  - test110.left-P.txt
+  - test110.right-P.txt
+  - test111.left-P.txt
+  - test111.right-P.txt
+  - test112.left-P.txt
+  - test112.right-P.txt
+  - test113.left-Pw.txt
+  - test113.right-Pw.txt
+  - test114.left-P.txt
+  - test114.right-P.txt
+  - test115.left-P.txt
+  - test115.right-P.txt
+  - test116.left-P.txt
+  - test116.right-P.txt
+  - test117.left-P.txt
+  - test117.right-P.txt
+  - test122.left-P.txt
+  - test122.right-P.txt
+  - test123.left-e.txt
+  - test123.right-e.txt
+  - test124.left-p.txt
+  - test124.right-p.txt
+  - test125.left.txt
+  - test125.right.txt
+  - test126.left.txt
+  - test126.right.txt
+  - verify_all.sh

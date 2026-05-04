@@ -1,0 +1,89 @@
+# CODEBASE MAP for lib9p
+
+Package: lib9p
+Source: contrib/lib9p
+
+Top-level contents:
+- .gitignore
+- COPYRIGHT
+- GNUmakefile
+- Makefile
+- README.md
+- apple_endian.h
+- backend/
+- connection.c
+- example/
+- fcall.h
+- fid.h
+- genacl.c
+- genacl.h
+- hashtable.c
+- hashtable.h
+- lib9p.h
+- lib9p_impl.h
+- linux_errno.h
+- log.c
+- log.h
+- pack.c
+- pytest/
+- request.c
+- rfuncs.c
+- rfuncs.h
+- sbuf/
+- threadpool.c
+- threadpool.h
+- transport/
+- utils.c
+
+Recursive contents:
+- .gitignore
+- COPYRIGHT
+- GNUmakefile
+- Makefile
+- README.md
+- apple_endian.h
+- backend/
+  - backend.h
+  - fs.c
+  - fs.h
+- connection.c
+- example/
+  - Makefile
+  - server.c
+- fcall.h
+- fid.h
+- genacl.c
+- genacl.h
+- hashtable.c
+- hashtable.h
+- lib9p.h
+- lib9p_impl.h
+- linux_errno.h
+- log.c
+- log.h
+- pack.c
+- pytest/
+  - .gitignore
+  - Makefile
+  - README
+  - client.py
+  - lerrno.py
+  - numalloc.py
+  - p9conn.py
+  - p9err.py
+  - pfod.py
+  - protocol.py
+  - sequencer.py
+  - testconf.ini.sample
+- request.c
+- rfuncs.c
+- rfuncs.h
+- sbuf/
+  - sbuf.c
+  - sbuf.h
+- threadpool.c
+- threadpool.h
+- transport/
+  - socket.c
+  - socket.h
+- utils.c

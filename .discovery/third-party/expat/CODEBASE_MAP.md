@@ -1,0 +1,150 @@
+# CODEBASE MAP for expat
+
+Package: expat
+Source: contrib/expat
+
+Top-level contents:
+- AUTHORS
+- COPYING
+- Changes
+- FREEBSD-Xlist
+- Makefile.am
+- Makefile.in
+- README.md
+- buildconf.sh
+- configure.ac
+- doc/
+- examples/
+- expat_config.h.in
+- fix-xmltest-log.sh
+- fuzz/
+- lib/
+- run.sh.in
+- test-driver-wrapper.sh
+- tests/
+- xmlwf/
+
+Recursive contents:
+- AUTHORS
+- COPYING
+- Changes
+- FREEBSD-Xlist
+- Makefile.am
+- Makefile.in
+- README.md
+- buildconf.sh
+- configure.ac
+- doc/
+  - Makefile.am
+  - Makefile.in
+  - ok.min.css
+  - reference.html
+  - style.css
+  - xmlwf.1
+  - xmlwf.xml
+- examples/
+  - Makefile.am
+  - Makefile.in
+  - element_declarations.c
+  - elements.c
+  - outline.c
+- expat_config.h.in
+- fix-xmltest-log.sh
+- fuzz/
+  - xml_lpm_fuzzer.cpp
+  - xml_lpm_fuzzer.proto
+  - xml_parse_fuzzer.c
+  - xml_parsebuffer_fuzzer.c
+- lib/
+  - Makefile.am
+  - Makefile.in
+  - ascii.h
+  - asciitab.h
+  - expat.h
+  - expat_external.h
+  - iasciitab.h
+  - internal.h
+  - latin1tab.h
+  - libexpat.map.in
+  - nametab.h
+  - random_arc4random.c
+  - random_arc4random.h
+  - random_arc4random_buf.c
+  - random_arc4random_buf.h
+  - random_dev_urandom.c
+  - random_dev_urandom.h
+  - random_getentropy.c
+  - random_getentropy.h
+  - random_getrandom.c
+  - random_getrandom.h
+  - random_rand_s.c
+  - random_rand_s.h
+  - siphash.h
+  - utf8tab.h
+  - xmlparse.c
+  - xmlrole.c
+  - xmlrole.h
+  - xmltok.c
+  - xmltok.h
+  - xmltok_impl.c
+  - xmltok_impl.h
+  - xmltok_ns.c
+- run.sh.in
+- test-driver-wrapper.sh
+- tests/
+  - Makefile.am
+  - Makefile.in
+  - README.md
+  - acc_tests.c
+  - acc_tests.h
+  - alloc_tests.c
+  - alloc_tests.h
+  - basic_tests.c
+  - basic_tests.h
+  - benchmark/
+    - Makefile.am
+    - Makefile.in
+    - README.txt
+    - benchmark.c
+  - chardata.c
+  - chardata.h
+  - common.c
+  - common.h
+  - dummy.c
+  - dummy.h
+  - handlers.c
+  - handlers.h
+  - memcheck.c
+  - memcheck.h
+  - minicheck.c
+  - minicheck.h
+  - misc_tests.c
+  - misc_tests.h
+  - ns_tests.c
+  - ns_tests.h
+  - nsalloc_tests.c
+  - nsalloc_tests.h
+  - runtests.c
+  - structdata.c
+  - structdata.h
+  - udiffer.py
+  - xmltest.log.expected
+  - xmltest.sh
+- xmlwf/
+  - Makefile.am
+  - Makefile.in
+  - codepage.c
+  - codepage.h
+  - ct.c
+  - filemap.h
+  - readfilemap.c
+  - unixfilemap.c
+  - win32filemap.c
+  - xmlfile.c
+  - xmlfile.h
+  - xmlmime.c
+  - xmlmime.h
+  - xmltchar.h
+  - xmlwf.c
+  - xmlwf_helpgen.py
+  - xmlwf_helpgen.sh

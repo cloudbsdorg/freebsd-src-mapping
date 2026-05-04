@@ -1,0 +1,65 @@
+# CODEBASE MAP for dma
+
+Package: dma
+Source: contrib/dma
+
+Top-level contents:
+- INSTALL
+- LICENSE
+- Makefile
+- Makefile.etc
+- README.markdown
+- TODO
+- VERSION
+- aliases_parse.y
+- aliases_scan.l
+- auth.conf
+- base64.c
+- conf.c
+- crypto.c
+- dfcompat.c
+- dfcompat.h
+- dma-mbox-create.c
+- dma.8
+- dma.c
+- dma.conf
+- dma.h
+- dns.c
+- get-version.sh
+- local.c
+- mail.c
+- net.c
+- spool.c
+- test/
+- util.c
+
+Recursive contents:
+- INSTALL
+- LICENSE
+- Makefile
+- Makefile.etc
+- README.markdown
+- TODO
+- VERSION
+- aliases_parse.y
+- aliases_scan.l
+- auth.conf
+- base64.c
+- conf.c
+- crypto.c
+- dfcompat.c
+- dfcompat.h
+- dma-mbox-create.c
+- dma.8
+- dma.c
+- dma.conf
+- dma.h
+- dns.c
+- get-version.sh
+- local.c
+- mail.c
+- net.c
+- spool.c
+- test/
+  - quote.rfc2822
+- util.c

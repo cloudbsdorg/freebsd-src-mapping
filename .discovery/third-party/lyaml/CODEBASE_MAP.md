@@ -1,0 +1,60 @@
+# CODEBASE MAP for lyaml
+
+Package: lyaml
+Source: contrib/lyaml
+
+Top-level contents:
+- .gitignore
+- .luacov
+- AUTHORS
+- LICENSE
+- NEWS.md
+- README.md
+- build-aux/
+- doc/
+- ext/
+- lib/
+- lukefile
+- lyaml-6.2.8-1.rockspec
+- spec/
+
+Recursive contents:
+- .gitignore
+- .luacov
+- AUTHORS
+- LICENSE
+- NEWS.md
+- README.md
+- build-aux/
+  - config.ld.in
+  - luke
+- doc/
+  - index.html
+  - ldoc.css
+  - modules/
+    - lyaml.explicit.html
+    - lyaml.functional.html
+    - lyaml.html
+    - lyaml.implicit.html
+- ext/
+  - yaml/
+    - emitter.c
+    - lyaml.h
+    - parser.c
+    - scanner.c
+    - yaml.c
+- lib/
+  - lyaml/
+    - explicit.lua
+    - functional.lua
+    - implicit.lua
+    - init.lua
+- lukefile
+- lyaml-6.2.8-1.rockspec
+- spec/
+  - ext_yaml_emitter_spec.yaml
+  - ext_yaml_parser_spec.yaml
+  - ext_yaml_scanner_spec.yaml
+  - lib_lyaml_functional_spec.yaml
+  - lib_lyaml_spec.yaml
+  - spec_helper.lua

@@ -1,0 +1,673 @@
+# CODEBASE MAP for file
+
+Package: file
+Source: contrib/file
+
+Top-level contents:
+- AUTHORS
+- COPYING
+- ChangeLog
+- INSTALL
+- MAINT
+- Makefile.am
+- Makefile.in
+- NEWS
+- README.DEVELOPER
+- README.md
+- RELEASE-PROCEDURE
+- TODO
+- acinclude.m4
+- aclocal.m4
+- compile
+- config.guess
+- config.h.in
+- config.sub
+- configure
+- configure.ac
+- depcomp
+- doc/
+- install-sh
+- libmagic.pc.in
+- ltmain.sh
+- m4/
+- magic/
+- missing
+- python/
+- src/
+- tests/
+
+Recursive contents:
+- AUTHORS
+- COPYING
+- ChangeLog
+- INSTALL
+- MAINT
+- Makefile.am
+- Makefile.in
+- NEWS
+- README.DEVELOPER
+- README.md
+- RELEASE-PROCEDURE
+- TODO
+- acinclude.m4
+- aclocal.m4
+- compile
+- config.guess
+- config.h.in
+- config.sub
+- configure
+- configure.ac
+- depcomp
+- doc/
+  - Makefile.am
+  - Makefile.in
+  - file.man
+  - libmagic.man
+  - magic.man
+- install-sh
+- libmagic.pc.in
+- ltmain.sh
+- m4/
+  - libtool.m4
+  - ltoptions.m4
+  - ltsugar.m4
+  - ltversion.m4
+  - lt~obsolete.m4
+  - visibility.m4
+- magic/
+  - Header
+  - Localstuff
+  - Magdir/
+    - acorn
+    - adi
+    - adventure
+    - aes
+    - algol68
+    - allegro
+    - alliant
+    - amanda
+    - amigaos
+    - android
+    - animation
+    - aout
+    - apache
+    - apl
+    - apple
+    - application
+    - applix
+    - apt
+    - archive
+    - aria
+    - arm
+    - asf
+    - assembler
+    - asterix
+    - att3b
+    - audio
+    - avm
+    - basis
+    - beetle
+    - ber
+    - bflt
+    - bhl
+    - bioinformatics
+    - biosig
+    - blackberry
+    - blcr
+    - blender
+    - blit
+    - bm
+    - bout
+    - bsdi
+    - bsi
+    - btsnoop
+    - burp
+    - bytecode
+    - c-lang
+    - c64
+    - cad
+    - cafebabe
+    - cbor
+    - ccf
+    - cddb
+    - chord
+    - cisco
+    - citrus
+    - clarion
+    - claris
+    - clipper
+    - clojure
+    - coff
+    - commands
+    - communications
+    - compress
+    - console
+    - convex
+    - coverage
+    - cracklib
+    - crypto
+    - ctags
+    - ctf
+    - cubemap
+    - cups
+    - dact
+    - database
+    - dataone
+    - dbpf
+    - der
+    - diamond
+    - dif
+    - diff
+    - digital
+    - dolby
+    - dump
+    - dwarfs
+    - dyadic
+    - ebml
+    - edid
+    - editors
+    - efi
+    - elf
+    - encore
+    - epoc
+    - erlang
+    - espressif
+    - esri
+    - fcs
+    - filesystems
+    - finger
+    - firmware
+    - flash
+    - flif
+    - fonts
+    - forth
+    - fortran
+    - frame
+    - freebsd
+    - fsav
+    - fusecompress
+    - games
+    - gcc
+    - gconv
+    - gentoo
+    - geo
+    - geos
+    - gimp
+    - git
+    - glibc
+    - gnome
+    - gnu
+    - gnumeric
+    - gpt
+    - gpu
+    - grace
+    - graphviz
+    - gringotts
+    - hardware
+    - hitachi-sh
+    - hp
+    - human68k
+    - ibm370
+    - ibm6000
+    - icc
+    - iff
+    - images
+    - inform
+    - intel
+    - interleaf
+    - island
+    - ispell
+    - isz
+    - java
+    - javascript
+    - jpeg
+    - karma
+    - kde
+    - keepass
+    - kerberos
+    - keyman
+    - kicad
+    - kml
+    - lammps
+    - lauterbach
+    - lecter
+    - lex
+    - lif
+    - linux
+    - lisp
+    - llvm
+    - locoscript
+    - lua
+    - luks
+    - m4
+    - mach
+    - macintosh
+    - macos
+    - magic
+    - mail.news
+    - make
+    - map
+    - maple
+    - marc21
+    - mathcad
+    - mathematica
+    - matroska
+    - mcrypt
+    - measure
+    - mercurial
+    - metastore
+    - meteorological
+    - microfocus
+    - mime
+    - mips
+    - mirage
+    - misctools
+    - mkid
+    - mlssa
+    - mmdf
+    - modem
+    - modulefile
+    - motorola
+    - mozilla
+    - msdos
+    - msooxml
+    - msvc
+    - msx
+    - mup
+    - music
+    - nasa
+    - natinst
+    - ncr
+    - netbsd
+    - netscape
+    - netware
+    - news
+    - nifty
+    - nim-lang
+    - nitpicker
+    - numpy
+    - oasis
+    - ocaml
+    - octave
+    - ole2compounddocs
+    - olf
+    - openfst
+    - opentimestamps
+    - oric
+    - os2
+    - os400
+    - os9
+    - osf1
+    - pack
+    - palm
+    - parix
+    - parrot
+    - pascal
+    - pbf
+    - pbm
+    - pc98
+    - pci_ids
+    - pcjr
+    - pdf
+    - pdp
+    - perl
+    - pgf
+    - pgp
+    - pgp-binary-keys
+    - pkgadd
+    - plan9
+    - playdate
+    - plus5
+    - pmem
+    - polyml
+    - printer
+    - project
+    - psdbms
+    - psl
+    - pulsar
+    - puzzle
+    - pwsafe
+    - pyramid
+    - python
+    - qt
+    - revision
+    - riff
+    - ringdove
+    - rpi
+    - rpm
+    - rpmsg
+    - rst
+    - rtf
+    - ruby
+    - rust
+    - sc
+    - sccs
+    - scientific
+    - securitycerts
+    - selinux
+    - sendmail
+    - sequent
+    - sereal
+    - sgi
+    - sgml
+    - sharc
+    - sinclair
+    - sisu
+    - sketch
+    - smalltalk
+    - smile
+    - sniffer
+    - softquad
+    - sosi
+    - spec
+    - spectrum
+    - sql
+    - ssh
+    - ssl
+    - statistics
+    - subtitle
+    - sun
+    - svf
+    - sylk
+    - symbos
+    - sysex
+    - tcl
+    - teapot
+    - terminfo
+    - tex
+    - tgif
+    - ti-8x
+    - timezone
+    - tplink
+    - troff
+    - tuxedo
+    - typeset
+    - uf2
+    - unicode
+    - unisig
+    - unknown
+    - usd
+    - uterus
+    - uuencode
+    - uxn
+    - vacuum-cleaner
+    - varied.out
+    - varied.script
+    - vax
+    - vicar
+    - virtual
+    - virtutech
+    - visx
+    - vms
+    - vmware
+    - vorbis
+    - vxl
+    - warc
+    - weak
+    - web
+    - webassembly
+    - windows
+    - wireless
+    - wordprocessors
+    - wsdl
+    - x68000
+    - xdelta
+    - xenix
+    - xilinx
+    - xo65
+    - xwindows
+    - yara
+    - zfs
+    - zilog
+    - zip
+    - zyxel
+  - Makefile.am
+  - Makefile.in
+  - scripts/
+    - create_filemagic_flac
+- missing
+- python/
+  - CHANGELOG.md
+  - LICENSE
+  - Makefile.am
+  - Makefile.in
+  - README.md
+  - example.py
+  - file_magic/
+    - __init__.py
+  - magic.py
+  - setup.py
+  - tests.py
+- src/
+  - BNF
+  - Makefile.am
+  - Makefile.in
+  - apprentice.c
+  - apptype.c
+  - ascmagic.c
+  - asctime_r.c
+  - asprintf.c
+  - buffer.c
+  - cdf.c
+  - cdf.h
+  - cdf.mk
+  - cdf_time.c
+  - compress.c
+  - ctime_r.c
+  - der.c
+  - der.h
+  - dprintf.c
+  - elfclass.h
+  - encoding.c
+  - file.c
+  - file.h
+  - file_opts.h
+  - fmtcheck.c
+  - fsmagic.c
+  - funcs.c
+  - getline.c
+  - getopt_long.c
+  - gmtime_r.c
+  - is_csv.c
+  - is_json.c
+  - is_simh.c
+  - is_tar.c
+  - localtime_r.c
+  - magic.c
+  - magic.h.in
+  - memtest.c
+  - mygetopt.h
+  - pread.c
+  - print.c
+  - readcdf.c
+  - readelf.c
+  - readelf.h
+  - seccomp.c
+  - softmagic.c
+  - strcasestr.c
+  - strlcat.c
+  - strlcpy.c
+  - tar.h
+  - vasprintf.c
+- tests/
+  - CVE-2014-1943.result
+  - CVE-2014-1943.testfile
+  - HWP2016.hwp.result
+  - HWP2016.hwp.testfile
+  - HWP2016.hwpx.zip.result
+  - HWP2016.hwpx.zip.testfile
+  - HWP97.hwp.result
+  - HWP97.hwp.testfile
+  - JW07022A.mp3.result
+  - JW07022A.mp3.testfile
+  - Makefile.am
+  - Makefile.in
+  - README
+  - android-vdex-1.result
+  - android-vdex-1.testfile
+  - android-vdex-2.result
+  - android-vdex-2.testfile
+  - arj.result
+  - arj.testfile
+  - bcachefs.result
+  - bcachefs.testfile
+  - bcachefs2.result
+  - bcachefs2.testfile
+  - cl8m8ocofedso.result
+  - cl8m8ocofedso.testfile
+  - cmd1.result
+  - cmd1.testfile
+  - cmd2.result
+  - cmd2.testfile
+  - cmd3.result
+  - cmd3.testfile
+  - cmd4.result
+  - cmd4.testfile
+  - dsd64-dff.result
+  - dsd64-dff.testfile
+  - dsd64-dsf.result
+  - dsd64-dsf.testfile
+  - escapevel.result
+  - escapevel.testfile
+  - ext4.result
+  - ext4.testfile
+  - fit-map-data.result
+  - fit-map-data.testfile
+  - gedcom.result
+  - gedcom.testfile
+  - gpkg-1-zst.result
+  - gpkg-1-zst.testfile
+  - hddrawcopytool.result
+  - hddrawcopytool.testfile
+  - hello-racket_rkt.result
+  - hello-racket_rkt.testfile
+  - issue311docx.result
+  - issue311docx.testfile
+  - issue359xlsx.result
+  - issue359xlsx.testfile
+  - jpeg-text.result
+  - jpeg-text.testfile
+  - json1.result
+  - json1.testfile
+  - json2.result
+  - json2.testfile
+  - json3.result
+  - json3.testfile
+  - json4.result
+  - json4.testfile
+  - json5.result
+  - json5.testfile
+  - json6.result
+  - json6.testfile
+  - json7.result
+  - json7.testfile
+  - json8.result
+  - json8.testfile
+  - jsonlines1.result
+  - jsonlines1.testfile
+  - keyman-0.result
+  - keyman-0.testfile
+  - keyman-1.result
+  - keyman-1.testfile
+  - keyman-2.result
+  - keyman-2.testfile
+  - matilde.arm.result
+  - matilde.arm.testfile
+  - multiple-A.magic
+  - multiple-B.magic
+  - multiple.flags
+  - multiple.result
+  - multiple.testfile
+  - pcjr.result
+  - pcjr.testfile
+  - pgp-binary-key-v2-phil.result
+  - pgp-binary-key-v2-phil.testfile
+  - pgp-binary-key-v3-lutz.result
+  - pgp-binary-key-v3-lutz.testfile
+  - pgp-binary-key-v4-dsa.result
+  - pgp-binary-key-v4-dsa.testfile
+  - pgp-binary-key-v4-ecc-no-userid-secret.result
+  - pgp-binary-key-v4-ecc-no-userid-secret.testfile
+  - pgp-binary-key-v4-ecc-secret-key.result
+  - pgp-binary-key-v4-ecc-secret-key.testfile
+  - pgp-binary-key-v4-rsa-key.result
+  - pgp-binary-key-v4-rsa-key.testfile
+  - pgp-binary-key-v4-rsa-no-userid-secret.result
+  - pgp-binary-key-v4-rsa-no-userid-secret.testfile
+  - pgp-binary-key-v4-rsa-secret-key.result
+  - pgp-binary-key-v4-rsa-secret-key.testfile
+  - pnm1.result
+  - pnm1.testfile
+  - pnm2.result
+  - pnm2.testfile
+  - pnm3.result
+  - pnm3.testfile
+  - regex-eol.magic
+  - regex-eol.result
+  - regex-eol.testfile
+  - registry-pol.result
+  - registry-pol.testfile
+  - rpm-v3.0-bin-aarch64.result
+  - rpm-v3.0-bin-aarch64.testfile
+  - rpm-v3.0-bin-powerpc64.result
+  - rpm-v3.0-bin-powerpc64.testfile
+  - rpm-v3.0-bin-s390x.result
+  - rpm-v3.0-bin-s390x.testfile
+  - rpm-v3.0-bin-x86_64.result
+  - rpm-v3.0-bin-x86_64.testfile
+  - rpm-v3.0-src.result
+  - rpm-v3.0-src.testfile
+  - searchbug.magic
+  - searchbug.result
+  - searchbug.testfile
+  - test.c
+  - uf2.result
+  - uf2.testfile
+  - utf16xmlsvg.result
+  - utf16xmlsvg.testfile
+  - xclbin.result
+  - xclbin.testfile
+  - zstd-3-skippable-frames.result
+  - zstd-dictionary-0.result
+  - zstd-dictionary-1.result
+  - zstd-dictionary-2.result
+  - zstd-skippable-frame-0.result
+  - zstd-skippable-frame-4.result
+  - zstd-skippable-frame-8.result
+  - zstd-skippable-frame-C.result
+  - zstd-v0.2-FF.result
+  - zstd-v0.2-FF.testfile
+  - zstd-v0.3-FF.result
+  - zstd-v0.3-FF.testfile
+  - zstd-v0.4-FF.result
+  - zstd-v0.4-FF.testfile
+  - zstd-v0.5-FF.result
+  - zstd-v0.5-FF.testfile
+  - zstd-v0.6-FF.result
+  - zstd-v0.6-FF.testfile
+  - zstd-v0.7-00.result
+  - zstd-v0.7-21.result
+  - zstd-v0.7-21.testfile
+  - zstd-v0.7-22.result
+  - zstd-v0.7-22.testfile
+  - zstd-v0.8-00.result
+  - zstd-v0.8-01.result
+  - zstd-v0.8-01.testfile
+  - zstd-v0.8-02.result
+  - zstd-v0.8-02.testfile
+  - zstd-v0.8-03.result
+  - zstd-v0.8-03.testfile
+  - zstd-v0.8-16.result
+  - zstd-v0.8-16.testfile
+  - zstd-v0.8-20.result
+  - zstd-v0.8-20.testfile
+  - zstd-v0.8-21.result
+  - zstd-v0.8-21.testfile
+  - zstd-v0.8-22.result
+  - zstd-v0.8-22.testfile
+  - zstd-v0.8-23.result
+  - zstd-v0.8-23.testfile
+  - zstd-v0.8-F4.result
+  - zstd-v0.8-F4.testfile
+  - zstd-v0.8-FF.result
+  - zstd-v0.8-FF.testfile

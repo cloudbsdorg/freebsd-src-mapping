@@ -1,0 +1,124 @@
+# CODEBASE MAP for processor-trace
+
+Package: processor-trace
+Source: contrib/processor-trace
+
+Top-level contents:
+- include/
+- libipt/
+
+Recursive contents:
+- include/
+  - posix/
+    - threads.h
+  - pt_compiler.h
+  - pt_version.h
+  - windows/
+    - inttypes.h
+    - threads.h
+- libipt/
+  - CMakeLists.txt
+  - include/
+    - intel-pt.h
+    - intel-pt.h.in
+  - internal/
+    - include/
+      - posix/
+        - pt_section_posix.h
+      - pt_asid.h
+      - pt_block_cache.h
+      - pt_block_decoder.h
+      - pt_config.h
+      - pt_cpu.h
+      - pt_cpuid.h
+      - pt_decoder_function.h
+      - pt_encoder.h
+      - pt_event_queue.h
+      - pt_ild.h
+      - pt_image.h
+      - pt_image_section_cache.h
+      - pt_insn.h
+      - pt_insn_decoder.h
+      - pt_last_ip.h
+      - pt_mapped_section.h
+      - pt_msec_cache.h
+      - pt_opcodes.h
+      - pt_packet.h
+      - pt_packet_decoder.h
+      - pt_query_decoder.h
+      - pt_retstack.h
+      - pt_section.h
+      - pt_section_file.h
+      - pt_sync.h
+      - pt_time.h
+      - pt_tnt_cache.h
+      - pti-disp-defs.h
+      - pti-disp.h
+      - pti-disp_default.h
+      - pti-imm-defs.h
+      - pti-imm.h
+      - pti-modrm-defs.h
+      - pti-modrm.h
+      - pti-sib.h
+      - windows/
+        - pt_section_windows.h
+  - src/
+    - posix/
+      - pt_cpuid.c
+      - pt_section_posix.c
+    - pt_asid.c
+    - pt_block_cache.c
+    - pt_block_decoder.c
+    - pt_config.c
+    - pt_cpu.c
+    - pt_decoder_function.c
+    - pt_encoder.c
+    - pt_error.c
+    - pt_event_queue.c
+    - pt_ild.c
+    - pt_image.c
+    - pt_image_section_cache.c
+    - pt_insn.c
+    - pt_insn_decoder.c
+    - pt_last_ip.c
+    - pt_msec_cache.c
+    - pt_packet.c
+    - pt_packet_decoder.c
+    - pt_query_decoder.c
+    - pt_retstack.c
+    - pt_section.c
+    - pt_section_file.c
+    - pt_sync.c
+    - pt_time.c
+    - pt_tnt_cache.c
+    - pt_version.c
+    - windows/
+      - pt_cpuid.c
+      - pt_section_windows.c
+  - test/
+    - src/
+      - ptunit-asid.c
+      - ptunit-block_cache.c
+      - ptunit-block_decoder.c
+      - ptunit-config.c
+      - ptunit-cpp.cpp
+      - ptunit-cpu.c
+      - ptunit-encoder.c
+      - ptunit-event_queue.c
+      - ptunit-fetch.c
+      - ptunit-ild.c
+      - ptunit-image.c
+      - ptunit-image_section_cache.c
+      - ptunit-insn_decoder.c
+      - ptunit-last_ip.c
+      - ptunit-mapped_section.c
+      - ptunit-msec_cache.c
+      - ptunit-packet.c
+      - ptunit-packet_decoder.c
+      - ptunit-query.c
+      - ptunit-retstack.c
+      - ptunit-section-file.c
+      - ptunit-section.c
+      - ptunit-sync.c
+      - ptunit-time.c
+      - ptunit-tnt_cache.c

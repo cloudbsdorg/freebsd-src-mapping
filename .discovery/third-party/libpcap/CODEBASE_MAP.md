@@ -1,0 +1,524 @@
+# CODEBASE MAP for libpcap
+
+Package: libpcap
+Source: contrib/libpcap
+
+Top-level contents:
+- CHANGES
+- CMakeLists.txt
+- CONTRIBUTING.md
+- CREDITS
+- ChmodBPF/
+- INSTALL.md
+- LICENSE
+- Makefile-devel-adds
+- Makefile.in
+- README.md
+- TODO
+- VERSION
+- aclocal.m4
+- arcnet.h
+- atmuni31.h
+- autogen.sh
+- bpf_dump.c
+- bpf_filter.c
+- bpf_image.c
+- charconv.c
+- charconv.h
+- chmod_bpf
+- cmake/
+- cmake_uninstall.cmake.in
+- cmakeconfig.h.in
+- config.guess
+- config.h.in
+- config.sub
+- configure
+- configure.ac
+- diag-control.h
+- dlpisubs.c
+- dlpisubs.h
+- doc/
+- etherent.c
+- ethertype.h
+- extract.h
+- fad-getad.c
+- fad-gifc.c
+- fad-glifc.c
+- fmtutils.c
+- fmtutils.h
+- ftmacros.h
+- gencode.c
+- gencode.h
+- grammar.y.in
+- ieee80211.h
+- install-sh
+- instrument-functions.c
+- lbl/
+- libpcap.pc.in
+- llc.h
+- missing/
+- mkdep
+- msdos/
+- nametoaddr.c
+- nametoaddr.h
+- nlpid.h
+- nomkdep
+- optimize.c
+- optimize.h
+- org.tcpdump.chmod_bpf.plist
+- pcap/
+- pcap-airpcap.c
+- pcap-airpcap.h
+- pcap-bpf.c
+- pcap-bpf.h
+- pcap-bt-linux.c
+- pcap-bt-linux.h
+- pcap-bt-monitor-linux.c
+- pcap-bt-monitor-linux.h
+- pcap-common.c
+- pcap-common.h
+- pcap-config.1
+- pcap-config.in
+- pcap-dag.c
+- pcap-dag.h
+- pcap-dbus.c
+- pcap-dbus.h
+- pcap-dll.rc
+- pcap-dlpi.c
+- pcap-dos.c
+- pcap-dos.h
+- pcap-dpdk.c
+- pcap-dpdk.h
+- pcap-enet.c
+- pcap-filter.manmisc.in
+- pcap-haiku.c
+- pcap-int.h
+- pcap-libdlpi.c
+- pcap-linktype.manmisc.in
+- pcap-linux.c
+- pcap-namedb.h
+- pcap-netfilter-linux.c
+- pcap-netfilter-linux.h
+- pcap-netmap.c
+- pcap-netmap.h
+- pcap-new.c
+- pcap-nit.c
+- pcap-npf.c
+- pcap-null.c
+- pcap-pf.c
+- pcap-rdmasniff.c
+- pcap-rdmasniff.h
+- pcap-rpcap.c
+- pcap-rpcap.h
+- pcap-savefile.manfile.in
+- pcap-septel.c
+- pcap-septel.h
+- pcap-sita.c
+- pcap-sita.h
+- pcap-sita.html
+- pcap-snf.c
+- pcap-snf.h
+- pcap-snit.c
+- pcap-snoop.c
+- pcap-tc.c
+- pcap-tc.h
+- pcap-tstamp.manmisc.in
+- pcap-types.h
+- pcap-usb-linux-common.h
+- pcap-usb-linux.c
+- pcap-usb-linux.h
+- pcap-util.c
+- pcap-util.h
+- pcap.3pcap.in
+- pcap.c
+- pcap.h
+- pcap_activate.3pcap
+- pcap_breakloop.3pcap
+- pcap_can_set_rfmon.3pcap
+- pcap_close.3pcap
+- pcap_compile.3pcap.in
+- pcap_create.3pcap
+- pcap_datalink.3pcap.in
+- pcap_datalink_name_to_val.3pcap
+- pcap_datalink_val_to_name.3pcap
+- pcap_dump.3pcap
+- pcap_dump_close.3pcap
+- pcap_dump_file.3pcap
+- pcap_dump_flush.3pcap
+- pcap_dump_ftell.3pcap
+- pcap_dump_open.3pcap.in
+- pcap_file.3pcap
+- pcap_fileno.3pcap
+- pcap_findalldevs.3pcap
+- pcap_freecode.3pcap
+- pcap_get_required_select_timeout.3pcap
+- pcap_get_selectable_fd.3pcap
+- pcap_get_tstamp_precision.3pcap.in
+- pcap_geterr.3pcap
+- pcap_init.3pcap
+- pcap_inject.3pcap
+- pcap_is_swapped.3pcap
+- pcap_lib_version.3pcap
+- pcap_list_datalinks.3pcap.in
+- pcap_list_tstamp_types.3pcap.in
+- pcap_lookupdev.3pcap
+- pcap_lookupnet.3pcap
+- pcap_loop.3pcap
+- pcap_major_version.3pcap
+- pcap_next_ex.3pcap
+- pcap_offline_filter.3pcap
+- pcap_open_dead.3pcap.in
+- pcap_open_live.3pcap
+- pcap_open_offline.3pcap.in
+- pcap_set_buffer_size.3pcap
+- pcap_set_datalink.3pcap
+- pcap_set_immediate_mode.3pcap.in
+- pcap_set_promisc.3pcap
+- pcap_set_protocol_linux.3pcap
+- pcap_set_rfmon.3pcap
+- pcap_set_snaplen.3pcap
+- pcap_set_timeout.3pcap
+- pcap_set_tstamp_precision.3pcap.in
+- pcap_set_tstamp_type.3pcap.in
+- pcap_setdirection.3pcap
+- pcap_setfilter.3pcap
+- pcap_setnonblock.3pcap
+- pcap_snapshot.3pcap
+- pcap_stats.3pcap
+- pcap_statustostr.3pcap
+- pcap_strerror.3pcap
+- pcap_tstamp_type_name_to_val.3pcap
+- pcap_tstamp_type_val_to_name.3pcap
+- pflog.h
+- portability.h
+- ppp.h
+- rpcap-protocol.c
+- rpcap-protocol.h
+- rpcapd/
+- savefile.c
+- scanner.l
+- sf-pcap.c
+- sf-pcap.h
+- sf-pcapng.c
+- sf-pcapng.h
+- sockutils.c
+- sockutils.h
+- sslutils.c
+- sslutils.h
+- sunatmpos.h
+- testprogs/
+- tests/
+- thread-local.h
+- varattrs.h
+
+Recursive contents:
+- CHANGES
+- CMakeLists.txt
+- CONTRIBUTING.md
+- CREDITS
+- ChmodBPF/
+  - ChmodBPF
+  - StartupParameters.plist
+- INSTALL.md
+- LICENSE
+- Makefile-devel-adds
+- Makefile.in
+- README.md
+- TODO
+- VERSION
+- aclocal.m4
+- arcnet.h
+- atmuni31.h
+- autogen.sh
+- bpf_dump.c
+- bpf_filter.c
+- bpf_image.c
+- charconv.c
+- charconv.h
+- chmod_bpf
+- cmake/
+  - Modules/
+    - FindAirPcap.cmake
+    - FindDAG.cmake
+    - FindFseeko.cmake
+    - FindLFS.cmake
+    - FindPacket.cmake
+    - FindSNF.cmake
+    - FindTC.cmake
+    - Finddpdk.cmake
+  - have_siocglifconf.c
+- cmake_uninstall.cmake.in
+- cmakeconfig.h.in
+- config.guess
+- config.h.in
+- config.sub
+- configure
+- configure.ac
+- diag-control.h
+- dlpisubs.c
+- dlpisubs.h
+- doc/
+  - README.aix
+  - README.dag
+  - README.haiku.md
+  - README.hpux
+  - README.linux
+  - README.macos
+  - README.septel
+  - README.sita
+  - README.solaris.md
+  - README.windows.md
+- etherent.c
+- ethertype.h
+- extract.h
+- fad-getad.c
+- fad-gifc.c
+- fad-glifc.c
+- fmtutils.c
+- fmtutils.h
+- ftmacros.h
+- gencode.c
+- gencode.h
+- grammar.y.in
+- ieee80211.h
+- install-sh
+- instrument-functions.c
+- lbl/
+  - os-aix4.h
+  - os-aix7.h
+  - os-hpux11.h
+  - os-osf4.h
+  - os-osf5.h
+  - os-solaris2.h
+  - os-sunos4.h
+  - os-ultrix4.h
+- libpcap.pc.in
+- llc.h
+- missing/
+  - asprintf.c
+  - getopt.c
+  - getopt.h
+  - strlcat.c
+  - strlcpy.c
+  - strtok_r.c
+  - win_asprintf.c
+- mkdep
+- msdos/
+  - bin2c.c
+  - makefile
+  - makefile.dj
+  - makefile.wc
+  - pkt_rx0.asm
+  - pkt_rx1.s
+  - pktdrvr.c
+  - pktdrvr.h
+  - readme.dos
+- nametoaddr.c
+- nametoaddr.h
+- nlpid.h
+- nomkdep
+- optimize.c
+- optimize.h
+- org.tcpdump.chmod_bpf.plist
+- pcap/
+  - bluetooth.h
+  - bpf.h
+  - can_socketcan.h
+  - compiler-tests.h
+  - dlt.h
+  - funcattrs.h
+  - ipnet.h
+  - namedb.h
+  - nflog.h
+  - pcap-inttypes.h
+  - pcap.h
+  - sll.h
+  - socket.h
+  - usb.h
+  - vlan.h
+- pcap-airpcap.c
+- pcap-airpcap.h
+- pcap-bpf.c
+- pcap-bpf.h
+- pcap-bt-linux.c
+- pcap-bt-linux.h
+- pcap-bt-monitor-linux.c
+- pcap-bt-monitor-linux.h
+- pcap-common.c
+- pcap-common.h
+- pcap-config.1
+- pcap-config.in
+- pcap-dag.c
+- pcap-dag.h
+- pcap-dbus.c
+- pcap-dbus.h
+- pcap-dll.rc
+- pcap-dlpi.c
+- pcap-dos.c
+- pcap-dos.h
+- pcap-dpdk.c
+- pcap-dpdk.h
+- pcap-enet.c
+- pcap-filter.manmisc.in
+- pcap-haiku.c
+- pcap-int.h
+- pcap-libdlpi.c
+- pcap-linktype.manmisc.in
+- pcap-linux.c
+- pcap-namedb.h
+- pcap-netfilter-linux.c
+- pcap-netfilter-linux.h
+- pcap-netmap.c
+- pcap-netmap.h
+- pcap-new.c
+- pcap-nit.c
+- pcap-npf.c
+- pcap-null.c
+- pcap-pf.c
+- pcap-rdmasniff.c
+- pcap-rdmasniff.h
+- pcap-rpcap.c
+- pcap-rpcap.h
+- pcap-savefile.manfile.in
+- pcap-septel.c
+- pcap-septel.h
+- pcap-sita.c
+- pcap-sita.h
+- pcap-sita.html
+- pcap-snf.c
+- pcap-snf.h
+- pcap-snit.c
+- pcap-snoop.c
+- pcap-tc.c
+- pcap-tc.h
+- pcap-tstamp.manmisc.in
+- pcap-types.h
+- pcap-usb-linux-common.h
+- pcap-usb-linux.c
+- pcap-usb-linux.h
+- pcap-util.c
+- pcap-util.h
+- pcap.3pcap.in
+- pcap.c
+- pcap.h
+- pcap_activate.3pcap
+- pcap_breakloop.3pcap
+- pcap_can_set_rfmon.3pcap
+- pcap_close.3pcap
+- pcap_compile.3pcap.in
+- pcap_create.3pcap
+- pcap_datalink.3pcap.in
+- pcap_datalink_name_to_val.3pcap
+- pcap_datalink_val_to_name.3pcap
+- pcap_dump.3pcap
+- pcap_dump_close.3pcap
+- pcap_dump_file.3pcap
+- pcap_dump_flush.3pcap
+- pcap_dump_ftell.3pcap
+- pcap_dump_open.3pcap.in
+- pcap_file.3pcap
+- pcap_fileno.3pcap
+- pcap_findalldevs.3pcap
+- pcap_freecode.3pcap
+- pcap_get_required_select_timeout.3pcap
+- pcap_get_selectable_fd.3pcap
+- pcap_get_tstamp_precision.3pcap.in
+- pcap_geterr.3pcap
+- pcap_init.3pcap
+- pcap_inject.3pcap
+- pcap_is_swapped.3pcap
+- pcap_lib_version.3pcap
+- pcap_list_datalinks.3pcap.in
+- pcap_list_tstamp_types.3pcap.in
+- pcap_lookupdev.3pcap
+- pcap_lookupnet.3pcap
+- pcap_loop.3pcap
+- pcap_major_version.3pcap
+- pcap_next_ex.3pcap
+- pcap_offline_filter.3pcap
+- pcap_open_dead.3pcap.in
+- pcap_open_live.3pcap
+- pcap_open_offline.3pcap.in
+- pcap_set_buffer_size.3pcap
+- pcap_set_datalink.3pcap
+- pcap_set_immediate_mode.3pcap.in
+- pcap_set_promisc.3pcap
+- pcap_set_protocol_linux.3pcap
+- pcap_set_rfmon.3pcap
+- pcap_set_snaplen.3pcap
+- pcap_set_timeout.3pcap
+- pcap_set_tstamp_precision.3pcap.in
+- pcap_set_tstamp_type.3pcap.in
+- pcap_setdirection.3pcap
+- pcap_setfilter.3pcap
+- pcap_setnonblock.3pcap
+- pcap_snapshot.3pcap
+- pcap_stats.3pcap
+- pcap_statustostr.3pcap
+- pcap_strerror.3pcap
+- pcap_tstamp_type_name_to_val.3pcap
+- pcap_tstamp_type_val_to_name.3pcap
+- pflog.h
+- portability.h
+- ppp.h
+- rpcap-protocol.c
+- rpcap-protocol.h
+- rpcapd/
+  - CMakeLists.txt
+  - Makefile.in
+  - config_params.h
+  - daemon.c
+  - daemon.h
+  - fileconf.c
+  - fileconf.h
+  - log.c
+  - log.h
+  - org.tcpdump.rpcapd.plist
+  - rpcapd-config.manfile.in
+  - rpcapd.c
+  - rpcapd.h
+  - rpcapd.inetd.conf
+  - rpcapd.manadmin.in
+  - rpcapd.rc
+  - rpcapd.socket
+  - rpcapd.xinetd.conf
+  - rpcapd@.service
+  - win32-svc.c
+  - win32-svc.h
+- savefile.c
+- scanner.l
+- sf-pcap.c
+- sf-pcap.h
+- sf-pcapng.c
+- sf-pcapng.h
+- sockutils.c
+- sockutils.h
+- sslutils.c
+- sslutils.h
+- sunatmpos.h
+- testprogs/
+  - CMakeLists.txt
+  - Makefile.in
+  - can_set_rfmon_test.c
+  - capturetest.c
+  - filtertest.c
+  - findalldevstest-perf.c
+  - findalldevstest.c
+  - nonblocktest.c
+  - opentest.c
+  - reactivatetest.c
+  - selpolltest.c
+  - threadsignaltest.c
+  - unix.h
+  - valgrindtest.c
+  - versiontest.c
+  - visopts.py
+  - writecaptest.c
+- tests/
+  - pcap-invalid-version-1.pcap
+  - pcap-invalid-version-2.pcap
+  - pcapng-invalid-vers-1.pcapng
+  - pcapng-invalid-vers-2.pcapng
+  - shb-option-too-long.pcapng
+- thread-local.h
+- varattrs.h

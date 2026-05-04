@@ -1,0 +1,229 @@
+# CODEBASE MAP for pkgconf
+
+Package: pkgconf
+Source: contrib/pkgconf
+
+Top-level contents:
+- AUTHORS
+- CODE_OF_CONDUCT.md
+- COPYING
+- Kyuafile.in
+- Makefile.am
+- Makefile.lite
+- NEWS
+- README.md
+- autogen.sh
+- cli/
+- configure.ac
+- doc/
+- libpkgconf/
+- libpkgconf.pc.in
+- m4/
+- man/
+- meson.build
+- meson_options.txt
+- pkg.m4
+- pkgconf.wxs.in
+- tests/
+- txt2rtf.py
+
+Recursive contents:
+- AUTHORS
+- CODE_OF_CONDUCT.md
+- COPYING
+- Kyuafile.in
+- Makefile.am
+- Makefile.lite
+- NEWS
+- README.md
+- autogen.sh
+- cli/
+  - bomtool/
+    - main.c
+  - getopt_long.c
+  - getopt_long.h
+  - main.c
+  - renderer-msvc.c
+  - renderer-msvc.h
+- configure.ac
+- doc/
+  - conf.py
+  - extract.py
+  - index.rst
+  - libpkgconf-argvsplit.rst
+  - libpkgconf-audit.rst
+  - libpkgconf-cache.rst
+  - libpkgconf-client.rst
+  - libpkgconf-dependency.rst
+  - libpkgconf-fragment.rst
+  - libpkgconf-path.rst
+  - libpkgconf-personality.rst
+  - libpkgconf-pkg.rst
+  - libpkgconf-queue.rst
+  - libpkgconf-tuple.rst
+  - libpkgconf.rst
+- libpkgconf/
+  - argvsplit.c
+  - audit.c
+  - bsdstubs.c
+  - bsdstubs.h
+  - buffer.c
+  - cache.c
+  - client.c
+  - config.h.meson
+  - dependency.c
+  - fileio.c
+  - fragment.c
+  - iter.h
+  - libpkgconf-api.h
+  - libpkgconf.h
+  - meson.build
+  - parser.c
+  - path.c
+  - personality.c
+  - pkg.c
+  - queue.c
+  - stdinc.h
+  - tuple.c
+  - win-dirent.h
+- libpkgconf.pc.in
+- m4/
+  - ax_check_compile_flag.m4
+- man/
+  - bomtool.1
+  - pc.5
+  - pkg.m4.7
+  - pkgconf-personality.5
+  - pkgconf.1
+- meson.build
+- meson_options.txt
+- pkg.m4
+- pkgconf.wxs.in
+- tests/
+  - Kyuafile.in
+  - basic.sh
+  - builtins.sh
+  - conflicts.sh
+  - framework.sh
+  - lib-relocatable/
+    - lib/
+      - pkgconfig/
+        - foo.pc
+  - lib1/
+    - argv-parse-2.pc
+    - argv-parse-3.pc
+    - argv-parse.pc
+    - bar.pc
+    - baz.pc
+    - billion-laughs.pc
+    - c-comment.pc
+    - case-sensitivity.pc
+    - cflags-internal.pc
+    - cflags-libs-only.pc
+    - cflags-libs-private-a.pc
+    - cflags-libs-private-b.pc
+    - cflags-libs-private-c.pc
+    - cflags-whitespace-trailing.pc
+    - cflags-whitespace.pc
+    - child-prefix/
+      - pkgconfig/
+        - child-prefix-1.pc
+    - circular-1.pc
+    - circular-2.pc
+    - circular-3.pc
+    - comments-in-fields.pc
+    - comments.pc
+    - conflicts.pc
+    - depgraph-break.pc
+    - dos-lineendings.pc
+    - empty-tuple.pc
+    - escaped-backslash.pc
+    - explicit-sysroot.pc
+    - flag-order-1.pc
+    - flag-order-3.pc
+    - foo.pc
+    - foobar.pc
+    - fragment-collision-1.pc
+    - fragment-collision-2.pc
+    - fragment-collision-intermediary.pc
+    - fragment-collision.pc
+    - fragment-comment.pc
+    - fragment-escaping-1.pc
+    - fragment-escaping-2.pc
+    - fragment-escaping-3.pc
+    - fragment-group-a.pc
+    - fragment-group-b.pc
+    - fragment-group-c.pc
+    - fragment-groups-2.pc
+    - fragment-groups.pc
+    - fragment-quoting-2.pc
+    - fragment-quoting-3.pc
+    - fragment-quoting-5.pc
+    - fragment-quoting-7.pc
+    - fragment-quoting.pc
+    - framework-1.pc
+    - framework-2.pc
+    - idirafter-ordering.pc
+    - idirafter.pc
+    - incomplete.pc
+    - intermediary-1.pc
+    - intermediary-2.pc
+    - isystem.pc
+    - malformed-1.pc
+    - malformed-quoting.pc
+    - malformed-version.pc
+    - metapackage-1.pc
+    - metapackage-2.pc
+    - metapackage-3.pc
+    - metapackage.pc
+    - missing-require.pc
+    - multiline-bogus.pc
+    - multiline.pc
+    - no-trailing-newline.pc
+    - nocflag.pc
+    - nolib.pc
+    - omg-sysroot-uninstalled.pc
+    - omg-uninstalled.pc
+    - orphaned-requires-private.pc
+    - paren-quoting.pc
+    - pcfiledir.pc
+    - prefix-foo1.pc
+    - prefix-foo2.pc
+    - private-libs-duplication.pc
+    - provides-request-simple.pc
+    - provides.pc
+    - quotes.pc
+    - requires-internal-2.pc
+    - requires-internal-collision.pc
+    - requires-internal-missing.pc
+    - requires-internal.pc
+    - spaces-in-paths.pc
+    - static-archive-libs.pc
+    - static-libs.pc
+    - sysroot-dir-2.pc
+    - sysroot-dir-3.pc
+    - sysroot-dir-4.pc
+    - sysroot-dir-5.pc
+    - sysroot-dir.pc
+    - tilde-quoting.pc
+    - tilde.pc
+    - truncated.pc
+    - tuple-quoting.pc
+    - typelibdir.pc
+    - unavailable-provider.pc
+    - utf8.pc
+    - variable-whitespace.pc
+  - lib2/
+    - foo.pc
+  - lib3/
+    - bar.pc
+  - meson.build
+  - parser.sh
+  - provides.sh
+  - regress.sh
+  - requires.sh
+  - symlink.sh
+  - sysroot.sh
+  - test_env.sh.in
+  - version.sh
+- txt2rtf.py

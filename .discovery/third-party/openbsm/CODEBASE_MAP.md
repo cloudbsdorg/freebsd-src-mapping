@@ -1,0 +1,333 @@
+# CODEBASE MAP for openbsm
+
+Package: openbsm
+Source: contrib/openbsm
+
+Top-level contents:
+- .travis.yml
+- CREDITS
+- FREEBSD-upgrade
+- INSTALL
+- LICENSE
+- Makefile.am
+- Makefile.in
+- NEWS
+- README
+- TODO
+- VERSION
+- aclocal.m4
+- autogen.sh
+- bin/
+- bsm/
+- compat/
+- config/
+- configure
+- configure.ac
+- etc/
+- libauditd/
+- libbsm/
+- m4/
+- man/
+- modules/
+- sys/
+- test/
+- tools/
+
+Recursive contents:
+- .travis.yml
+- CREDITS
+- FREEBSD-upgrade
+- INSTALL
+- LICENSE
+- Makefile.am
+- Makefile.in
+- NEWS
+- README
+- TODO
+- VERSION
+- aclocal.m4
+- autogen.sh
+- bin/
+  - Makefile.am
+  - Makefile.in
+  - audit/
+    - Makefile.am
+    - Makefile.in
+    - audit.8
+    - audit.c
+  - auditd/
+    - Makefile.am
+    - Makefile.in
+    - audit_triggers.defs
+    - audit_warn.c
+    - auditd.8
+    - auditd.c
+    - auditd.h
+    - auditd_control.defs
+    - auditd_darwin.c
+    - auditd_fbsd.c
+  - auditdistd/
+    - Makefile.am
+    - Makefile.in
+    - auditdistd.8
+    - auditdistd.c
+    - auditdistd.conf.5
+    - auditdistd.h
+    - faccessat.h
+    - fstatat.h
+    - openat.h
+    - parse.y
+    - pjdlog.c
+    - pjdlog.h
+    - proto.c
+    - proto.h
+    - proto_common.c
+    - proto_impl.h
+    - proto_socketpair.c
+    - proto_tcp.c
+    - proto_tls.c
+    - proto_uds.c
+    - receiver.c
+    - renameat.h
+    - sandbox.c
+    - sandbox.h
+    - sender.c
+    - sigtimedwait.h
+    - strndup.h
+    - subr.c
+    - subr.h
+    - synch.h
+    - token.l
+    - trail.c
+    - trail.h
+    - unlinkat.h
+  - auditfilterd/
+    - Makefile.am
+    - Makefile.in
+    - auditfilterd.8
+    - auditfilterd.c
+    - auditfilterd.h
+    - auditfilterd_conf.c
+  - auditreduce/
+    - Makefile.am
+    - Makefile.in
+    - auditreduce.1
+    - auditreduce.c
+    - auditreduce.h
+  - praudit/
+    - Makefile.am
+    - Makefile.in
+    - praudit.1
+    - praudit.c
+- bsm/
+  - Makefile.am
+  - Makefile.in
+  - audit_filter.h
+  - audit_uevents.h
+  - auditd_lib.h
+  - libbsm.h
+- compat/
+  - clock_gettime.h
+  - closefrom.h
+  - compat.h
+  - endian.h
+  - endian_enc.h
+  - flopen.h
+  - pidfile.h
+  - queue.h
+  - strlcat.h
+  - strlcpy.h
+  - vis.h
+- config/
+  - config.guess
+  - config.h
+  - config.h.in
+  - config.sub
+  - depcomp
+  - install-sh
+  - ltmain.sh
+  - missing
+  - ylwrap
+- configure
+- configure.ac
+- etc/
+  - audit_class
+  - audit_control
+  - audit_event
+  - audit_filter
+  - audit_user
+  - audit_warn
+- libauditd/
+  - Makefile.am
+  - Makefile.in
+  - auditd_lib.c
+  - libauditd.3
+- libbsm/
+  - Makefile.am
+  - Makefile.in
+  - au_class.3
+  - au_control.3
+  - au_domain.3
+  - au_errno.3
+  - au_event.3
+  - au_fcntl_cmd.3
+  - au_free_token.3
+  - au_io.3
+  - au_mask.3
+  - au_notify.3
+  - au_open.3
+  - au_socket_type.3
+  - au_token.3
+  - au_user.3
+  - audit_submit.3
+  - bsm_audit.c
+  - bsm_class.c
+  - bsm_control.c
+  - bsm_domain.c
+  - bsm_errno.c
+  - bsm_event.c
+  - bsm_fcntl.c
+  - bsm_flags.c
+  - bsm_io.c
+  - bsm_mask.c
+  - bsm_notify.c
+  - bsm_socket_type.c
+  - bsm_token.c
+  - bsm_user.c
+  - bsm_wrappers.c
+  - libbsm.3
+- m4/
+  - libtool.m4
+  - ltoptions.m4
+  - ltsugar.m4
+  - ltversion.m4
+- man/
+  - Makefile.am
+  - Makefile.in
+  - audit.2
+  - audit.log.5
+  - audit_class.5
+  - audit_control.5
+  - audit_event.5
+  - audit_user.5
+  - audit_warn.5
+  - auditctl.2
+  - auditon.2
+  - getaudit.2
+  - getauid.2
+  - setaudit.2
+  - setauid.2
+- modules/
+  - Makefile.am
+  - Makefile.in
+  - auditfilter_noop/
+    - Makefile.am
+    - Makefile.in
+    - auditfilter_noop.c
+- sys/
+  - Makefile.am
+  - Makefile.in
+  - bsm/
+    - Makefile.am
+    - Makefile.in
+    - audit.h
+    - audit_domain.h
+    - audit_errno.h
+    - audit_fcntl.h
+    - audit_internal.h
+    - audit_kevents.h
+    - audit_record.h
+    - audit_socket_type.h
+- test/
+  - Makefile.am
+  - Makefile.in
+  - bsm/
+    - Makefile.am
+    - Makefile.in
+    - generate.c
+  - reference/
+    - E2BIG_record
+    - EACCES_record
+    - EBADF_record
+    - EBUSY_record
+    - ECHILD_record
+    - EDEADLK_record
+    - EEXIST_record
+    - EFAULT_record
+    - EFBIG_record
+    - EINTR_record
+    - EINVAL_record
+    - EIO_record
+    - EISDIR_record
+    - EMFILE_record
+    - EMLINK_record
+    - ENFILE_record
+    - ENODEV_record
+    - ENOENT_record
+    - ENOEXEC_record
+    - ENOMEM_record
+    - ENOSPC_record
+    - ENOTBLK_record
+    - ENOTDIR_record
+    - ENOTTY_record
+    - ENXIO_record
+    - EPERM_record
+    - EPIPE_record
+    - EROFS_record
+    - ESPIPE_record
+    - ESRCH_record
+    - ETXTBSY_record
+    - EXDEV_record
+    - arg32_record
+    - arg32_token
+    - data_record
+    - data_token
+    - file_record
+    - file_token
+    - header32_token
+    - in_addr_record
+    - in_addr_token
+    - ip_record
+    - ip_token
+    - ipc_record
+    - ipc_token
+    - iport_record
+    - iport_token
+    - opaque_record
+    - opaque_token
+    - path_record
+    - path_token
+    - process32_record
+    - process32_token
+    - process32ex_record-IPv4
+    - process32ex_record-IPv6
+    - process32ex_token-IPv4
+    - process32ex_token-IPv6
+    - process64_record
+    - process64_token
+    - process64ex_record-IPv4
+    - process64ex_record-IPv6
+    - process64ex_token-IPv4
+    - process64ex_token-IPv6
+    - return32_record
+    - return32_token
+    - seq_record
+    - seq_token
+    - socketex_record
+    - socketex_token
+    - subject32_record
+    - subject32_token
+    - subject32ex_record
+    - subject32ex_token-IPv4
+    - subject32ex_token-IPv6
+    - text_record
+    - text_token
+    - trailer_token
+    - zonename_record
+    - zonename_token
+  - samples/
+    - execve-long-args.trail
+- tools/
+  - Makefile.am
+  - Makefile.in
+  - audump.c

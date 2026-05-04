@@ -1,0 +1,171 @@
+# CODEBASE MAP for libucl
+
+Package: libucl
+Source: contrib/libucl
+
+Top-level contents:
+- .clang-format
+- COPYING
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- doc/
+- include/
+- klib/
+- lua/
+- src/
+- tests/
+- uthash/
+
+Recursive contents:
+- .clang-format
+- COPYING
+- FREEBSD-Xlist
+- FREEBSD-upgrade
+- doc/
+  - libucl.3
+- include/
+  - lua_ucl.h
+  - ucl++.h
+  - ucl.h
+- klib/
+  - khash.h
+  - kvec.h
+- lua/
+  - lua_ucl.c
+  - test.lua
+- src/
+  - mum.h
+  - tree.h
+  - ucl_chartable.h
+  - ucl_emitter.c
+  - ucl_emitter_streamline.c
+  - ucl_emitter_utils.c
+  - ucl_hash.c
+  - ucl_hash.h
+  - ucl_internal.h
+  - ucl_msgpack.c
+  - ucl_parser.c
+  - ucl_schema.c
+  - ucl_sexp.c
+  - ucl_util.c
+- tests/
+  - .gitignore
+  - CMakeLists.txt
+  - basic/
+    - 1.in
+    - 1.res
+    - 10.in
+    - 11.in
+    - 11.res
+    - 12.in
+    - 12.res
+    - 13.in
+    - 13.res
+    - 14.in
+    - 14.res
+    - 15.in
+    - 15.inc
+    - 15.res
+    - 16.in
+    - 16.inc
+    - 16.res
+    - 17.in
+    - 17.res
+    - 18.in
+    - 18.res
+    - 19-append.inc
+    - 19-merge.inc
+    - 19-rewrite.inc
+    - 19.in
+    - 19.res
+    - 2.in
+    - 2.res
+    - 22.in
+    - 22.res
+    - 23-json-with-braces.inc
+    - 23-json-without-braces.inc
+    - 23-ucl-with-braces.inc
+    - 23-ucl-without-braces.inc
+    - 23.in
+    - 23.res
+    - 3.in
+    - 3.res
+    - 4.in
+    - 4.res
+    - 6.in
+    - 6.res
+    - 8.in
+    - 8.res
+    - 9-comment.inc
+    - 9-empty.inc
+    - 9.in
+    - 9.inc
+    - 9.res
+    - comments.in
+    - comments.res
+    - escapes.in
+    - escapes.res
+    - include_dir/
+      - invalid.conf
+      - pri1.conf
+      - pri2.conf
+      - test1.conf
+      - test2.conf
+      - test3.conf
+    - issue319.in
+    - issue319.res
+    - load.in
+    - load.inc
+    - load.res
+    - squote.in
+    - squote.res
+  - basic.test
+  - fuzzers/
+    - ucl_add_string_fuzzer.c
+    - ucl_msgpack_fuzzer.c
+  - generate.res
+  - generate.test
+  - msgpack.test
+  - run_tests.sh
+  - schema/
+    - additionalItems.json
+    - additionalProperties.json
+    - allOf.json
+    - anyOf.json
+    - definitions.json.disabled
+    - dependencies.json
+    - enum.json
+    - items.json
+    - maxItems.json
+    - maxLength.json
+    - maxProperties.json
+    - maximum.json
+    - minItems.json
+    - minLength.json
+    - minProperties.json
+    - minimum.json
+    - multipleOf.json
+    - not.json
+    - oneOf.json
+    - pattern.json
+    - patternProperties.json
+    - properties.json
+    - ref.json
+    - refRemote.json.disabled
+    - required.json
+    - type.json
+    - uniqueItems.json
+  - schema.test
+  - speed.test
+  - streamline.res
+  - streamline.test
+  - test_basic.c
+  - test_generate.c
+  - test_msgpack.c
+  - test_schema.c
+  - test_speed.c
+  - test_streamline.c
+- uthash/
+  - uthash.h
+  - utlist.h
+  - utstring.h

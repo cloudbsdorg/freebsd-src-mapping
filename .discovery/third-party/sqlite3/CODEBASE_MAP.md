@@ -1,0 +1,80 @@
+# CODEBASE MAP for sqlite3
+
+Package: sqlite3
+Source: contrib/sqlite3
+
+Top-level contents:
+- Makefile.fallback
+- Makefile.in
+- Makefile.msc
+- README.txt
+- Replace.cs
+- VERSION
+- auto.def
+- autosetup/
+- configure
+- shell.c
+- sqlite3.1
+- sqlite3.c
+- sqlite3.h
+- sqlite3.pc.in
+- sqlite3.rc
+- sqlite3ext.h
+- sqlite3rc.h
+- tea/
+
+Recursive contents:
+- Makefile.fallback
+- Makefile.in
+- Makefile.msc
+- README.txt
+- Replace.cs
+- VERSION
+- auto.def
+- autosetup/
+  - LICENSE
+  - README.autosetup
+  - README.md
+  - autosetup
+  - autosetup-config.guess
+  - autosetup-config.sub
+  - autosetup-find-tclsh
+  - autosetup-test-tclsh
+  - cc-db.tcl
+  - cc-lib.tcl
+  - cc-shared.tcl
+  - cc.tcl
+  - find_tclconfig.tcl
+  - jimsh0.c
+  - pkg-config.tcl
+  - proj.tcl
+  - sqlite-config.tcl
+  - system.tcl
+  - teaish/
+    - README.txt
+    - core.tcl
+    - feature.tcl
+    - tester.tcl
+- configure
+- shell.c
+- sqlite3.1
+- sqlite3.c
+- sqlite3.h
+- sqlite3.pc.in
+- sqlite3.rc
+- sqlite3ext.h
+- sqlite3rc.h
+- tea/
+  - Makefile.in
+  - README.txt
+  - _teaish.tester.tcl.in
+  - auto.def
+  - configure
+  - doc/
+    - sqlite3.n
+  - generic/
+    - tclsqlite3.c
+  - license.terms
+  - pkgIndex.tcl.in
+  - teaish.tcl
+  - teaish.test.tcl

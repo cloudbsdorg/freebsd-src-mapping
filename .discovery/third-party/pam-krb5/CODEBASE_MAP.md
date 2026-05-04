@@ -1,0 +1,320 @@
+# CODEBASE MAP for pam-krb5
+
+Package: pam-krb5
+Source: contrib/pam-krb5
+
+Top-level contents:
+- .clang-format
+- .github/
+- LICENSE
+- Makefile.am
+- NEWS
+- README
+- README.md
+- TODO
+- bootstrap
+- ci/
+- configure.ac
+- docs/
+- m4/
+- module/
+- pam-util/
+- portable/
+- tests/
+
+Recursive contents:
+- .clang-format
+- .github/
+  - dependabot.yml
+  - workflows/
+    - build.yaml
+- LICENSE
+- Makefile.am
+- NEWS
+- README
+- README.md
+- TODO
+- bootstrap
+- ci/
+  - README.md
+  - files/
+    - heimdal/
+      - heimdal-kdc
+      - kadmind.acl
+      - kdc.conf
+      - krb5.conf
+      - pki-mapping
+    - mit/
+      - extensions.client
+      - extensions.kdc
+      - kadm5.acl
+      - kdc.conf
+      - krb5.conf
+  - install
+  - kdc-setup-heimdal
+  - kdc-setup-mit
+  - test
+- configure.ac
+- docs/
+  - docknot.yaml
+  - pam_krb5.pod
+- m4/
+  - cc-flags.m4
+  - clang.m4
+  - kadm5clnt.m4
+  - krb5-config.m4
+  - krb5-pkinit.m4
+  - krb5.m4
+  - ld-version.m4
+  - lib-depends.m4
+  - lib-helper.m4
+  - lib-pathname.m4
+  - pam-const.m4
+- module/
+  - account.c
+  - alt-auth.c
+  - auth.c
+  - cache.c
+  - context.c
+  - fast.c
+  - internal.h
+  - options.c
+  - pam_krb5.map
+  - pam_krb5.sym
+  - password.c
+  - prompting.c
+  - public.c
+  - setcred.c
+  - support.c
+- pam-util/
+  - args.c
+  - args.h
+  - logging.c
+  - logging.h
+  - options.c
+  - options.h
+  - vector.c
+  - vector.h
+- portable/
+  - asprintf.c
+  - dummy.c
+  - issetugid.c
+  - kadmin.h
+  - krb5-extra.c
+  - krb5-profile.c
+  - krb5.h
+  - macros.h
+  - mkstemp.c
+  - pam.h
+  - pam_syslog.c
+  - pam_vsyslog.c
+  - reallocarray.c
+  - stdbool.h
+  - strndup.c
+  - system.h
+- tests/
+  - README
+  - TESTS
+  - config/
+    - README
+  - data/
+    - cppcheck.supp
+    - generate-krb5-conf
+    - krb5-pam.conf
+    - krb5.conf
+    - perl.conf
+    - scripts/
+      - alt-auth/
+        - basic
+        - basic-debug
+        - fail
+        - fail-debug
+        - fallback
+        - fallback-debug
+        - fallback-realm
+        - force
+        - force-fail-debug
+        - force-fallback
+        - only
+        - only-fail
+        - username-map
+        - username-map-prefix
+      - bad-authtok/
+        - no-prompt
+        - try-first
+        - try-first-debug
+        - use-first
+        - use-first-debug
+      - basic/
+        - force-first
+        - force-first-debug
+        - ignore-root
+        - ignore-root-debug
+        - minimum-uid
+        - minimum-uid-debug
+        - no-context
+        - no-context-debug
+      - cache/
+        - basic
+        - end-data-silent
+        - open-session
+        - search-k5login
+        - search-k5login-debug
+      - cache-cleanup/
+        - auth-only
+      - expired/
+        - basic-heimdal
+        - basic-heimdal-debug
+        - basic-heimdal-flag-silent
+        - basic-heimdal-old
+        - basic-heimdal-old-debug
+        - basic-heimdal-silent
+        - basic-mit
+        - basic-mit-debug
+        - basic-mit-flag-silent
+        - basic-mit-silent
+        - defer-mit
+        - defer-mit-debug
+        - fail
+        - fail-debug
+      - fast/
+        - anonymous
+        - anonymous-debug
+        - ccache
+        - ccache-debug
+        - no-ccache
+        - no-ccache-debug
+      - long/
+        - password
+        - password-debug
+        - use-first
+        - use-first-debug
+      - no-cache/
+        - no-prompt
+        - no-prompt-try
+        - no-prompt-use
+        - prompt
+        - prompt-expose
+        - prompt-fail
+        - prompt-fail-debug
+        - prompt-principal
+        - try-first
+        - use-first
+      - pam-user/
+        - no-update
+        - update
+      - password/
+        - authtok
+        - authtok-force
+        - authtok-too-long
+        - authtok-too-long-debug
+        - banner
+        - banner-expose
+        - basic
+        - basic-debug
+        - expose
+        - ignore
+        - no-banner
+        - no-banner-expose
+        - prompt-principal
+        - too-long
+        - too-long-debug
+      - pkinit/
+        - basic
+        - basic-debug
+        - no-use-pkinit
+        - pin-mit
+        - preauth-opt-mit
+        - prompt-try
+        - prompt-use
+        - try-pkinit
+        - try-pkinit-debug
+        - try-pkinit-debug-mit
+      - realm/
+        - fail-bad-user-realm
+        - fail-no-realm
+        - fail-no-realm-debug
+        - fail-realm
+        - fail-user-realm
+        - pass-realm
+        - pass-user-realm
+      - stacked/
+        - auth-only
+        - basic
+        - prompt
+        - prompt-principal
+        - try-first
+        - use-first
+      - trace/
+        - supported
+        - unsupported
+    - valgrind.supp
+  - docs/
+    - pod-spelling-t
+    - pod-t
+    - spdx-license-t
+  - fakepam/
+    - README
+    - config.c
+    - data.c
+    - general.c
+    - internal.h
+    - kuserok.c
+    - logging.c
+    - pam.h
+    - script.c
+    - script.h
+  - module/
+    - alt-auth-t.c
+    - bad-authtok-t.c
+    - basic-t.c
+    - cache-cleanup-t.c
+    - cache-t.c
+    - expired-t.c
+    - fast-anon-t.c
+    - fast-t.c
+    - long-t.c
+    - no-cache-t.c
+    - pam-user-t.c
+    - password-t.c
+    - pkinit-t.c
+    - realm-t.c
+    - stacked-t.c
+    - trace-t.c
+  - pam-util/
+    - args-t.c
+    - fakepam-t.c
+    - logging-t.c
+    - options-t.c
+    - vector-t.c
+  - portable/
+    - asprintf-t.c
+    - asprintf.c
+    - mkstemp-t.c
+    - mkstemp.c
+    - strndup-t.c
+    - strndup.c
+  - runtests.c
+  - style/
+    - obsolete-strings-t
+  - tap/
+    - basic.c
+    - basic.h
+    - kadmin.c
+    - kadmin.h
+    - kerberos.c
+    - kerberos.h
+    - libtap.sh
+    - macros.h
+    - perl/
+      - Test/
+        - RRA/
+          - Automake.pm
+          - Config.pm
+        - RRA.pm
+    - process.c
+    - process.h
+    - string.c
+    - string.h
+  - valgrind/
+    - logs-t

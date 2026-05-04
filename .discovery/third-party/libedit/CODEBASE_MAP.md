@@ -1,0 +1,126 @@
+# CODEBASE MAP for libedit
+
+Package: libedit
+Source: contrib/libedit
+
+Top-level contents:
+- ChangeLog
+- Makefile
+- TEST/
+- chared.c
+- chared.h
+- chartype.c
+- chartype.h
+- common.c
+- config.h
+- edit.expsym
+- editline.3
+- editline.7
+- editrc.5
+- el.c
+- el.h
+- eln.c
+- emacs.c
+- filecomplete.c
+- filecomplete.h
+- hist.c
+- hist.h
+- histedit.h
+- history.c
+- historyn.c
+- keymacro.c
+- keymacro.h
+- libedit.pc
+- literal.c
+- literal.h
+- makelist
+- map.c
+- map.h
+- parse.c
+- parse.h
+- prompt.c
+- prompt.h
+- read.c
+- read.h
+- readline/
+- readline.c
+- refresh.c
+- refresh.h
+- search.c
+- search.h
+- shlib_version
+- sig.c
+- sig.h
+- sys.h
+- terminal.c
+- terminal.h
+- tokenizer.c
+- tokenizern.c
+- tty.c
+- tty.h
+- vi.c
+
+Recursive contents:
+- ChangeLog
+- Makefile
+- TEST/
+  - Makefile
+  - fuzz1.c
+  - rl1.c
+  - tc1.c
+  - test_filecompletion.c
+  - wtc1.c
+- chared.c
+- chared.h
+- chartype.c
+- chartype.h
+- common.c
+- config.h
+- edit.expsym
+- editline.3
+- editline.7
+- editrc.5
+- el.c
+- el.h
+- eln.c
+- emacs.c
+- filecomplete.c
+- filecomplete.h
+- hist.c
+- hist.h
+- histedit.h
+- history.c
+- historyn.c
+- keymacro.c
+- keymacro.h
+- libedit.pc
+- literal.c
+- literal.h
+- makelist
+- map.c
+- map.h
+- parse.c
+- parse.h
+- prompt.c
+- prompt.h
+- read.c
+- read.h
+- readline/
+  - Makefile
+  - readline.h
+- readline.c
+- refresh.c
+- refresh.h
+- search.c
+- search.h
+- shlib_version
+- sig.c
+- sig.h
+- sys.h
+- terminal.c
+- terminal.h
+- tokenizer.c
+- tokenizern.c
+- tty.c
+- tty.h
+- vi.c

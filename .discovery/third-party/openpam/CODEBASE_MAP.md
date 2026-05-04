@@ -1,0 +1,288 @@
+# CODEBASE MAP for openpam
+
+Package: openpam
+Source: contrib/openpam
+
+Top-level contents:
+- CREDITS
+- HISTORY
+- INSTALL
+- LICENSE
+- Makefile.am
+- Makefile.in
+- README
+- RELNOTES
+- TODO
+- aclocal.m4
+- autogen.sh
+- bin/
+- compile
+- config.guess
+- config.h.in
+- config.sub
+- configure
+- configure.ac
+- depcomp
+- doc/
+- freebsd/
+- include/
+- install-sh
+- lib/
+- ltmain.sh
+- m4/
+- misc/
+- missing
+- modules/
+- t/
+- test-driver
+
+Recursive contents:
+- CREDITS
+- HISTORY
+- INSTALL
+- LICENSE
+- Makefile.am
+- Makefile.in
+- README
+- RELNOTES
+- TODO
+- aclocal.m4
+- autogen.sh
+- bin/
+  - Makefile.am
+  - Makefile.in
+  - openpam_dump_policy/
+    - Makefile.am
+    - Makefile.in
+    - openpam_dump_policy.c
+  - pamtest/
+    - Makefile.am
+    - Makefile.in
+    - pamtest.1
+    - pamtest.c
+  - su/
+    - Makefile.am
+    - Makefile.in
+    - su.1
+    - su.c
+- compile
+- config.guess
+- config.h.in
+- config.sub
+- configure
+- configure.ac
+- depcomp
+- doc/
+  - Makefile.am
+  - Makefile.in
+  - man/
+    - Makefile.am
+    - Makefile.in
+    - openpam.3
+    - openpam.man
+    - openpam_borrow_cred.3
+    - openpam_free_data.3
+    - openpam_free_envlist.3
+    - openpam_get_feature.3
+    - openpam_get_option.3
+    - openpam_log.3
+    - openpam_nullconv.3
+    - openpam_readline.3
+    - openpam_readlinev.3
+    - openpam_readword.3
+    - openpam_restore_cred.3
+    - openpam_set_feature.3
+    - openpam_set_option.3
+    - openpam_straddch.3
+    - openpam_subst.3
+    - openpam_ttyconv.3
+    - pam.3
+    - pam.conf.5
+    - pam.man
+    - pam_acct_mgmt.3
+    - pam_authenticate.3
+    - pam_chauthtok.3
+    - pam_close_session.3
+    - pam_conv.3
+    - pam_end.3
+    - pam_error.3
+    - pam_get_authtok.3
+    - pam_get_data.3
+    - pam_get_item.3
+    - pam_get_user.3
+    - pam_getenv.3
+    - pam_getenvlist.3
+    - pam_info.3
+    - pam_open_session.3
+    - pam_prompt.3
+    - pam_putenv.3
+    - pam_set_data.3
+    - pam_set_item.3
+    - pam_setcred.3
+    - pam_setenv.3
+    - pam_sm_acct_mgmt.3
+    - pam_sm_authenticate.3
+    - pam_sm_chauthtok.3
+    - pam_sm_close_session.3
+    - pam_sm_open_session.3
+    - pam_sm_setcred.3
+    - pam_start.3
+    - pam_strerror.3
+    - pam_verror.3
+    - pam_vinfo.3
+    - pam_vprompt.3
+- freebsd/
+  - Makefile.in
+- include/
+  - Makefile.am
+  - Makefile.in
+  - security/
+    - Makefile.am
+    - Makefile.in
+    - openpam.h
+    - openpam_attr.h
+    - openpam_version.h
+    - pam_appl.h
+    - pam_constants.h
+    - pam_modules.h
+    - pam_types.h
+- install-sh
+- lib/
+  - Makefile.am
+  - Makefile.in
+  - libpam/
+    - Makefile.am
+    - Makefile.in
+    - openpam_asprintf.c
+    - openpam_asprintf.h
+    - openpam_borrow_cred.c
+    - openpam_check_owner_perms.c
+    - openpam_configure.c
+    - openpam_constants.c
+    - openpam_constants.h
+    - openpam_cred.h
+    - openpam_ctype.h
+    - openpam_debug.h
+    - openpam_dispatch.c
+    - openpam_dlfunc.h
+    - openpam_dynamic.c
+    - openpam_features.c
+    - openpam_features.h
+    - openpam_findenv.c
+    - openpam_free_data.c
+    - openpam_free_envlist.c
+    - openpam_get_feature.c
+    - openpam_get_option.c
+    - openpam_impl.h
+    - openpam_load.c
+    - openpam_log.c
+    - openpam_nullconv.c
+    - openpam_readline.c
+    - openpam_readlinev.c
+    - openpam_readword.c
+    - openpam_restore_cred.c
+    - openpam_set_feature.c
+    - openpam_set_option.c
+    - openpam_static.c
+    - openpam_straddch.c
+    - openpam_strlcat.c
+    - openpam_strlcat.h
+    - openpam_strlcmp.h
+    - openpam_strlcpy.c
+    - openpam_strlcpy.h
+    - openpam_strlset.c
+    - openpam_strlset.h
+    - openpam_subst.c
+    - openpam_ttyconv.c
+    - openpam_vasprintf.c
+    - openpam_vasprintf.h
+    - pam_acct_mgmt.c
+    - pam_authenticate.c
+    - pam_authenticate_secondary.c
+    - pam_chauthtok.c
+    - pam_close_session.c
+    - pam_end.c
+    - pam_error.c
+    - pam_get_authtok.c
+    - pam_get_data.c
+    - pam_get_item.c
+    - pam_get_mapped_authtok.c
+    - pam_get_mapped_username.c
+    - pam_get_user.c
+    - pam_getenv.c
+    - pam_getenvlist.c
+    - pam_info.c
+    - pam_open_session.c
+    - pam_prompt.c
+    - pam_putenv.c
+    - pam_set_data.c
+    - pam_set_item.c
+    - pam_set_mapped_authtok.c
+    - pam_set_mapped_username.c
+    - pam_setcred.c
+    - pam_setenv.c
+    - pam_sm_acct_mgmt.c
+    - pam_sm_authenticate.c
+    - pam_sm_authenticate_secondary.c
+    - pam_sm_chauthtok.c
+    - pam_sm_close_session.c
+    - pam_sm_get_mapped_authtok.c
+    - pam_sm_get_mapped_username.c
+    - pam_sm_open_session.c
+    - pam_sm_set_mapped_authtok.c
+    - pam_sm_set_mapped_username.c
+    - pam_sm_setcred.c
+    - pam_start.c
+    - pam_strerror.c
+    - pam_verror.c
+    - pam_vinfo.c
+    - pam_vprompt.c
+- ltmain.sh
+- m4/
+  - ax_compiler_vendor.m4
+  - ax_pkg_config.m4
+  - libtool.m4
+  - ltoptions.m4
+  - ltsugar.m4
+  - ltversion.m4
+  - lt~obsolete.m4
+- misc/
+  - Makefile.am
+  - Makefile.in
+  - coverity.sh.in
+  - gendoc.pl
+- missing
+- modules/
+  - Makefile.am
+  - Makefile.in
+  - pam_deny/
+    - Makefile.am
+    - Makefile.in
+    - pam_deny.c
+  - pam_permit/
+    - Makefile.am
+    - Makefile.in
+    - pam_permit.c
+  - pam_return/
+    - Makefile.am
+    - Makefile.in
+    - pam_return.c
+  - pam_unix/
+    - Makefile.am
+    - Makefile.in
+    - pam_unix.c
+- t/
+  - Makefile.am
+  - Makefile.in
+  - t_openpam_ctype.c
+  - t_openpam_dispatch.c
+  - t_openpam_readlinev.c
+  - t_openpam_readword.c
+  - t_openpam_straddch.c
+  - t_openpam_subst.c
+  - t_pam_conv.c
+  - t_pam_conv.h
+  - t_pam_env.c
+  - t_pam_err.c
+  - t_pam_err.h
+- test-driver

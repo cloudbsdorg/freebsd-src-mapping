@@ -1,0 +1,81 @@
+# CODEBASE MAP for smbfs
+
+Package: smbfs
+Source: contrib/smbfs
+
+Top-level contents:
+- COPYRIGHT
+- CREDITS
+- FREEBSD-upgrade
+- HISTORY
+- INSTALL
+- Makefile
+- Makefile.inc
+- README
+- config.mk.in
+- configure
+- examples/
+- include/
+- lib/
+- mount_smbfs/
+- smbutil/
+
+Recursive contents:
+- COPYRIGHT
+- CREDITS
+- FREEBSD-upgrade
+- HISTORY
+- INSTALL
+- Makefile
+- Makefile.inc
+- README
+- config.mk.in
+- configure
+- examples/
+  - dot.nsmbrc
+  - print/
+    - lj6l
+    - ljspool
+    - printcap.sample
+    - tolj
+  - smbfs.sh.sample
+- include/
+  - cflib.h
+  - netsmb/
+    - nb_lib.h
+    - smb_lib.h
+    - smb_rap.h
+- lib/
+  - Makefile
+  - Makefile.inc
+  - smb/
+    - Makefile
+    - cfopt.c
+    - ctx.c
+    - file.c
+    - kiconv.c
+    - mbuf.c
+    - nb.c
+    - nb_name.c
+    - nb_net.c
+    - nbns_rq.c
+    - nls.c
+    - print.c
+    - rap.c
+    - rcfile.c
+    - rcfile_priv.h
+    - rq.c
+    - subr.c
+- mount_smbfs/
+  - mount_smbfs.8
+  - mount_smbfs.c
+- smbutil/
+  - Makefile
+  - common.h
+  - dumptree.c
+  - login.c
+  - lookup.c
+  - print.c
+  - smbutil.1
+  - smbutil.c
+  - view.c

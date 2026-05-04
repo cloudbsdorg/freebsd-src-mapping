@@ -1,0 +1,451 @@
+# CODEBASE MAP for one-true-awk
+
+Package: one-true-awk
+Source: contrib/one-true-awk
+
+Top-level contents:
+- ChangeLog
+- FIXES
+- FIXES.1e
+- FREEBSD-upgrade
+- LICENSE
+- README.md
+- REGRESS
+- TODO
+- awk.1
+- awk.h
+- awkgram.y
+- b.c
+- bugs-fixed/
+- lex.c
+- lib.c
+- main.c
+- makefile
+- maketab.c
+- parse.c
+- proto.h
+- run.c
+- testdir/
+- tran.c
+
+Recursive contents:
+- ChangeLog
+- FIXES
+- FIXES.1e
+- FREEBSD-upgrade
+- LICENSE
+- README.md
+- REGRESS
+- TODO
+- awk.1
+- awk.h
+- awkgram.y
+- b.c
+- bugs-fixed/
+  - README
+  - REGRESS
+  - a-format.awk
+  - a-format.bad
+  - a-format.ok
+  - concat-assign-same.awk
+  - concat-assign-same.bad
+  - concat-assign-same.ok
+  - decr-NF.awk
+  - decr-NF.bad
+  - decr-NF.ok
+  - fmt-overflow.awk
+  - fmt-overflow.ok
+  - fs-overflow.awk
+  - fs-overflow.ok
+  - getline-corruption.awk
+  - getline-corruption.in
+  - getline-corruption.ok
+  - getline-numeric.awk
+  - getline-numeric.bad
+  - getline-numeric.in
+  - getline-numeric.ok
+  - inf-nan-torture.awk
+  - inf-nan-torture.in
+  - inf-nan-torture.ok
+  - matchop-deref.awk
+  - matchop-deref.bad
+  - matchop-deref.in
+  - matchop-deref.ok
+  - missing-precision.awk
+  - missing-precision.err
+  - negative-nf.awk
+  - negative-nf.err
+  - nf-self-assign.awk
+  - nf-self-assign.bad
+  - nf-self-assign.ok
+  - numeric-fs.awk
+  - numeric-fs.ok
+  - numeric-output-seps.awk
+  - numeric-output-seps.bad
+  - numeric-output-seps.ok
+  - numeric-rs.awk
+  - numeric-rs.bad
+  - numeric-rs.ok
+  - numeric-subsep.awk
+  - numeric-subsep.bad
+  - numeric-subsep.ok
+  - ofs-rebuild.awk
+  - ofs-rebuild.bad
+  - ofs-rebuild.ok
+  - pfile-overflow.awk
+  - pfile-overflow.err
+  - rs_underflow.awk
+  - rs_underflow.in
+  - rs_underflow.ok
+  - rstart-rlength.awk
+  - rstart-rlength.ok
+  - space.awk
+  - space.bad
+  - space.ok
+  - split-fs-from-array.awk
+  - split-fs-from-array.ok
+  - string-conv.awk
+  - string-conv.bad
+  - string-conv.ok
+  - subsep-overflow.awk
+  - subsep-overflow.ok
+  - system-status.ok2
+  - unary-plus.awk
+  - unary-plus.bad
+  - unary-plus.ok
+  - unicode-fs-rs-1.awk
+  - unicode-fs-rs-1.in
+  - unicode-fs-rs-1.ok
+  - unicode-fs-rs-2.awk
+  - unicode-fs-rs-2.in
+  - unicode-fs-rs-2.ok
+  - unicode-null-match.awk
+  - unicode-null-match.bad
+  - unicode-null-match.ok
+- lex.c
+- lib.c
+- main.c
+- makefile
+- maketab.c
+- parse.c
+- proto.h
+- run.c
+- testdir/
+  - Compare.T1
+  - Compare.drek
+  - Compare.p
+  - Compare.t
+  - Compare.tt
+  - NOTES
+  - README.TESTS
+  - REGRESS
+  - T.-f-f
+  - T.argv
+  - T.arnold
+  - T.beebe
+  - T.builtin
+  - T.chem
+  - T.close
+  - T.clv
+  - T.csconcat
+  - T.csv
+  - T.delete
+  - T.errmsg
+  - T.expr
+  - T.exprconv
+  - T.flags
+  - T.func
+  - T.gawk
+  - T.getline
+  - T.int-expr
+  - T.latin1
+  - T.lilly
+  - T.main
+  - T.misc
+  - T.nextfile
+  - T.overflow
+  - T.re
+  - T.recache
+  - T.redir
+  - T.split
+  - T.sub
+  - T.system
+  - T.utf
+  - T.utfre
+  - arnold-fixes.tar
+  - beebe.tar
+  - bib
+  - bundle.awk
+  - chem.awk
+  - cleanup
+  - countries
+  - ctimes
+  - echo.c
+  - funstack.awk
+  - funstack.in
+  - funstack.ok
+  - ind
+  - latin1
+  - lilly.ifile
+  - lilly.out
+  - lilly.progs
+  - lsd1.p
+  - p.1
+  - p.10
+  - p.11
+  - p.12
+  - p.13
+  - p.14
+  - p.15
+  - p.16
+  - p.17
+  - p.18
+  - p.19
+  - p.2
+  - p.20
+  - p.21
+  - p.21a
+  - p.22
+  - p.23
+  - p.24
+  - p.25
+  - p.26
+  - p.26a
+  - p.27
+  - p.28
+  - p.29
+  - p.3
+  - p.30
+  - p.31
+  - p.32
+  - p.33
+  - p.34
+  - p.35
+  - p.36
+  - p.37
+  - p.38
+  - p.39
+  - p.4
+  - p.40
+  - p.41
+  - p.42
+  - p.43
+  - p.44
+  - p.45
+  - p.46
+  - p.47
+  - p.48
+  - p.48a
+  - p.48b
+  - p.49
+  - p.5
+  - p.50
+  - p.51
+  - p.52
+  - p.5a
+  - p.6
+  - p.7
+  - p.8
+  - p.9
+  - p.table
+  - penicil.p
+  - res.p
+  - sgi.ctimes
+  - t.0
+  - t.0a
+  - t.1
+  - t.1.x
+  - t.2
+  - t.2.x
+  - t.3
+  - t.3.x
+  - t.4
+  - t.4.x
+  - t.5.x
+  - t.6
+  - t.6.x
+  - t.6a
+  - t.6b
+  - t.8.x
+  - t.8.y
+  - t.NF
+  - t.a
+  - t.addops
+  - t.aeiou
+  - t.aeiouy
+  - t.arith
+  - t.array
+  - t.array1
+  - t.array2
+  - t.assert
+  - t.avg
+  - t.b.x
+  - t.be
+  - t.beginexit
+  - t.beginnext
+  - t.break
+  - t.break1
+  - t.break2
+  - t.break3
+  - t.bug1
+  - t.builtins
+  - t.cat
+  - t.cat1
+  - t.cat2
+  - t.cmp
+  - t.coerce
+  - t.coerce2
+  - t.comment
+  - t.comment1
+  - t.concat
+  - t.cond
+  - t.contin
+  - t.count
+  - t.crlf
+  - t.cum
+  - t.d.x
+  - t.delete0
+  - t.delete1
+  - t.delete2
+  - t.delete3
+  - t.do
+  - t.e
+  - t.else
+  - t.exit
+  - t.exit1
+  - t.f
+  - t.f.x
+  - t.f0
+  - t.f1
+  - t.f2
+  - t.f3
+  - t.f4
+  - t.for
+  - t.for1
+  - t.for2
+  - t.for3
+  - t.format4
+  - t.fun
+  - t.fun0
+  - t.fun1
+  - t.fun2
+  - t.fun3
+  - t.fun4
+  - t.fun5
+  - t.getline1
+  - t.getval
+  - t.gsub
+  - t.gsub1
+  - t.gsub3
+  - t.gsub4
+  - t.i.x
+  - t.if
+  - t.in
+  - t.in1
+  - t.in2
+  - t.in3
+  - t.incr
+  - t.incr2
+  - t.incr3
+  - t.index
+  - t.intest
+  - t.intest2
+  - t.j.x
+  - t.longstr
+  - t.makef
+  - t.match
+  - t.match1
+  - t.max
+  - t.mod
+  - t.monotone
+  - t.nameval
+  - t.next
+  - t.not
+  - t.null0
+  - t.ofmt
+  - t.ofs
+  - t.ors
+  - t.pat
+  - t.pipe
+  - t.pp
+  - t.pp1
+  - t.pp2
+  - t.printf
+  - t.printf2
+  - t.quote
+  - t.randk
+  - t.re1
+  - t.re1a
+  - t.re2
+  - t.re3
+  - t.re4
+  - t.re5
+  - t.re7
+  - t.reFS
+  - t.rec
+  - t.redir1
+  - t.reg
+  - t.roff
+  - t.sep
+  - t.seqno
+  - t.set0
+  - t.set0a
+  - t.set0b
+  - t.set1
+  - t.set2
+  - t.set3
+  - t.split1
+  - t.split2
+  - t.split2a
+  - t.split3
+  - t.split4
+  - t.split8
+  - t.split9
+  - t.split9a
+  - t.stately
+  - t.strcmp
+  - t.strcmp1
+  - t.strnum
+  - t.sub0
+  - t.sub1
+  - t.sub2
+  - t.sub3
+  - t.substr
+  - t.substr1
+  - t.time
+  - t.vf
+  - t.vf1
+  - t.vf2
+  - t.vf3
+  - t.x
+  - td.1
+  - test.countries
+  - test.data
+  - time.c
+  - try
+  - tt.01
+  - tt.02
+  - tt.02a
+  - tt.03
+  - tt.03a
+  - tt.04
+  - tt.05
+  - tt.06
+  - tt.07
+  - tt.08
+  - tt.09
+  - tt.10
+  - tt.10a
+  - tt.11
+  - tt.12
+  - tt.13
+  - tt.13a
+  - tt.14
+  - tt.15
+  - tt.16
+  - tt.big
+  - u.main
+  - unbundle.awk
+  - xc
+  - yc
+- tran.c

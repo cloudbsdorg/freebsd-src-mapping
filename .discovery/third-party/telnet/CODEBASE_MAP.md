@@ -1,0 +1,53 @@
+# CODEBASE MAP for telnet
+
+Package: telnet
+Source: contrib/telnet
+
+Top-level contents:
+- arpa/
+- libtelnet/
+- telnet/
+
+Recursive contents:
+- arpa/
+  - telnet.h
+- libtelnet/
+  - auth-proto.h
+  - auth.c
+  - auth.h
+  - enc-proto.h
+  - enc_des.c
+  - encrypt.c
+  - encrypt.h
+  - genget.c
+  - getent.c
+  - kerberos.c
+  - kerberos5.c
+  - key-proto.h
+  - krb4encpwd.c
+  - misc-proto.h
+  - misc.c
+  - misc.h
+  - pk.c
+  - pk.h
+  - read_password.c
+  - rsaencpwd.c
+  - sra.c
+- telnet/
+  - authenc.c
+  - baud.h
+  - commands.c
+  - defines.h
+  - externs.h
+  - fdset.h
+  - general.h
+  - main.c
+  - network.c
+  - ring.c
+  - ring.h
+  - sys_bsd.c
+  - telnet.1
+  - telnet.c
+  - terminal.c
+  - types.h
+  - utilities.c

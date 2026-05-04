@@ -1,0 +1,101 @@
+# CODEBASE MAP for libyaml
+
+Package: libyaml
+Source: contrib/libyaml
+
+Top-level contents:
+- .appveyor.yml
+- .github/
+- .gitignore
+- .indent.pro
+- .makefile
+- .travis.yml
+- CMakeLists.txt
+- Changes
+- License
+- Makefile.am
+- ReadMe.md
+- announcement.msg
+- bootstrap
+- configure.ac
+- doc/
+- docker/
+- examples/
+- include/
+- regression-inputs/
+- src/
+- tests/
+- yaml-0.1.pc.in
+- yamlConfig.cmake.in
+
+Recursive contents:
+- .appveyor.yml
+- .github/
+  - workflows/
+    - main.yml
+- .gitignore
+- .indent.pro
+- .makefile
+- .travis.yml
+- CMakeLists.txt
+- Changes
+- License
+- Makefile.am
+- ReadMe.md
+- announcement.msg
+- bootstrap
+- configure.ac
+- doc/
+  - doxygen.cfg
+- docker/
+  - README.mkd
+  - alpine-3.7
+  - fedora-25
+  - ubuntu-14.04
+  - ubuntu-16.04
+- examples/
+  - anchors.yaml
+  - array.yaml
+  - global-tag.yaml
+  - json.yaml
+  - mapping.yaml
+  - numbers.yaml
+  - strings.yaml
+  - tags.yaml
+  - yaml-version.yaml
+- include/
+  - Makefile.am
+  - yaml.h
+- regression-inputs/
+  - clusterfuzz-testcase-minimized-5607885063061504.yml
+- src/
+  - Makefile.am
+  - api.c
+  - dumper.c
+  - emitter.c
+  - loader.c
+  - parser.c
+  - reader.c
+  - scanner.c
+  - writer.c
+  - yaml_private.h
+- tests/
+  - CMakeLists.txt
+  - Makefile.am
+  - ReadMe.md
+  - example-deconstructor-alt.c
+  - example-deconstructor.c
+  - example-reformatter-alt.c
+  - example-reformatter.c
+  - run-all-tests.sh
+  - run-dumper.c
+  - run-emitter-test-suite.c
+  - run-emitter.c
+  - run-loader.c
+  - run-parser-test-suite.c
+  - run-parser.c
+  - run-scanner.c
+  - test-reader.c
+  - test-version.c
+- yaml-0.1.pc.in
+- yamlConfig.cmake.in

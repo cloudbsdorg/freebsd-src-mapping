@@ -1,0 +1,470 @@
+# CODEBASE MAP for unbound
+
+Package: unbound
+Source: contrib/unbound
+
+Top-level contents:
+- LICENSE
+- Makefile.in
+- README
+- README-Travis.md
+- README.md
+- SECURITY.md
+- aclocal.m4
+- acx_nlnetlabs.m4
+- acx_python.m4
+- ax_build_date_epoch.m4
+- ax_pkg_swig.m4
+- ax_pthread.m4
+- cachedb/
+- compat/
+- config.guess
+- config.h.in
+- config.sub
+- configure
+- configure.ac
+- contrib/
+- daemon/
+- dns64/
+- dnscrypt/
+- dnstap/
+- doc/
+- dynlibmod/
+- edns-subnet/
+- freebsd-configure.sh
+- freebsd-sources.pl
+- install-sh
+- ipsecmod/
+- ipset/
+- iterator/
+- libunbound/
+- ltmain.sh
+- pythonmod/
+- respip/
+- services/
+- sldns/
+- smallapp/
+- systemd.m4
+- testcode/
+- util/
+- validator/
+- winrc/
+
+Recursive contents:
+- LICENSE
+- Makefile.in
+- README
+- README-Travis.md
+- README.md
+- SECURITY.md
+- aclocal.m4
+- acx_nlnetlabs.m4
+- acx_python.m4
+- ax_build_date_epoch.m4
+- ax_pkg_swig.m4
+- ax_pthread.m4
+- cachedb/
+  - cachedb.c
+  - cachedb.h
+  - redis.c
+  - redis.h
+- compat/
+  - arc4_lock.c
+  - arc4random.c
+  - arc4random_uniform.c
+  - chacha_private.h
+  - ctime_r.c
+  - explicit_bzero.c
+  - fake-rfc2553.c
+  - fake-rfc2553.h
+  - getentropy_freebsd.c
+  - getentropy_linux.c
+  - getentropy_osx.c
+  - getentropy_solaris.c
+  - getentropy_win.c
+  - gmtime_r.c
+  - inet_aton.c
+  - inet_ntop.c
+  - inet_pton.c
+  - isblank.c
+  - malloc.c
+  - memcmp.c
+  - memcmp.h
+  - memmove.c
+  - reallocarray.c
+  - sha512.c
+  - snprintf.c
+  - strlcat.c
+  - strlcpy.c
+  - strptime.c
+  - strsep.c
+- config.guess
+- config.h.in
+- config.sub
+- configure
+- configure.ac
+- contrib/
+  - Dockerfile.tests
+  - README
+  - aaaa-filter-iterator.patch
+  - android/
+    - 15-android.conf
+    - install_expat.sh
+    - install_ndk.sh
+    - install_openssl.sh
+    - install_tools.sh
+    - setenv_android.sh
+  - build-unbound-localzone-from-hosts.pl
+  - create_unbound_ad_servers.cmd
+  - create_unbound_ad_servers.sh
+  - drop-tld.diff
+  - drop2rpz
+  - fastrpz.patch
+  - ios/
+    - 15-ios.conf
+    - install_expat.sh
+    - install_openssl.sh
+    - install_tools.sh
+    - openssl.patch
+    - setenv_ios.sh
+  - libunbound.pc.in
+  - libunbound.so.conf
+  - metrics.awk
+  - parseunbound.pl
+  - patch_rsamd5_enable.diff
+  - rc_d_unbound
+  - redirect-bogus.patch
+  - selinux/
+    - unbound.fc
+    - unbound.te
+  - unbound-fuzzers.tar.bz2
+  - unbound-fuzzme.patch
+  - unbound-host.nagios.patch
+  - unbound-querycachedb.py
+  - unbound.init
+  - unbound.init_fedora
+  - unbound.init_yocto
+  - unbound.plist
+  - unbound.service.in
+  - unbound.socket.in
+  - unbound.spec
+  - unbound.spec_fedora
+  - unbound_cache.cmd
+  - unbound_cache.sh
+  - unbound_cacti.tar.gz
+  - unbound_munin_
+  - unbound_portable.service.in
+  - unbound_smf23.tar.gz
+  - update-anchor.sh
+  - validation-reporter.sh
+  - warmup.cmd
+  - warmup.sh
+- daemon/
+  - acl_list.c
+  - acl_list.h
+  - cachedump.c
+  - cachedump.h
+  - daemon.c
+  - daemon.h
+  - remote.c
+  - remote.h
+  - stats.c
+  - stats.h
+  - unbound.c
+  - worker.c
+  - worker.h
+- dns64/
+  - dns64.c
+  - dns64.h
+- dnscrypt/
+  - cert.h
+  - dnscrypt.c
+  - dnscrypt.h
+  - dnscrypt.m4
+  - dnscrypt_config.h
+  - dnscrypt_config.h.in
+- dnstap/
+  - dnstap.c
+  - dnstap.h
+  - dnstap.m4
+  - dnstap.proto
+  - dnstap_config.h
+  - dnstap_config.h.in
+  - dnstap_fstrm.c
+  - dnstap_fstrm.h
+  - dtstream.c
+  - dtstream.h
+  - unbound-dnstap-socket.c
+- doc/
+  - CNAME-basedRedirectionDesignNotes.pdf
+  - CREDITS
+  - Changelog
+  - FEATURES
+  - IP-BasedActions.pdf
+  - LICENSE
+  - README
+  - README.DNS64
+  - README.ipset.md
+  - README.man
+  - README.svn
+  - README.tests
+  - TODO
+  - control_proto_spec.txt
+  - example.conf
+  - example.conf.in
+  - ietf67-design-02.odp
+  - ietf67-design-02.pdf
+  - libunbound.3
+  - libunbound.3.in
+  - libunbound.rst
+  - requirements.txt
+  - unbound-anchor.8
+  - unbound-anchor.8.in
+  - unbound-anchor.rst
+  - unbound-checkconf.8
+  - unbound-checkconf.8.in
+  - unbound-checkconf.rst
+  - unbound-control.8
+  - unbound-control.8.in
+  - unbound-control.rst
+  - unbound-host.1
+  - unbound-host.1.in
+  - unbound-host.rst
+  - unbound.8
+  - unbound.8.in
+  - unbound.conf.5
+  - unbound.conf.5.in
+  - unbound.conf.rst
+  - unbound.doxygen
+  - unbound.rst
+- dynlibmod/
+  - dynlibmod.c
+  - dynlibmod.h
+  - examples/
+    - helloworld.c
+- edns-subnet/
+  - addrtree.c
+  - addrtree.h
+  - edns-subnet.c
+  - edns-subnet.h
+  - subnet-whitelist.c
+  - subnet-whitelist.h
+  - subnetmod.c
+  - subnetmod.h
+- freebsd-configure.sh
+- freebsd-sources.pl
+- install-sh
+- ipsecmod/
+  - ipsecmod-whitelist.c
+  - ipsecmod-whitelist.h
+  - ipsecmod.c
+  - ipsecmod.h
+- ipset/
+  - ipset.c
+  - ipset.h
+- iterator/
+  - iter_delegpt.c
+  - iter_delegpt.h
+  - iter_donotq.c
+  - iter_donotq.h
+  - iter_fwd.c
+  - iter_fwd.h
+  - iter_hints.c
+  - iter_hints.h
+  - iter_priv.c
+  - iter_priv.h
+  - iter_resptype.c
+  - iter_resptype.h
+  - iter_scrub.c
+  - iter_scrub.h
+  - iter_utils.c
+  - iter_utils.h
+  - iterator.c
+  - iterator.h
+- libunbound/
+  - context.c
+  - context.h
+  - libunbound.c
+  - libworker.c
+  - libworker.h
+  - ubsyms.def
+  - unbound-event.h
+  - unbound.h
+  - worker.h
+- ltmain.sh
+- pythonmod/
+  - interface.i
+  - pythonmod_utils.c
+- respip/
+  - respip.c
+  - respip.h
+- services/
+  - authzone.c
+  - authzone.h
+  - cache/
+    - dns.c
+    - dns.h
+    - infra.c
+    - infra.h
+    - rrset.c
+    - rrset.h
+  - listen_dnsport.c
+  - listen_dnsport.h
+  - localzone.c
+  - localzone.h
+  - mesh.c
+  - mesh.h
+  - modstack.c
+  - modstack.h
+  - outbound_list.c
+  - outbound_list.h
+  - outside_network.c
+  - outside_network.h
+  - rpz.c
+  - rpz.h
+  - view.c
+  - view.h
+- sldns/
+  - keyraw.c
+  - keyraw.h
+  - parse.c
+  - parse.h
+  - parseutil.c
+  - parseutil.h
+  - pkthdr.h
+  - rrdef.c
+  - rrdef.h
+  - sbuffer.c
+  - sbuffer.h
+  - str2wire.c
+  - str2wire.h
+  - wire2str.c
+  - wire2str.h
+- smallapp/
+  - unbound-anchor.c
+  - unbound-checkconf.c
+  - unbound-control-setup.sh
+  - unbound-control-setup.sh.in
+  - unbound-control.c
+  - unbound-host.c
+  - worker_cb.c
+- systemd.m4
+- testcode/
+  - checklocks.c
+  - do-tests.sh
+  - doqclient.c
+  - fake_event.c
+  - testbound.c
+  - unitdname.c
+  - unitinfra.c
+  - unitldns.c
+  - unitmain.c
+  - unitmain.h
+  - unitneg.c
+  - unitverify.c
+  - unitzonemd.c
+- util/
+  - alloc.c
+  - alloc.h
+  - as112.c
+  - as112.h
+  - config_file.c
+  - config_file.h
+  - configlexer.c
+  - configlexer.lex
+  - configparser.c
+  - configparser.h
+  - configparser.y
+  - configyyrename.h
+  - data/
+    - dname.c
+    - dname.h
+    - msgencode.c
+    - msgencode.h
+    - msgparse.c
+    - msgparse.h
+    - msgreply.c
+    - msgreply.h
+    - packed_rrset.c
+    - packed_rrset.h
+  - edns.c
+  - edns.h
+  - fptr_wlist.c
+  - fptr_wlist.h
+  - iana_ports.inc
+  - locks.c
+  - locks.h
+  - log.c
+  - log.h
+  - mini_event.c
+  - mini_event.h
+  - module.c
+  - module.h
+  - net_help.c
+  - net_help.h
+  - netevent.c
+  - netevent.h
+  - proxy_protocol.c
+  - proxy_protocol.h
+  - random.c
+  - random.h
+  - rbtree.c
+  - rbtree.h
+  - regional.c
+  - regional.h
+  - rfc_1982.c
+  - rfc_1982.h
+  - rtt.c
+  - rtt.h
+  - shm_side/
+    - shm_main.c
+    - shm_main.h
+  - siphash.c
+  - siphash.h
+  - storage/
+    - dnstree.c
+    - dnstree.h
+    - lookup3.c
+    - lookup3.h
+    - lruhash.c
+    - lruhash.h
+    - slabhash.c
+    - slabhash.h
+  - tcp_conn_limit.c
+  - tcp_conn_limit.h
+  - timehist.c
+  - timehist.h
+  - timeval_func.c
+  - timeval_func.h
+  - tube.c
+  - tube.h
+  - ub_event.c
+  - ub_event.h
+  - ub_event_pluggable.c
+  - winsock_event.c
+  - winsock_event.h
+- validator/
+  - autotrust.c
+  - autotrust.h
+  - val_anchor.c
+  - val_anchor.h
+  - val_kcache.c
+  - val_kcache.h
+  - val_kentry.c
+  - val_kentry.h
+  - val_neg.c
+  - val_neg.h
+  - val_nsec.c
+  - val_nsec.h
+  - val_nsec3.c
+  - val_nsec3.h
+  - val_secalgo.c
+  - val_secalgo.h
+  - val_sigcrypt.c
+  - val_sigcrypt.h
+  - val_utils.c
+  - val_utils.h
+  - validator.c
+  - validator.h
+- winrc/
+  - win_svc.c

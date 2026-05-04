@@ -1,0 +1,65 @@
+# CODEBASE MAP for wireguard-tools
+
+Package: wireguard-tools
+Source: contrib/wireguard-tools
+
+Top-level contents:
+- .gitignore
+- config.c
+- config.h
+- containers.h
+- ctype.h
+- curve25519-fiat32.h
+- curve25519-hacl64.h
+- curve25519.c
+- curve25519.h
+- encoding.c
+- encoding.h
+- genkey.c
+- ipc-freebsd.h
+- ipc-uapi-unix.h
+- ipc-uapi.h
+- ipc.c
+- ipc.h
+- man/
+- pubkey.c
+- set.c
+- setconf.c
+- show.c
+- showconf.c
+- subcommands.h
+- terminal.c
+- terminal.h
+- version.h
+- wg.c
+
+Recursive contents:
+- .gitignore
+- config.c
+- config.h
+- containers.h
+- ctype.h
+- curve25519-fiat32.h
+- curve25519-hacl64.h
+- curve25519.c
+- curve25519.h
+- encoding.c
+- encoding.h
+- genkey.c
+- ipc-freebsd.h
+- ipc-uapi-unix.h
+- ipc-uapi.h
+- ipc.c
+- ipc.h
+- man/
+  - wg.8
+- pubkey.c
+- set.c
+- setconf.c
+- show.c
+- showconf.c
+- subcommands.h
+- terminal.c
+- terminal.h
+- version.h
+- wg.c

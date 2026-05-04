@@ -1,0 +1,805 @@
+# CODEBASE MAP for byacc
+
+Package: byacc
+Source: contrib/byacc
+
+Top-level contents:
+- ACKNOWLEDGEMENTS
+- AUTHORS
+- CHANGES
+- LICENSE
+- MANIFEST
+- Makefile.old
+- NEW_FEATURES
+- NOTES
+- NO_WARRANTY
+- README
+- README.BTYACC
+- VERSION
+- aclocal.m4
+- btyaccpar.c
+- btyaccpar.skel
+- closure.c
+- config.guess
+- config.sub
+- config_h.in
+- configure
+- configure.in
+- defs.h
+- descrip.mms
+- error.c
+- graph.c
+- install-sh
+- lalr.c
+- lr0.c
+- main.c
+- makefile.in
+- mkpar.c
+- mstring.c
+- output.c
+- reader.c
+- skel2c
+- symtab.c
+- test/
+- verbose.c
+- vmsbuild.com
+- warshall.c
+- yacc.1
+- yaccpar.c
+- yaccpar.skel
+
+Recursive contents:
+- ACKNOWLEDGEMENTS
+- AUTHORS
+- CHANGES
+- LICENSE
+- MANIFEST
+- Makefile.old
+- NEW_FEATURES
+- NOTES
+- NO_WARRANTY
+- README
+- README.BTYACC
+- VERSION
+- aclocal.m4
+- btyaccpar.c
+- btyaccpar.skel
+- closure.c
+- config.guess
+- config.sub
+- config_h.in
+- configure
+- configure.in
+- defs.h
+- descrip.mms
+- error.c
+- graph.c
+- install-sh
+- lalr.c
+- lr0.c
+- main.c
+- makefile.in
+- mkpar.c
+- mstring.c
+- output.c
+- reader.c
+- skel2c
+- symtab.c
+- test/
+  - README
+  - btyacc/
+    - big_b.error
+    - big_b.output
+    - big_l.error
+    - big_l.output
+    - btyacc_calc1.error
+    - btyacc_calc1.output
+    - btyacc_calc1.tab.c
+    - btyacc_calc1.tab.h
+    - btyacc_demo.error
+    - btyacc_demo.output
+    - btyacc_demo.tab.c
+    - btyacc_demo.tab.h
+    - btyacc_destroy1.error
+    - btyacc_destroy1.output
+    - btyacc_destroy1.tab.c
+    - btyacc_destroy1.tab.h
+    - btyacc_destroy2.error
+    - btyacc_destroy2.output
+    - btyacc_destroy2.tab.c
+    - btyacc_destroy2.tab.h
+    - btyacc_destroy3.error
+    - btyacc_destroy3.output
+    - btyacc_destroy3.tab.c
+    - btyacc_destroy3.tab.h
+    - calc.error
+    - calc.output
+    - calc.tab.c
+    - calc.tab.h
+    - calc1.error
+    - calc1.output
+    - calc1.tab.c
+    - calc1.tab.h
+    - calc2.error
+    - calc2.output
+    - calc2.tab.c
+    - calc2.tab.h
+    - calc3.error
+    - calc3.output
+    - calc3.tab.c
+    - calc3.tab.h
+    - calc_code_all.error
+    - calc_code_all.output
+    - calc_code_all.tab.c
+    - calc_code_all.tab.h
+    - calc_code_default.error
+    - calc_code_default.output
+    - calc_code_default.tab.c
+    - calc_code_default.tab.h
+    - calc_code_imports.error
+    - calc_code_imports.output
+    - calc_code_imports.tab.c
+    - calc_code_imports.tab.h
+    - calc_code_provides.error
+    - calc_code_provides.output
+    - calc_code_provides.tab.c
+    - calc_code_provides.tab.h
+    - calc_code_requires.error
+    - calc_code_requires.output
+    - calc_code_requires.tab.c
+    - calc_code_requires.tab.h
+    - calc_code_top.error
+    - calc_code_top.output
+    - calc_code_top.tab.c
+    - calc_code_top.tab.h
+    - code_calc.code.c
+    - code_calc.error
+    - code_calc.output
+    - code_calc.tab.c
+    - code_calc.tab.h
+    - code_error.code.c
+    - code_error.error
+    - code_error.output
+    - code_error.tab.c
+    - code_error.tab.h
+    - defines1.calc.c
+    - defines1.calc.h
+    - defines1.error
+    - defines1.output
+    - defines2.calc.c
+    - defines2.calc.h
+    - defines2.error
+    - defines2.output
+    - defines3.calc.c
+    - defines3.calc.h
+    - defines3.error
+    - defines3.output
+    - empty.error
+    - empty.output
+    - empty.tab.c
+    - empty.tab.h
+    - err_inherit1.error
+    - err_inherit1.output
+    - err_inherit1.tab.c
+    - err_inherit1.tab.h
+    - err_inherit2.error
+    - err_inherit2.output
+    - err_inherit2.tab.c
+    - err_inherit2.tab.h
+    - err_inherit3.error
+    - err_inherit3.output
+    - err_inherit3.tab.c
+    - err_inherit3.tab.h
+    - err_inherit4.error
+    - err_inherit4.output
+    - err_inherit4.tab.c
+    - err_inherit4.tab.h
+    - err_inherit5.error
+    - err_inherit5.output
+    - err_inherit5.tab.c
+    - err_inherit5.tab.h
+    - err_syntax1.error
+    - err_syntax1.output
+    - err_syntax1.tab.c
+    - err_syntax1.tab.h
+    - err_syntax10.error
+    - err_syntax10.output
+    - err_syntax10.tab.c
+    - err_syntax10.tab.h
+    - err_syntax11.error
+    - err_syntax11.output
+    - err_syntax11.tab.c
+    - err_syntax11.tab.h
+    - err_syntax12.error
+    - err_syntax12.output
+    - err_syntax12.tab.c
+    - err_syntax12.tab.h
+    - err_syntax13.error
+    - err_syntax13.output
+    - err_syntax13.tab.c
+    - err_syntax13.tab.h
+    - err_syntax14.error
+    - err_syntax14.output
+    - err_syntax14.tab.c
+    - err_syntax14.tab.h
+    - err_syntax15.error
+    - err_syntax15.output
+    - err_syntax15.tab.c
+    - err_syntax15.tab.h
+    - err_syntax16.error
+    - err_syntax16.output
+    - err_syntax16.tab.c
+    - err_syntax16.tab.h
+    - err_syntax17.error
+    - err_syntax17.output
+    - err_syntax17.tab.c
+    - err_syntax17.tab.h
+    - err_syntax18.error
+    - err_syntax18.output
+    - err_syntax18.tab.c
+    - err_syntax18.tab.h
+    - err_syntax19.error
+    - err_syntax19.output
+    - err_syntax19.tab.c
+    - err_syntax19.tab.h
+    - err_syntax2.error
+    - err_syntax2.output
+    - err_syntax2.tab.c
+    - err_syntax2.tab.h
+    - err_syntax20.error
+    - err_syntax20.output
+    - err_syntax20.tab.c
+    - err_syntax20.tab.h
+    - err_syntax21.error
+    - err_syntax21.output
+    - err_syntax21.tab.c
+    - err_syntax21.tab.h
+    - err_syntax22.error
+    - err_syntax22.output
+    - err_syntax22.tab.c
+    - err_syntax22.tab.h
+    - err_syntax23.error
+    - err_syntax23.output
+    - err_syntax23.tab.c
+    - err_syntax23.tab.h
+    - err_syntax24.error
+    - err_syntax24.output
+    - err_syntax24.tab.c
+    - err_syntax24.tab.h
+    - err_syntax25.error
+    - err_syntax25.output
+    - err_syntax25.tab.c
+    - err_syntax25.tab.h
+    - err_syntax26.error
+    - err_syntax26.output
+    - err_syntax26.tab.c
+    - err_syntax26.tab.h
+    - err_syntax27.error
+    - err_syntax27.output
+    - err_syntax27.tab.c
+    - err_syntax27.tab.h
+    - err_syntax3.error
+    - err_syntax3.output
+    - err_syntax3.tab.c
+    - err_syntax3.tab.h
+    - err_syntax4.error
+    - err_syntax4.output
+    - err_syntax4.tab.c
+    - err_syntax4.tab.h
+    - err_syntax5.error
+    - err_syntax5.output
+    - err_syntax5.tab.c
+    - err_syntax5.tab.h
+    - err_syntax6.error
+    - err_syntax6.output
+    - err_syntax6.tab.c
+    - err_syntax6.tab.h
+    - err_syntax7.error
+    - err_syntax7.output
+    - err_syntax7.tab.c
+    - err_syntax7.tab.h
+    - err_syntax7a.error
+    - err_syntax7a.output
+    - err_syntax7a.tab.c
+    - err_syntax7a.tab.h
+    - err_syntax7b.error
+    - err_syntax7b.output
+    - err_syntax7b.tab.c
+    - err_syntax7b.tab.h
+    - err_syntax8.error
+    - err_syntax8.output
+    - err_syntax8.tab.c
+    - err_syntax8.tab.h
+    - err_syntax8a.error
+    - err_syntax8a.output
+    - err_syntax8a.tab.c
+    - err_syntax8a.tab.h
+    - err_syntax9.error
+    - err_syntax9.output
+    - err_syntax9.tab.c
+    - err_syntax9.tab.h
+    - error.error
+    - error.output
+    - error.tab.c
+    - error.tab.h
+    - expr.oxout.error
+    - expr.oxout.output
+    - expr.oxout.tab.c
+    - expr.oxout.tab.h
+    - grammar.dot
+    - grammar.error
+    - grammar.output
+    - grammar.tab.c
+    - grammar.tab.h
+    - help.error
+    - help.output
+    - inherit0.error
+    - inherit0.output
+    - inherit0.tab.c
+    - inherit0.tab.h
+    - inherit1.error
+    - inherit1.output
+    - inherit1.tab.c
+    - inherit1.tab.h
+    - inherit2.error
+    - inherit2.output
+    - inherit2.tab.c
+    - inherit2.tab.h
+    - no_b_opt.error
+    - no_b_opt.output
+    - no_b_opt1.error
+    - no_b_opt1.output
+    - no_code_c.error
+    - no_code_c.output
+    - no_defines.error
+    - no_defines.output
+    - no_graph.error
+    - no_graph.output
+    - no_include.error
+    - no_include.output
+    - no_opts.error
+    - no_opts.output
+    - no_output.error
+    - no_output.output
+    - no_output1.error
+    - no_output1.output
+    - no_output2.error
+    - no_output2.output
+    - no_p_opt.error
+    - no_p_opt.output
+    - no_p_opt1.error
+    - no_p_opt1.output
+    - no_verbose.error
+    - no_verbose.output
+    - nostdin.error
+    - nostdin.output
+    - ok_syntax1.error
+    - ok_syntax1.output
+    - ok_syntax1.tab.c
+    - ok_syntax1.tab.h
+    - pure_calc.error
+    - pure_calc.output
+    - pure_calc.tab.c
+    - pure_calc.tab.h
+    - pure_error.error
+    - pure_error.output
+    - pure_error.tab.c
+    - pure_error.tab.h
+    - quote_calc-s.error
+    - quote_calc-s.output
+    - quote_calc-s.tab.c
+    - quote_calc-s.tab.h
+    - quote_calc.error
+    - quote_calc.output
+    - quote_calc.tab.c
+    - quote_calc.tab.h
+    - quote_calc2-s.error
+    - quote_calc2-s.output
+    - quote_calc2-s.tab.c
+    - quote_calc2-s.tab.h
+    - quote_calc2.error
+    - quote_calc2.output
+    - quote_calc2.tab.c
+    - quote_calc2.tab.h
+    - quote_calc3-s.error
+    - quote_calc3-s.output
+    - quote_calc3-s.tab.c
+    - quote_calc3-s.tab.h
+    - quote_calc3.error
+    - quote_calc3.output
+    - quote_calc3.tab.c
+    - quote_calc3.tab.h
+    - quote_calc4-s.error
+    - quote_calc4-s.output
+    - quote_calc4-s.tab.c
+    - quote_calc4-s.tab.h
+    - quote_calc4.error
+    - quote_calc4.output
+    - quote_calc4.tab.c
+    - quote_calc4.tab.h
+    - rename_debug.c
+    - rename_debug.error
+    - rename_debug.h
+    - rename_debug.i
+    - rename_debug.output
+    - stdin1.calc.c
+    - stdin1.error
+    - stdin1.output
+    - stdin2.calc.c
+    - stdin2.error
+    - stdin2.output
+    - varsyntax_calc1.error
+    - varsyntax_calc1.output
+    - varsyntax_calc1.tab.c
+    - varsyntax_calc1.tab.h
+  - btyacc_calc1.y
+  - btyacc_demo.y
+  - btyacc_destroy1.y
+  - btyacc_destroy2.y
+  - btyacc_destroy3.y
+  - calc.y
+  - calc1.y
+  - calc2.y
+  - calc3.y
+  - calc_code_all.y
+  - calc_code_default.y
+  - calc_code_imports.y
+  - calc_code_provides.y
+  - calc_code_requires.y
+  - calc_code_top.y
+  - code_calc.y
+  - code_debug.y
+  - code_error.y
+  - empty.y
+  - err_inherit1.y
+  - err_inherit2.y
+  - err_inherit3.y
+  - err_inherit4.y
+  - err_inherit5.y
+  - err_syntax1.y
+  - err_syntax10.y
+  - err_syntax11.y
+  - err_syntax12.y
+  - err_syntax13.y
+  - err_syntax14.y
+  - err_syntax15.y
+  - err_syntax16.y
+  - err_syntax17.y
+  - err_syntax18.y
+  - err_syntax19.y
+  - err_syntax2.y
+  - err_syntax20.y
+  - err_syntax21.y
+  - err_syntax22.y
+  - err_syntax23.y
+  - err_syntax24.y
+  - err_syntax25.y
+  - err_syntax26.y
+  - err_syntax27.y
+  - err_syntax3.y
+  - err_syntax4.y
+  - err_syntax5.y
+  - err_syntax6.y
+  - err_syntax7.y
+  - err_syntax7a.y
+  - err_syntax7b.y
+  - err_syntax8.y
+  - err_syntax8a.y
+  - err_syntax9.y
+  - error.y
+  - expr.oxout.h
+  - expr.oxout.y
+  - grammar.y
+  - inherit0.y
+  - inherit1.y
+  - inherit2.y
+  - ok_syntax1.y
+  - pure_calc.y
+  - pure_error.y
+  - quote_calc.y
+  - quote_calc2.y
+  - quote_calc3.y
+  - quote_calc4.y
+  - run_lint.sh
+  - run_make.sh
+  - run_test.sh
+  - varsyntax_calc1.y
+  - yacc/
+    - big_b.error
+    - big_b.output
+    - big_l.error
+    - big_l.output
+    - calc.error
+    - calc.output
+    - calc.tab.c
+    - calc.tab.h
+    - calc1.error
+    - calc1.output
+    - calc1.tab.c
+    - calc1.tab.h
+    - calc2.error
+    - calc2.output
+    - calc2.tab.c
+    - calc2.tab.h
+    - calc3.error
+    - calc3.output
+    - calc3.tab.c
+    - calc3.tab.h
+    - calc_code_all.error
+    - calc_code_all.output
+    - calc_code_all.tab.c
+    - calc_code_all.tab.h
+    - calc_code_default.error
+    - calc_code_default.output
+    - calc_code_default.tab.c
+    - calc_code_default.tab.h
+    - calc_code_imports.error
+    - calc_code_imports.output
+    - calc_code_imports.tab.c
+    - calc_code_imports.tab.h
+    - calc_code_provides.error
+    - calc_code_provides.output
+    - calc_code_provides.tab.c
+    - calc_code_provides.tab.h
+    - calc_code_requires.error
+    - calc_code_requires.output
+    - calc_code_requires.tab.c
+    - calc_code_requires.tab.h
+    - calc_code_top.error
+    - calc_code_top.output
+    - calc_code_top.tab.c
+    - calc_code_top.tab.h
+    - code_calc.code.c
+    - code_calc.error
+    - code_calc.output
+    - code_calc.tab.c
+    - code_calc.tab.h
+    - code_error.code.c
+    - code_error.error
+    - code_error.output
+    - code_error.tab.c
+    - code_error.tab.h
+    - defines1.calc.c
+    - defines1.calc.h
+    - defines1.error
+    - defines1.output
+    - defines2.calc.c
+    - defines2.calc.h
+    - defines2.error
+    - defines2.output
+    - defines3.calc.c
+    - defines3.calc.h
+    - defines3.error
+    - defines3.output
+    - empty.error
+    - empty.output
+    - empty.tab.c
+    - empty.tab.h
+    - err_syntax1.error
+    - err_syntax1.output
+    - err_syntax1.tab.c
+    - err_syntax1.tab.h
+    - err_syntax10.error
+    - err_syntax10.output
+    - err_syntax10.tab.c
+    - err_syntax10.tab.h
+    - err_syntax11.error
+    - err_syntax11.output
+    - err_syntax11.tab.c
+    - err_syntax11.tab.h
+    - err_syntax12.error
+    - err_syntax12.output
+    - err_syntax12.tab.c
+    - err_syntax12.tab.h
+    - err_syntax13.error
+    - err_syntax13.output
+    - err_syntax13.tab.c
+    - err_syntax13.tab.h
+    - err_syntax14.error
+    - err_syntax14.output
+    - err_syntax14.tab.c
+    - err_syntax14.tab.h
+    - err_syntax15.error
+    - err_syntax15.output
+    - err_syntax15.tab.c
+    - err_syntax15.tab.h
+    - err_syntax16.error
+    - err_syntax16.output
+    - err_syntax16.tab.c
+    - err_syntax16.tab.h
+    - err_syntax17.error
+    - err_syntax17.output
+    - err_syntax17.tab.c
+    - err_syntax17.tab.h
+    - err_syntax18.error
+    - err_syntax18.output
+    - err_syntax18.tab.c
+    - err_syntax18.tab.h
+    - err_syntax19.error
+    - err_syntax19.output
+    - err_syntax19.tab.c
+    - err_syntax19.tab.h
+    - err_syntax2.error
+    - err_syntax2.output
+    - err_syntax2.tab.c
+    - err_syntax2.tab.h
+    - err_syntax20.error
+    - err_syntax20.output
+    - err_syntax20.tab.c
+    - err_syntax20.tab.h
+    - err_syntax21.error
+    - err_syntax21.output
+    - err_syntax21.tab.c
+    - err_syntax21.tab.h
+    - err_syntax22.error
+    - err_syntax22.output
+    - err_syntax22.tab.c
+    - err_syntax22.tab.h
+    - err_syntax23.error
+    - err_syntax23.output
+    - err_syntax23.tab.c
+    - err_syntax23.tab.h
+    - err_syntax24.error
+    - err_syntax24.output
+    - err_syntax24.tab.c
+    - err_syntax24.tab.h
+    - err_syntax25.error
+    - err_syntax25.output
+    - err_syntax25.tab.c
+    - err_syntax25.tab.h
+    - err_syntax26.error
+    - err_syntax26.output
+    - err_syntax26.tab.c
+    - err_syntax26.tab.h
+    - err_syntax27.error
+    - err_syntax27.output
+    - err_syntax27.tab.c
+    - err_syntax27.tab.h
+    - err_syntax3.error
+    - err_syntax3.output
+    - err_syntax3.tab.c
+    - err_syntax3.tab.h
+    - err_syntax4.error
+    - err_syntax4.output
+    - err_syntax4.tab.c
+    - err_syntax4.tab.h
+    - err_syntax5.error
+    - err_syntax5.output
+    - err_syntax5.tab.c
+    - err_syntax5.tab.h
+    - err_syntax6.error
+    - err_syntax6.output
+    - err_syntax6.tab.c
+    - err_syntax6.tab.h
+    - err_syntax7.error
+    - err_syntax7.output
+    - err_syntax7.tab.c
+    - err_syntax7.tab.h
+    - err_syntax7a.error
+    - err_syntax7a.output
+    - err_syntax7a.tab.c
+    - err_syntax7a.tab.h
+    - err_syntax7b.error
+    - err_syntax7b.output
+    - err_syntax7b.tab.c
+    - err_syntax7b.tab.h
+    - err_syntax8.error
+    - err_syntax8.output
+    - err_syntax8.tab.c
+    - err_syntax8.tab.h
+    - err_syntax8a.error
+    - err_syntax8a.output
+    - err_syntax8a.tab.c
+    - err_syntax8a.tab.h
+    - err_syntax9.error
+    - err_syntax9.output
+    - err_syntax9.tab.c
+    - err_syntax9.tab.h
+    - error.error
+    - error.output
+    - error.tab.c
+    - error.tab.h
+    - expr.oxout.error
+    - expr.oxout.output
+    - expr.oxout.tab.c
+    - expr.oxout.tab.h
+    - grammar.dot
+    - grammar.error
+    - grammar.output
+    - grammar.tab.c
+    - grammar.tab.h
+    - help.error
+    - help.output
+    - no_b_opt.error
+    - no_b_opt.output
+    - no_b_opt1.error
+    - no_b_opt1.output
+    - no_code_c.error
+    - no_code_c.output
+    - no_defines.error
+    - no_defines.output
+    - no_graph.error
+    - no_graph.output
+    - no_include.error
+    - no_include.output
+    - no_opts.error
+    - no_opts.output
+    - no_output.error
+    - no_output.output
+    - no_output1.error
+    - no_output1.output
+    - no_output2.error
+    - no_output2.output
+    - no_p_opt.error
+    - no_p_opt.output
+    - no_p_opt1.error
+    - no_p_opt1.output
+    - no_verbose.error
+    - no_verbose.output
+    - nostdin.error
+    - nostdin.output
+    - ok_syntax1.error
+    - ok_syntax1.output
+    - ok_syntax1.tab.c
+    - ok_syntax1.tab.h
+    - pure_calc.error
+    - pure_calc.output
+    - pure_calc.tab.c
+    - pure_calc.tab.h
+    - pure_error.error
+    - pure_error.output
+    - pure_error.tab.c
+    - pure_error.tab.h
+    - quote_calc-s.error
+    - quote_calc-s.output
+    - quote_calc-s.tab.c
+    - quote_calc-s.tab.h
+    - quote_calc.error
+    - quote_calc.output
+    - quote_calc.tab.c
+    - quote_calc.tab.h
+    - quote_calc2-s.error
+    - quote_calc2-s.output
+    - quote_calc2-s.tab.c
+    - quote_calc2-s.tab.h
+    - quote_calc2.error
+    - quote_calc2.output
+    - quote_calc2.tab.c
+    - quote_calc2.tab.h
+    - quote_calc3-s.error
+    - quote_calc3-s.output
+    - quote_calc3-s.tab.c
+    - quote_calc3-s.tab.h
+    - quote_calc3.error
+    - quote_calc3.output
+    - quote_calc3.tab.c
+    - quote_calc3.tab.h
+    - quote_calc4-s.error
+    - quote_calc4-s.output
+    - quote_calc4-s.tab.c
+    - quote_calc4-s.tab.h
+    - quote_calc4.error
+    - quote_calc4.output
+    - quote_calc4.tab.c
+    - quote_calc4.tab.h
+    - rename_debug.c
+    - rename_debug.error
+    - rename_debug.h
+    - rename_debug.i
+    - rename_debug.output
+    - stdin1.calc.c
+    - stdin1.error
+    - stdin1.output
+    - stdin2.calc.c
+    - stdin2.error
+    - stdin2.output
+    - varsyntax_calc1.error
+    - varsyntax_calc1.output
+    - varsyntax_calc1.tab.c
+    - varsyntax_calc1.tab.h
+- verbose.c
+- vmsbuild.com
+- warshall.c
+- yacc.1
+- yaccpar.c
+- yaccpar.skel
