@@ -1,0 +1,56 @@
+# CODEBASE MAP for lib/libpmc
+
+Subdirectories:
+- pmu-events
+
+Files:
+- libpmc_json.cc
+- libpmc_pmu_util.c
+- libpmc.c
+- libpmcinternal.h
+- Makefile
+- Makefile.depend
+- Makefile.inc
+- pmc_allocate.3
+- pmc_attach.3
+- pmc_capabilities.3
+- pmc_configure_logfile.3
+- pmc_disable.3
+- pmc_event_names_of_class.3
+- pmc_get_driver_stats.3
+- pmc_get_msr.3
+- pmc_init.3
+- pmc_name_of_capability.3
+- pmc_read.3
+- pmc_set.3
+- pmc_start.3
+- pmc.3
+- pmc.amd.3
+- pmc.atom.3
+- pmc.atomsilvermont.3
+- pmc.cmn-600.3
+- pmc.core.3
+- pmc.core2.3
+- pmc.corei7.3
+- pmc.corei7uc.3
+- pmc.dmc-620.3
+- pmc.h
+- pmc.haswell.3
+- pmc.haswelluc.3
+- pmc.haswellxeon.3
+- pmc.iaf.3
+- pmc.ibs.3
+- pmc.ivybridge.3
+- pmc.ivybridgexeon.3
+- pmc.sandybridge.3
+- pmc.sandybridgeuc.3
+- pmc.sandybridgexeon.3
+- pmc.soft.3
+- pmc.tsc.3
+- pmc.ucf.3
+- pmc.westmere.3
+- pmc.westmereuc.3
+- pmcformat.h
+- pmclog.3
+- pmclog.c
+- pmclog.h

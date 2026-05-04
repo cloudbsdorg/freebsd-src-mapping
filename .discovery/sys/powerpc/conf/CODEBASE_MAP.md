@@ -1,0 +1,17 @@
+Directory: sys/powerpc/conf
+Entries:
+- d/dpaa/
+- f/DEFAULTS
+- f/GENERIC
+- f/GENERIC-NODEBUG
+- f/GENERIC.hints
+- f/GENERIC64
+- f/GENERIC64-NODEBUG
+- f/GENERIC64LE
+- f/GENERIC64LE-NODEBUG
+- f/LINT
+- f/LINT64
+- f/LINT64LE
+- f/MPC85XX
+- f/NOTES
+- f/QORIQ64

@@ -1,0 +1,19 @@
+Directory: sys/contrib/openzfs/tests/zfs-tests/tests/functional/cli_root/zpool_wait
+Entries:
+- d/scan/
+- f/cleanup.ksh
+- f/setup.ksh
+- f/zpool_wait_discard.ksh
+- f/zpool_wait_freeing.ksh
+- f/zpool_wait_initialize_basic.ksh
+- f/zpool_wait_initialize_cancel.ksh
+- f/zpool_wait_initialize_flag.ksh
+- f/zpool_wait_multiple.ksh
+- f/zpool_wait_no_activity.ksh
+- f/zpool_wait_remove_cancel.ksh
+- f/zpool_wait_remove.ksh
+- f/zpool_wait_trim_basic.ksh
+- f/zpool_wait_trim_cancel.ksh
+- f/zpool_wait_trim_flag.ksh
+- f/zpool_wait_usage.ksh
+- f/zpool_wait.kshlib

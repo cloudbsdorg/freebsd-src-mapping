@@ -1,0 +1,52 @@
+# CODEBASE MAP for lib/libc/softfloat
+
+Subdirectories:
+- bits32
+- bits64
+- templates
+
+Files:
+- eqdf2.c
+- eqsf2.c
+- eqtf2.c
+- fpgetmask.c
+- fpgetround.c
+- fpgetsticky.c
+- fpsetmask.c
+- fpsetround.c
+- fpsetsticky.c
+- gedf2.c
+- gesf2.c
+- getf2.c
+- gexf2.c
+- gtdf2.c
+- gtsf2.c
+- gttf2.c
+- gtxf2.c
+- ledf2.c
+- lesf2.c
+- letf2.c
+- ltdf2.c
+- ltsf2.c
+- lttf2.c
+- Makefile.inc
+- nedf2.c
+- negdf2.c
+- negsf2.c
+- negtf2.c
+- negxf2.c
+- nesf2.c
+- netf2.c
+- nexf2.c
+- README.NetBSD
+- README.txt
+- softfloat-for-gcc.h
+- softfloat-history.txt
+- softfloat-source.txt
+- softfloat-specialize
+- softfloat.txt
+- Symbol.map
+- timesoftfloat.c
+- timesoftfloat.txt
+- unorddf2.c
+- unordsf2.c

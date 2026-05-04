@@ -1,0 +1,51 @@
+# CODEBASE MAP for lib/libc
+
+Subdirectories:
+- aarch64
+- amd64
+- arm
+- capability
+- compat-43
+- csu
+- db
+- gdtoa
+- gen
+- gmon
+- i386
+- iconv
+- include
+- inet
+- isc
+- locale
+- nameser
+- net
+- nls
+- posix1e
+- powerpc
+- powerpc64
+- quad
+- regex
+- resolv
+- riscv
+- rpc
+- secure
+- softfloat
+- stdbit
+- stdio
+- stdlib
+- stdtime
+- string
+- sys
+- tests
+- uuid
+- x86
+- xdr
+- yp
+
+Files:
+- libc_nossp.ldscript
+- libc.ldscript
+- Makefile
+- Makefile.depend
+- Makefile.depend.options
+- Versions.def

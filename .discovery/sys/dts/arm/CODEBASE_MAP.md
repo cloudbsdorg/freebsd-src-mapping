@@ -1,0 +1,22 @@
+Directory: sys/dts/arm
+Entries:
+- d/overlays/
+- f/annapurna-alpine.dts
+- f/db78460.dts
+- f/Makefile
+- f/Makefile.inc
+- f/qcom-ipq4018-rt-ac58u.dts
+- f/qcom-ipq4019-ethernet.dtsi
+- f/tegra124-jetson-tk1-fbsd.dts
+- f/tegra20-paz00.dts
+- f/tegra20.dtsi
+- f/trimslice.dts
+- f/ufw.dts
+- f/versatilepb.dts
+- f/vybrid-colibri-vf50.dts
+- f/vybrid-cosmic.dts
+- f/vybrid-quartz.dts
+- f/vybrid.dtsi
+- f/zedboard.dts
+- f/zybo.dts
+- f/zynq-7000.dtsi

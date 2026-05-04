@@ -1,0 +1,20 @@
+Directory: sys/tools
+Entries:
+- d/fdt/
+- d/gdb/
+- d/sound/
+- d/syscalls/
+- f/acpi_quirks2h.awk
+- f/amd64_ia32_vdso.sh
+- f/amd64_vdso.sh
+- f/arm_kernel_boothdr.awk
+- f/bus_macro.sh
+- f/embed_mfs.sh
+- f/fw_stub.awk
+- f/kernel-gdb.py
+- f/makeobjops.awk
+- f/miidevs2h.awk
+- f/sdiodevs2h.awk
+- f/usbdevs2h.awk
+- f/vdso_wrap.S
+- f/vnode_if.awk

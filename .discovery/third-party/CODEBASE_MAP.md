@@ -1,22 +1,23 @@
-# third-party/ — Third-Party Integration Codebase Map
+# CODEBASE MAP for 
 
-**Path:** `third-party/`
-**Purpose:** Third-party software integration
+Package: 
+Source: contrib/bearssl/
 
-## Overview
+Top-level contents:
+- build
+- conf
+- Doxyfile
+- inc
+- LICENSE.txt
+- Makefile
+- mk
+- README.txt
+- samples
+- src
+- T0
+- T0Comp.exe
+- test
+- tools
 
-The third-party directory contains integration points for third-party software.
-
-## Key Components
-
-| Component | Description |
-|-----------|-------------|
-| `android/ | Android compatibility |
-| `binutils/` | GNU binutils |
-| `dTrace/ | DTrace tools |
-| `gdb/ | GDB debugger |
-
-## See Also
-
-- `contrib/` - Third-party packages
-- `gnu/` - GNU software
+Recursive contents:
+build/

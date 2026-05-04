@@ -1,0 +1,22 @@
+Directory: sys/amd64/vmm
+Entries:
+- d/amd/
+- d/intel/
+- d/io/
+- f/vmm_dev_machdep.c
+- f/vmm_host.c
+- f/vmm_host.h
+- f/vmm_instruction_emul.c
+- f/vmm_ioport.c
+- f/vmm_ioport.h
+- f/vmm_lapic.c
+- f/vmm_lapic.h
+- f/vmm_mem_machdep.c
+- f/vmm_mem.h
+- f/vmm_snapshot.c
+- f/vmm_stat.h
+- f/vmm_util.c
+- f/vmm_util.h
+- f/vmm.c
+- f/x86.c
+- f/x86.h

@@ -1,0 +1,21 @@
+Directory: sys/contrib/openzfs/include
+Entries:
+- d/os/
+- d/sys/
+- f/cityhash.h
+- f/libnvpair.h
+- f/libzdb.h
+- f/libzfs_core.h
+- f/libzfs.h
+- f/libzfsbootenv.h
+- f/libzpool.h
+- f/libzutil.h
+- f/Makefile.am
+- f/zfeature_common.h
+- f/zfs_comutil.h
+- f/zfs_crrd.h
+- f/zfs_deleg.h
+- f/zfs_fletcher.h
+- f/zfs_namecheck.h
+- f/zfs_prop.h
+- f/zfs_valstr.h

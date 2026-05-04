@@ -1,0 +1,22 @@
+Directory: sys/contrib/openzfs/cmd
+Entries:
+- d/raidz_test/
+- d/zdb/
+- d/zed/
+- d/zfs/
+- d/zinject/
+- d/zpool_influxdb/
+- d/zpool/
+- d/zstream/
+- f/dbufstat.in
+- f/fsck.zfs.in
+- f/Makefile.am
+- f/mount_zfs.c
+- f/zarcstat.in
+- f/zarcsummary
+- f/zfs_ids_to_path.c
+- f/zgenhostid.c
+- f/zhack.c
+- f/zilstat.in
+- f/ztest.c
+- f/zvol_wait

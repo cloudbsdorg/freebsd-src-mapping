@@ -1,20 +1,24 @@
-# sys/contrib/ — Kernel-Internal Contributions Codebase Map
-
-**Path:** `sys/contrib/`
-**Purpose:** BSD-licensed code used by the kernel
-
-## Overview
-
-The contrib directory contains third-party code with BSD-compatible licenses that is used internally by the kernel.
-
-## Key Components
-
-| Component | Description |
-|-----------|-------------|
-| `zlib/` | Compression (used by gzip, zlib) |
-| `libmd/` | Message digest (used by crypto) |
-
-## See Also
-
-- `sys/libkern/` - Kernel library
-- `contrib/` - External contributions
+Directory: sys/contrib
+Entries:
+- d/alpine-hal/
+- d/ck/
+- d/dev/
+- d/device-tree/
+- d/dpdk_rte_lpm/
+- d/edk2/
+- d/ena-com/
+- d/libb2/
+- d/libfdt/
+- d/libnv/
+- d/libsodium/
+- d/ncsw/
+- d/openzfs/
+- d/pcg-c/
+- d/rdma/
+- d/v4l/
+- d/vchiq/
+- d/x86emu/
+- d/xen/
+- d/xz-embedded/
+- d/zlib/
+- d/zstd/

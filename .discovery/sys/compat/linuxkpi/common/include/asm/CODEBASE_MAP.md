@@ -1,0 +1,26 @@
+Directory: sys/compat/linuxkpi/common/include/asm
+Entries:
+- d/fpu/
+- f/atomic-long.h
+- f/atomic.h
+- f/atomic64.h
+- f/barrier.h
+- f/byteorder.h
+- f/cpu_device_id.h
+- f/cpufeature.h
+- f/fcntl.h
+- f/hypervisor.h
+- f/intel-family.h
+- f/io.h
+- f/iosf_mbi.h
+- f/memtype.h
+- f/msr.h
+- f/neon.h
+- f/pgtable.h
+- f/processor.h
+- f/set_memory.h
+- f/smp.h
+- f/topology.h
+- f/types.h
+- f/uaccess.h
+- f/unaligned.h
