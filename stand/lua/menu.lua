@@ -38,17 +38,29 @@ local themes = require("themes")
 local menu = {}
 
 local drawn_menu
+local themes = require("themes")
+local theme = require("theme")
+
+local function get_theme_str(key, default)
+	return theme.get_text(key, default)
+end
+
 local return_menu_entry = {
 	entry_type = core.MENU_RETURN,
-	name = "Back to main menu" .. color.highlight(" [Backspace]"),
+	name = function()
+		return get_theme_str("back_to_main_menu", "Back to main menu") ..
+		    color.highlight(" [Backspace]")
+	end,
 }
 
 local function OnOff(str, value)
 	if value then
-		return str .. color.escapefg(color.GREEN) .. "On" ..
+		return str .. color.escapefg(color.GREEN) ..
+		    get_theme_str("on", "On") ..
 		    color.resetfg()
 	else
-		return str .. color.escapefg(color.RED) .. "off" ..
+		return str .. color.escapefg(color.RED) ..
+		    get_theme_str("off", "off") ..
 		    color.resetfg()
 	end
 end
