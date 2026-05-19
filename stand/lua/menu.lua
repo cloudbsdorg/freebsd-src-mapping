@@ -478,43 +478,48 @@ function menu.process(menudef, keypress)
 		keypress = nil
 
 		-- Handle arrow keys (multi-byte escape sequences)
-		if key == 27 and io.ischar() then
-			local next1 = io.getchar()
-			if next1 == 91 then  -- '['
-				local next2 = io.getchar()
-				if next2 == 65 then  -- 'A' = Up arrow
-					-- Move selection up
-					local max_idx = 0
-					for idx, _ in pairs(drawer.getButtonPositions()) do
-						if idx > max_idx then
-							max_idx = idx
+		-- Only process if we see ESC[ followed by A or B
+		if key == 27 then
+			if io.ischar() then
+				local next1 = io.getchar()
+				if next1 == 91 and io.ischar() then  -- '['
+					local next2 = io.getchar()
+					if next2 == 65 then  -- 'A' = Up arrow
+						-- Move selection up
+						local max_idx = 0
+						for idx, _ in pairs(drawer.getButtonPositions()) do
+							if idx > max_idx then
+								max_idx = idx
+							end
 						end
-					end
-					local cur = drawer.getSelectedIndex()
-					local new_idx = cur - 1
-					if new_idx < 1 then
-						new_idx = max_idx
-					end
-					drawer.setSelectedIndex(new_idx)
-					menu.draw(menudef)
-				elseif next2 == 66 then  -- 'B' = Down arrow
-					-- Move selection down
-					local max_idx = 0
-					for idx, _ in pairs(drawer.getButtonPositions()) do
-						if idx > max_idx then
-							max_idx = idx
+						local cur = drawer.getSelectedIndex()
+						local new_idx = cur - 1
+						if new_idx < 1 then
+							new_idx = max_idx
 						end
+						drawer.setSelectedIndex(new_idx)
+						menu.draw(menudef)
+						goto continue
+					elseif next2 == 66 then  -- 'B' = Down arrow
+						-- Move selection down
+						local max_idx = 0
+						for idx, _ in pairs(drawer.getButtonPositions()) do
+							if idx > max_idx then
+								max_idx = idx
+							end
+						end
+						local cur = drawer.getSelectedIndex()
+						local new_idx = cur + 1
+						if new_idx > max_idx then
+							new_idx = 1
+						end
+						drawer.setSelectedIndex(new_idx)
+						menu.draw(menudef)
+						goto continue
 					end
-					local cur = drawer.getSelectedIndex()
-					local new_idx = cur + 1
-					if new_idx > max_idx then
-						new_idx = 1
-					end
-					drawer.setSelectedIndex(new_idx)
-					menu.draw(menudef)
 				end
 			end
-			goto continue
+			-- If we got here, it wasn't an arrow key, treat ESC as regular
 		end
 
 		-- Special key behaviors
