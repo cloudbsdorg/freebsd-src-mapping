@@ -28,8 +28,6 @@
 -- OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 -- SUCH DAMAGE.
 
-local core = require("core")
-
 local theme = {}
 
 local current_theme = nil
