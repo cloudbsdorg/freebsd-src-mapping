@@ -47,6 +47,30 @@ local frame_size
 local default_shift
 local shift
 
+local themes
+local theme
+
+local function init_theme()
+	if theme ~= nil then
+		return
+	end
+	theme = require("theme")
+	themes = require("themes")
+	themes.init()
+	themes.load()
+	theme.apply_defaults()
+end
+
+local function get_theme_string(key, default)
+	init_theme()
+	return theme.get_text(key, default)
+end
+
+local function is_graphical_buttons()
+	init_theme()
+	return theme.is_graphical_enabled()
+end
+
 -- Make this code compatible with older loader binaries. We moved the term_*
 -- functions from loader to the gfx. if we're running on an older loader that
 -- has these functions, create aliases for them in gfx. The loader binary might
@@ -614,7 +638,19 @@ function drawer.drawscreen(menudef)
 	drawitem(drawlogo)
 	drawitem(drawbrand)
 	drawitem(drawbox)
+	drawitem(drawthemeindicator)
 	return drawmenu(menudef)
+end
+
+function drawer.drawthemeindicator()
+	init_theme()
+	local t = theme.get_current()
+	if t == nil then
+		return
+	end
+	local name = theme.get("name", "unknown")
+	screen.setcursor(1, 25)
+	printc("Theme: " .. name .. " (T to cycle)")
 end
 
 return drawer

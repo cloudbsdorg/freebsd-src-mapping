@@ -36,8 +36,14 @@ local color = require("color")
 local core = require("core")
 local config = require("config")
 local password = require("password")
+local themes = require("themes")
+local theme = require("theme")
 
 config.load()
+
+themes.init()
+themes.load()
+theme.apply_defaults()
 
 if core.isUEFIBoot() then
 	loader.perform("efi-autoresizecons")

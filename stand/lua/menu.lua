@@ -33,6 +33,7 @@ local color = require("color")
 local config = require("config")
 local screen = require("screen")
 local drawer = require("drawer")
+local themes = require("themes")
 
 local menu = {}
 
@@ -476,6 +477,15 @@ function menu.process(menudef, keypress)
 		end
 
 		key = string.char(key)
+
+		-- Theme cycling with 'T' key
+		if key == "t" or key == "T" then
+			local new_theme = themes.cycle_next()
+			if new_theme ~= nil then
+				screen.clear()
+				menu.draw(menudef)
+			end
+		end
 		-- check to see if key is an alias
 		local sel_entry = nil
 		for k, v in pairs(menu.current_alias_table) do
