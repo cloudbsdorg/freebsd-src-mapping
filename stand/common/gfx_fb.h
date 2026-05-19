@@ -266,6 +266,8 @@ void gfx_framework_init(void);
 void gfx_fb_cons_display(uint32_t, uint32_t, uint32_t, uint32_t, void *);
 void gfx_fb_setpixel(uint32_t, uint32_t);
 void gfx_fb_drawrect(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
+void gfx_fb_drawroundedrect(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t,
+    uint32_t, uint32_t, uint32_t);
 void gfx_term_drawrect(uint32_t, uint32_t, uint32_t, uint32_t);
 void gfx_fb_line(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t);
 void gfx_fb_bezier(uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t,

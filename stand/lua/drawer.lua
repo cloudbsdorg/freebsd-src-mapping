@@ -71,6 +71,53 @@ local function is_graphical_buttons()
 	return theme.is_graphical_enabled()
 end
 
+-- Convert 0xRRGGBB to 0x00BBGGRR (BGRA format for framebuffer)
+local function rgb_to_bgra(rgb)
+	local r = (rgb >> 16) & 0xFF
+	local g = (rgb >> 8) & 0xFF
+	local b = rgb & 0xFF
+	return 0x00000000 + (b << 16) + (g << 8) + r
+end
+
+-- Draw a graphical button at the given position
+function drawer.drawButton(x, y, width, height, label, state)
+	if not is_graphical_buttons() then
+		return false
+	end
+
+	if gfx == nil or gfx.fb_drawroundedrect == nil then
+		return false
+	end
+
+	init_theme()
+
+	local btn = theme.get("graphical.button", {})
+	local radius = btn.corner_radius or 12
+	local bw = btn.border_width or 2
+
+	local colors
+	if state == "selected" then
+		colors = btn.selected or btn.normal
+	elseif state == "pressed" then
+		colors = btn.pressed or btn.normal
+	else
+		colors = btn.normal
+	end
+
+	if colors == nil then
+		return false
+	end
+
+	local bg = rgb_to_bgra(colors.bg or 0x333333)
+	local fg = rgb_to_bgra(colors.fg or 0xFFFFFF)
+	local border = rgb_to_bgra(colors.border or 0x555555)
+	local border_w = colors.border_width or bw
+
+	gfx.fb_drawroundedrect(x, y, width, height, radius, bg, border, border_w)
+
+	return true
+end
+
 -- Make this code compatible with older loader binaries. We moved the term_*
 -- functions from loader to the gfx. if we're running on an older loader that
 -- has these functions, create aliases for them in gfx. The loader binary might

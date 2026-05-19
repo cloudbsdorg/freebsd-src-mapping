@@ -203,6 +203,30 @@ lua_fb_drawrect(lua_State *L)
 }
 
 static int
+lua_fb_drawroundedrect(lua_State *L)
+{
+	uint32_t x, y, width, height, radius, bg_color, border_color, border_width;
+	int nargs;
+
+	nargs = lua_gettop(L);
+	if (nargs != 8) {
+		lua_pushnil(L);
+		return 1;
+	}
+
+	x = luaL_checknumber(L, 1);
+	y = luaL_checknumber(L, 2);
+	width = luaL_checknumber(L, 3);
+	height = luaL_checknumber(L, 4);
+	radius = luaL_checknumber(L, 5);
+	bg_color = luaL_checknumber(L, 6);
+	border_color = luaL_checknumber(L, 7);
+	border_width = luaL_checknumber(L, 8);
+	gfx_fb_drawroundedrect(x, y, width, height, radius, bg_color, border_color, border_width);
+	return 0;
+}
+
+static int
 lua_term_drawrect(lua_State *L)
 {
 	uint32_t x0, y0, x1, y1;
@@ -226,6 +250,7 @@ lua_term_drawrect(lua_State *L)
 static const struct luaL_Reg gfxlib[] = {
 	REG_SIMPLE(fb_bezier),
 	REG_SIMPLE(fb_drawrect),
+	REG_SIMPLE(fb_drawroundedrect),
 	REG_SIMPLE(fb_line),
 	REG_SIMPLE(fb_putimage),
 	REG_SIMPLE(fb_setpixel),
@@ -259,6 +284,7 @@ gfx_init_md(lua_State *L)
 	if (luaL_dostring(L,
 		"loader.fb_bezier = gfx.fb_bezier\n"
 		"loader.fb_drawrect = gfx.fb_drawrect\n"
+		"loader.fb_drawroundedrect = gfx.fb_drawroundedrect\n"
 		"loader.fb_line = gfx.fb_line\n"
 		"loader.fb_putimage = gfx.fb_putimage\n"
 		"loader.fb_setpixel = gfx.fb_setpixel\n"

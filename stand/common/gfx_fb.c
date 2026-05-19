@@ -1568,6 +1568,114 @@ gfx_fb_drawrect(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2,
 	}
 }
 
+/*
+ * Draw a rounded rectangle with explicit colors.
+ * x, y: top-left corner
+ * width, height: dimensions of the rectangle
+ * radius: corner radius (0 = sharp corners)
+ * bg_color: background/fill color (0x00BBGGRR format)
+ * border_color: border color (0x00BBGGRR format)
+ * border_width: width of border in pixels
+ */
+void
+gfx_fb_drawroundedrect(uint32_t x, uint32_t y, uint32_t width,
+    uint32_t height, uint32_t radius, uint32_t bg_color,
+    uint32_t border_color, uint32_t border_width)
+{
+	uint32_t c;
+	int i, j;
+	uint32_t x2, y2;
+
+	if (gfx_state.tg_fb_type == FB_TEXT)
+		return;
+
+	if (radius > width / 2)
+		radius = width / 2;
+	if (radius > height / 2)
+		radius = height / 2;
+
+	x2 = x + width;
+	y2 = y + height;
+
+	/* Draw main filled rectangle */
+	c = bg_color;
+	if (radius > 0) {
+		/* Fill middle sections (without corners) */
+		gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0, x + radius, y,
+		    x2 - radius, y + height, 0);
+		gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0, x, y + radius,
+		    x + width, y2 - radius, 0);
+		/* Fill corners with circles */
+		for (j = 0; j < radius; j++) {
+			for (i = 0; i < radius; i++) {
+				/* Top-left corner */
+				if ((i*i + j*j) < (radius*radius)) {
+					gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0,
+					    x + radius - 1 - i, y + radius - 1 - j,
+					    1, 1, 0);
+					/* Top-right corner */
+					gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0,
+					    x2 - radius + i, y + radius - 1 - j,
+					    1, 1, 0);
+					/* Bottom-left corner */
+					gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0,
+					    x + radius - 1 - i, y2 - radius + j,
+					    1, 1, 0);
+					/* Bottom-right corner */
+					gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0,
+					    x2 - radius + i, y2 - radius + j,
+					    1, 1, 0);
+				}
+			}
+		}
+	} else {
+		gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0, x, y, width, height, 0);
+	}
+
+	/* Draw border */
+	if (border_width > 0 && border_color != bg_color) {
+		c = border_color;
+		/* Top border */
+		gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0, x + radius, y,
+		    x2 - radius, y + border_width, 0);
+		/* Bottom border */
+		gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0, x + radius, y2 - border_width,
+		    x2 - radius, y2, 0);
+		/* Left border */
+		gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0, x, y + radius,
+		    x + border_width, y2 - radius, 0);
+		/* Right border */
+		gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0, x2 - border_width, y + radius,
+		    x2, y2 - radius, 0);
+
+		/* Corner patches to cover the gap between borders */
+		if (radius > 0) {
+			for (j = 0; j < radius; j++) {
+				for (i = 0; i < radius; i++) {
+					/* Check if we're on the border arc */
+					int dist = i*i + j*j;
+					int outer_dist = (radius + border_width - 1) * (radius + border_width - 1);
+					int inner_dist = radius * radius;
+					if (dist >= inner_dist && dist < outer_dist) {
+						/* Top-left */
+						gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0,
+						    x + radius - 1 - i, y + radius - 1 - j, 1, 1, 0);
+						/* Top-right */
+						gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0,
+						    x2 - radius + i, y + radius - 1 - j, 1, 1, 0);
+						/* Bottom-left */
+						gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0,
+						    x + radius - 1 - i, y2 - radius + j, 1, 1, 0);
+						/* Bottom-right */
+						gfxfb_blt(&c, GfxFbBltVideoFill, 0, 0,
+						    x2 - radius + i, y2 - radius + j, 1, 1, 0);
+					}
+				}
+			}
+		}
+	}
+}
+
 void
 gfx_fb_line(uint32_t x0, uint32_t y0, uint32_t x1, uint32_t y1, uint32_t wd)
 {
