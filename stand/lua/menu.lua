@@ -477,6 +477,46 @@ function menu.process(menudef, keypress)
 		local key = keypress or io.getchar()
 		keypress = nil
 
+		-- Handle arrow keys (multi-byte escape sequences)
+		if key == 27 and io.ischar() then
+			local next1 = io.getchar()
+			if next1 == 91 then  -- '['
+				local next2 = io.getchar()
+				if next2 == 65 then  -- 'A' = Up arrow
+					-- Move selection up
+					local max_idx = 0
+					for idx, _ in pairs(drawer.getButtonPositions()) do
+						if idx > max_idx then
+							max_idx = idx
+						end
+					end
+					local cur = drawer.getSelectedIndex()
+					local new_idx = cur - 1
+					if new_idx < 1 then
+						new_idx = max_idx
+					end
+					drawer.setSelectedIndex(new_idx)
+					menu.draw(menudef)
+				elseif next2 == 66 then  -- 'B' = Down arrow
+					-- Move selection down
+					local max_idx = 0
+					for idx, _ in pairs(drawer.getButtonPositions()) do
+						if idx > max_idx then
+							max_idx = idx
+						end
+					end
+					local cur = drawer.getSelectedIndex()
+					local new_idx = cur + 1
+					if new_idx > max_idx then
+						new_idx = 1
+					end
+					drawer.setSelectedIndex(new_idx)
+					menu.draw(menudef)
+				end
+			end
+			goto continue
+		end
+
 		-- Special key behaviors
 		if (key == core.KEY_BACKSPACE or key == core.KEY_DELETE) and
 		    menudef ~= menu.default then
@@ -498,6 +538,7 @@ function menu.process(menudef, keypress)
 				menu.draw(menudef)
 			end
 		end
+
 		-- check to see if key is an alias
 		local sel_entry = nil
 		for k, v in pairs(menu.current_alias_table) do
@@ -521,6 +562,7 @@ function menu.process(menudef, keypress)
 			-- redraw it.
 			menu.draw(menudef)
 		end
+		::continue::
 	end
 end
 
