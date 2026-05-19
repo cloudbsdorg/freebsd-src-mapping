@@ -50,6 +50,9 @@ local shift
 local themes
 local theme
 
+local selected_index = 1
+local button_positions = {}
+
 local function init_theme()
 	if theme ~= nil then
 		return
@@ -69,6 +72,22 @@ end
 local function is_graphical_buttons()
 	init_theme()
 	return theme.is_graphical_enabled()
+end
+
+function drawer.getSelectedIndex()
+	return selected_index
+end
+
+function drawer.setSelectedIndex(idx)
+	selected_index = idx
+end
+
+function drawer.getButtonPositions()
+	return button_positions
+end
+
+function drawer.clearButtonPositions()
+	button_positions = {}
 end
 
 -- Convert 0xRRGGBB to 0x00BBGGRR (BGRA format for framebuffer)
@@ -289,6 +308,17 @@ local function drawmenu(menudef)
 	if type(menu_entries) == "function" then
 		menu_entries = menu_entries()
 	end
+
+	-- Clear button positions for graphical mode
+	drawer.clearButtonPositions()
+
+	local use_graphical = is_graphical_buttons() and gfxcapable()
+	local btn_cfg = nil
+	if use_graphical then
+		init_theme()
+		btn_cfg = theme.get("graphical.button", {})
+	end
+
 	for _, e in ipairs(menu_entries) do
 		-- Allow menu items to be conditionally visible by specifying
 		-- a visible function.
@@ -298,9 +328,34 @@ local function drawmenu(menudef)
 		effective_line_num = effective_line_num + 1
 		if e.entry_type ~= core.MENU_SEPARATOR then
 			entry_num = entry_num + 1
-			screen.setcursor(x, y + effective_line_num)
 
-			printc(entry_num .. ". " .. menuEntryName(menudef, e))
+			if use_graphical and btn_cfg and btn_cfg.enabled then
+				local bw = btn_cfg.width or 280
+				local bh = btn_cfg.height or 40
+				local bmargin = btn_cfg.margin or 8
+				local btn_x = x
+				local btn_y = y + effective_line_num
+
+				-- Draw button
+				local state = (entry_num == selected_index) and "selected" or "normal"
+				drawer.drawButton(btn_x, btn_y, bw, bh, "", state)
+
+				-- Track button position
+				button_positions[entry_num] = {
+					x = btn_x,
+					y = btn_y,
+					width = bw,
+					height = bh,
+					entry = e
+				}
+
+				-- Draw text on button
+				screen.setcursor(x + 10, btn_y + bh / 2 - 1)
+				printc(entry_num .. ". " .. menuEntryName(menudef, e))
+			else
+				screen.setcursor(x, y + effective_line_num)
+				printc(entry_num .. ". " .. menuEntryName(menudef, e))
+			end
 
 			-- fill the alias table
 			alias_table[tostring(entry_num)] = e
